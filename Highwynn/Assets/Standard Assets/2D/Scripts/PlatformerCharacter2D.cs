@@ -1,3 +1,5 @@
+#pragma warning disable
+
 //Tutorial help 5:20 https://www.youtube.com/watch?v=JC59tDg4tmo also hurt wisp effect https://www.youtube.com/watch?v=uf0ZXDKDWrc
 using System.Collections;
 using System;

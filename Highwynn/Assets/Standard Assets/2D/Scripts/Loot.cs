@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class Loot : MonoBehaviour
 {
     [SerializeField]
-    private Text pickupText;
+    private Text pickupText = null;
     private bool pickupAllowed;
 
     // Start is called before the first frame update
