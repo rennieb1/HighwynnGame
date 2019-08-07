@@ -9,13 +9,13 @@ namespace Highwynn
         [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
         [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
-        [SerializeField] private LayerMask m_WhatIsGround = ~0;                  // A mask determining what is ground to the character
+        [SerializeField] private LayerMask m_WhatIsGround = ~10;                  // A mask determining what is ground to the character
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
         private bool m_Grounded;            // Whether or not the player is grounded.
         private Transform m_CeilingCheck;   // A position marking where to check for ceilings
-        const float k_CeilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
+        const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
         private Animator m_Anim;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
@@ -50,6 +50,16 @@ namespace Highwynn
                 if (colliders[i].gameObject != gameObject)
                     m_Grounded = true;
             }
+
+            // Check if the player hits ceiling
+            Collider2D[] ceilingColliders = Physics2D.OverlapCircleAll(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround);
+            foreach (Collider2D collider in ceilingColliders) {
+                if (collider.gameObject != gameObject) {
+                    m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0.0f);
+                    m_Rigidbody2D.AddForce(new Vector2(0.0f, -300.0f));
+                }
+            }
+
             m_Anim.SetBool("Ground", m_Grounded);
 
             // Set the vertical animation
