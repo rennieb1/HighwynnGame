@@ -9,6 +9,7 @@ namespace Highwynn
         [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
         [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
+        [SerializeField] private bool m_ceilingCollide = true;
         [SerializeField] private LayerMask m_WhatIsGround = ~10;                  // A mask determining what is ground to the character
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
@@ -52,11 +53,13 @@ namespace Highwynn
             }
 
             // Check if the player hits ceiling
-            Collider2D[] ceilingColliders = Physics2D.OverlapCircleAll(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround);
-            foreach (Collider2D collider in ceilingColliders) {
-                if (collider.gameObject != gameObject) {
-                    m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0.0f);
-                    m_Rigidbody2D.AddForce(new Vector2(0.0f, -300.0f));
+            if (m_ceilingCollide) {
+                Collider2D[] ceilingColliders = Physics2D.OverlapCircleAll(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround);
+                foreach (Collider2D collider in ceilingColliders) {
+                    if (collider.gameObject != gameObject) {
+                        m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0.0f);
+                        m_Rigidbody2D.AddForce(new Vector2(0.0f, -300.0f));
+                    }
                 }
             }
 
