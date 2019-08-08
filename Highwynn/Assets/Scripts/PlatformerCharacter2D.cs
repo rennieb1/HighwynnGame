@@ -9,8 +9,11 @@ namespace Highwynn
         [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
         [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
-        [SerializeField] private bool m_ceilingCollide = true;
         [SerializeField] private LayerMask m_WhatIsGround = ~10;                  // A mask determining what is ground to the character
+
+        // Custom Variables
+        [SerializeField] private bool ceilingCollide = false;
+        private bool canDoubleJump = false;
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -53,14 +56,16 @@ namespace Highwynn
             }
 
             // Check if the player hits ceiling
-            if (m_ceilingCollide) {
-                Collider2D[] ceilingColliders = Physics2D.OverlapCircleAll(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround);
-                foreach (Collider2D collider in ceilingColliders) {
-                    if (collider.gameObject != gameObject) {
-                        m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0.0f);
-                        m_Rigidbody2D.AddForce(new Vector2(0.0f, -300.0f));
-                    }
-                }
+            if (ceilingCollide) {
+                //This is still potentially useful for other effects/interactions, however the collider is best for handling collisions ;)
+
+                // Collider2D[] ceilingColliders = Physics2D.OverlapCircleAll(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround);
+                // foreach (Collider2D collider in ceilingColliders) {
+                //     if (collider.gameObject != gameObject) {
+                //         m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0.0f);
+                //         m_Rigidbody2D.AddForce(new Vector2(0.0f, -300.0f));
+                //     }
+                // }
             }
 
             m_Anim.SetBool("Ground", m_Grounded);
@@ -110,11 +115,20 @@ namespace Highwynn
                     Flip();
                 }
             }
+
+            // Handle player doublejump. Must be checked before standard jump
+            if (!m_Grounded && jump && canDoubleJump) {
+                canDoubleJump = false;
+                m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0.0f);
+                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            }
+
             // If the player should jump...
             if (m_Grounded && jump && m_Anim.GetBool("Ground"))
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
+                canDoubleJump = true;
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             }
