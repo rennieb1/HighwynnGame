@@ -62,9 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
@@ -75,15 +72,32 @@
     <Compile Include="Assets\Scripts\CompanionFollow.cs" />
     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\EnemyBehavior.cs" />
+    <Compile Include="Assets\Scripts\FinishLevel.cs" />
     <Compile Include="Assets\Scripts\HighwynnGameManager.cs" />
     <Compile Include="Assets\Scripts\Loot.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\ButtonSelectKeyboard.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\QuitOnClick.cs" />
     <Compile Include="Assets\Scripts\Platformer2DUserControl.cs" />
     <Compile Include="Assets\Scripts\PlatformerCharacter2D.cs" />
     <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\Restarter.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L1_01.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L1_02.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L1_03.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L1_04.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L2_01.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L2_02.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L2_03.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L2_04.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L3_01.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L3_02.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L3_03.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Collectables Scripts\Act_C_L3_04.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\Player.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\SaveFiles(multiply)\SaveLoad.cs" />
     <Compile Include="Assets\Scripts\SaveScript.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />

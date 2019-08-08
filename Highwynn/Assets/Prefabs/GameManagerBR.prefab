@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &633918097210037752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 633918097210037754}
+  - component: {fileID: 633918097210037753}
+  - component: {fileID: 633918097210037755}
+  m_Layer: 0
+  m_Name: GameManagerBR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &633918097210037754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633918097210037752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -43.748188, y: -26.806087, z: -15.428148}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &633918097210037753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633918097210037752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e3dd07db1aa03f4e9bf57a69cfdda92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  health: 3
+  c_LOneOne: 0
+  c_LOneTwo: 0
+  c_LOneThree: 0
+  c_LOneFour: 0
+  c_LTwoOne: 0
+  c_LTwoTwo: 0
+  c_LTwoThree: 0
+  c_LTwoFour: 0
+  c_LThreeOne: 0
+  c_LThreeTwo: 0
+  c_LThreeThree: 0
+  c_LThreeFour: 0
+  c_LFourOne: 0
+  c_LFourTwo: 0
+  c_LFourThree: 0
+  c_LFourFour: 0
+  c_LFiveOne: 0
+  c_LFiveTwo: 0
+  c_LFiveThree: 0
+  c_LFiveFour: 0
+  c_LSixOne: 0
+  c_LSixTwo: 0
+  c_LSixThree: 0
+  c_LSixFour: 0
+  C_L1_1: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L1_2: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L1_3: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L1_4: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  LevelTwoButton: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799,
+    type: 3}
+  C_L2_1: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L2_2: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L2_3: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L2_4: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  LevelThreeButton: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799,
+    type: 3}
+  C_L3_1: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L3_2: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L3_3: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L3_4: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  LevelFourButton: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799,
+    type: 3}
+  C_L4_1: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L4_2: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L4_3: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L4_4: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  LevelFiveButton: {fileID: 6307933198479414103, guid: fb1f2436dc0904b40b05f7e0ed73407a,
+    type: 3}
+  C_L5_1: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L5_2: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L5_3: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L5_4: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  LevelSixButton: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799,
+    type: 3}
+  C_L6_1: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L6_2: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L6_3: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+  C_L6_4: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
+--- !u!114 &633918097210037755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633918097210037752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849b36f1cbb561b4c9cc4463b2f46b6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gamePauseMenu: {fileID: 0}
