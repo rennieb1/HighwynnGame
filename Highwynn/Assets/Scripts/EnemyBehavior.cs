@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    public int enemyHealth = 5;
+    public float health = 5;
     public float moveSpeed = 3f;
     Transform leftWayPoint, rightWayPoint;
     Vector3 localScale;
@@ -84,14 +84,28 @@ public class EnemyBehavior : MonoBehaviour
         
     }
 
+    /*
     void OnTriggerEnter2D(Collider2D col) 
     {
-              if (col.gameObject.name.Equals("Fire"))
+        Debug.Log("Fire Collision");
+
+        if (col.gameObject.name.Equals("Fire"))
         {
             enemyHealth -= 1;
         }
         if (enemyHealth < 1)
         {
+            Die();
+        }
+    }
+    */
+
+    public void Hit(float damage) {
+        Debug.Log(name + " takes " + damage + " damage");
+
+        health -= damage;
+
+        if (health <= 0) {
             Die();
         }
     }

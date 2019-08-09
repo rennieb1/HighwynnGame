@@ -32,6 +32,8 @@ namespace Highwynn {
                         Quaternion.Euler(new Vector3(0, 0, transform.localEulerAngles.z))
                 ) as Rigidbody2D;
 
+                bulletInstance.GetComponent<Fireball>().SetOwner = gameObject;
+
                 bulletInstance.velocity = new Vector2(character.GetComponent<Rigidbody2D>().velocity.x, 0.0f);
 
                 if (character.FacingRight) {
