@@ -169,5 +169,9 @@ namespace Highwynn
                 gameObject.SetActive(false);
             }
         }
+
+        public bool FacingRight {
+            get { return m_FacingRight; }
+        }
     }
 }
