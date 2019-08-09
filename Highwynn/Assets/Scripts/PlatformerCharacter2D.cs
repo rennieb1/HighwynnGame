@@ -14,6 +14,7 @@ namespace Highwynn
         // Custom Variables
         [SerializeField] private bool ceilingCollide = false;
         private bool canAirJump = false;
+        private bool hasAirJumped = false;
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -60,7 +61,7 @@ namespace Highwynn
             }
 
             // If no ground colliders detected can air-jump
-            if (colliders.Length == 0)
+            if (colliders.Length == 0 && !hasAirJumped)
             {
                 canAirJump = true;
             }
@@ -130,6 +131,7 @@ namespace Highwynn
             if (!m_Grounded && jump && canAirJump)
             {
                 canAirJump = false;
+                hasAirJumped = true;
                 m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0.0f);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             }
@@ -140,6 +142,7 @@ namespace Highwynn
                 // Add a vertical force to the player.
                 m_Grounded = false;
                 canAirJump = true;
+                hasAirJumped = false;
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             }
