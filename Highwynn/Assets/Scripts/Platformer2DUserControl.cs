@@ -9,11 +9,13 @@ namespace Highwynn
     {
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
+        private bool canSendScout;
 
 
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
+            canSendScout = true;
         }
 
 
@@ -23,6 +25,12 @@ namespace Highwynn
             {
                 // Read the jump input in Update so button presses aren't missed.
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+            }
+
+            if (Input.GetMouseButtonDown(0)/* && canSendScout*/) {
+                Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                StartCoroutine(m_Character.Companion.Scout(new Vector2(mousePosition.x, mousePosition.y)));
+                canSendScout = false;
             }
         }
 
