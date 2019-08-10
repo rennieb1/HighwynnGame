@@ -57,6 +57,7 @@ namespace Highwynn
                 {
                     m_Grounded = true;
                     canAirJump = false;
+                    hasAirJumped = false;
                 }
             }
 
