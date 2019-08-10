@@ -6,26 +6,29 @@ namespace Highwynn
 {
     public class CompanionFollow : MonoBehaviour
     {
-        public PlatformerCharacter2D target;
-        public Vector3 targetPosition;
         public float damping = 1;
         public float lookAheadFactor = 3;
         public float lookAheadReturnSpeed = 0.5f;
         public float lookAheadMoveThreshold = 0.1f;
-
-        public bool followTarget = true;
 
         private float m_OffsetZ;
         private Vector3 m_LastTargetPosition;
         private Vector3 m_CurrentVelocity;
         private Vector3 m_LookAheadPos;
 
+        //Custom variables
+        public PlatformerCharacter2D target;
+        public Vector3 targetPosition;
+        public bool followTarget = true;
+        private float zPosition;
+
         // Start is called before the first frame update
         void Start()
         {
+            zPosition = transform.position.z;
             m_LastTargetPosition = target.transform.position;
             m_OffsetZ = (transform.position - target.transform.position).z;
-            transform.parent = null;
+            transform.parent = null;            
         }
 
         // Update is called once per frame
@@ -56,12 +59,14 @@ namespace Highwynn
 
             Vector3 aheadTargetPos = target.transform.position + m_LookAheadPos + Vector3.forward*m_OffsetZ;
             Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
+            newPos.z = zPosition;
 
             transform.position = newPos;
 
             m_LastTargetPosition = target.transform.position;
         }
 
+        // Follow player-directed position
         void FollowMark() {
             // only update lookahead pos if accelerating or changed direction
             float xMoveDelta = (targetPosition - m_LastTargetPosition).x;
@@ -79,6 +84,7 @@ namespace Highwynn
 
             Vector3 aheadTargetPos = targetPosition + m_LookAheadPos + Vector3.forward*m_OffsetZ;
             Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
+            newPos.z = zPosition;
 
             transform.position = newPos;
 

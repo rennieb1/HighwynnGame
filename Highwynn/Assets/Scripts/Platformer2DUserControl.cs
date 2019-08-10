@@ -9,13 +9,13 @@ namespace Highwynn
     {
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
-        private bool canSendScout;
+        // Custom variables
+        private Coroutine scoutRoutine = null; // Hold reference to started coroutine so it can be cancelled
 
 
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
-            canSendScout = true;
         }
 
 
@@ -27,10 +27,19 @@ namespace Highwynn
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
 
-            if (Input.GetMouseButtonDown(0)/* && canSendScout*/) {
+            // On main click
+            if (Input.GetMouseButtonDown(0)) {
+                // Get mouse position
                 Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                StartCoroutine(m_Character.Companion.Scout(new Vector2(mousePosition.x, mousePosition.y)));
-                canSendScout = false;
+
+                // Start coroutine which moves the wisp, pass in mouse position
+                if (scoutRoutine == null) {
+                    scoutRoutine = StartCoroutine(m_Character.Companion.Scout(new Vector2(mousePosition.x, mousePosition.y)));
+                }
+                else {
+                    StopCoroutine(scoutRoutine);
+                    scoutRoutine = StartCoroutine(m_Character.Companion.Scout(new Vector2(mousePosition.x, mousePosition.y)));
+                }
             }
         }
 
