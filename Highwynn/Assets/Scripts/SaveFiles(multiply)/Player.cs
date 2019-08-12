@@ -382,7 +382,16 @@ public class Player : MonoBehaviour
 
     public void Updatec_Lcount(int levelcount)
     {
-        level = levelcount;
+        if(level >= levelcount)
+        {
+            level = level;
+        }
+        else 
+        {
+            level = levelcount;
+        }
+        
+        
     }
 
 
