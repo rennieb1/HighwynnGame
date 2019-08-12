@@ -13,7 +13,7 @@ public class SaveScript : MonoBehaviour
     {
         saveText.gameObject.SetActive(false);
     }
-
+/*
     // Update is called once per frame
     void Update()
     {
@@ -22,13 +22,22 @@ public class SaveScript : MonoBehaviour
             Save();
         }
     }
-
+*/
      private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.tag == "Fire")
+        {
+            saveText.gameObject.SetActive(true);
+        //    saveAllowed = true;
+            Save();
+          //  Destroy(gameObject);
+        }
         if (collision.gameObject.name.Equals("Player"))
         {
             saveText.gameObject.SetActive(true);
-            saveAllowed = true;
+         //   saveAllowed = true;
+            Save();
+            
         }
     }
 
@@ -37,7 +46,13 @@ public class SaveScript : MonoBehaviour
         if (collision.gameObject.name.Equals("Player"))
         {
             saveText.gameObject.SetActive(false);
-            saveAllowed = false;
+        //    saveAllowed = false;
+        }
+        if (collision.tag == "Fire")
+        {
+            saveText.gameObject.SetActive(false);
+         //   saveAllowed = false;
+            Debug.Log("Fire Collidered with Save"); 
         }
     }
 

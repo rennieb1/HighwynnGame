@@ -27,7 +27,7 @@ namespace Highwynn
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
-        public GameObject fireRight, fireLef, gameOverText, restartButton, hurtParticle;
+        public GameObject fireRight, fireLef, /*gameOverText, restartButton,*/ hurtParticle;
 
         private void Awake()
         {
@@ -40,8 +40,8 @@ namespace Highwynn
 
         void Start()
         {
-            gameOverText.SetActive(false);
-            restartButton.SetActive(false);
+       //     gameOverText.SetActive(false);
+        //    restartButton.SetActive(false);
         }
 
         private void FixedUpdate()
@@ -166,10 +166,11 @@ namespace Highwynn
         {
             if (col.gameObject.tag.Equals("Enemy"))
             {
-                gameOverText.SetActive(true);
-                restartButton.SetActive(true);
+              //  gameOverText.SetActive(true);
+              //  restartButton.SetActive(true);
                 Instantiate(hurtParticle, transform.position, Quaternion.identity);
                 gameObject.SetActive(false);
+                HighwynnGameManager.Instance().ResetPlayerToLastCheckpoint();
             }
         }
 

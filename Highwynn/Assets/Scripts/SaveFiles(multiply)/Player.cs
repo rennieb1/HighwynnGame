@@ -8,7 +8,8 @@ public class Player : MonoBehaviour
     public int level = 1;
     public int health = 3;
 
-  
+    public int c_LZeroOne;
+
     public int c_LOneOne;
     public int c_LOneTwo;
     public int c_LOneThree;
@@ -43,6 +44,8 @@ public class Player : MonoBehaviour
     public int c_LSixTwo;
     public int c_LSixThree;
     public int c_LSixFour;
+
+    public GameObject C_L0_1;
 
     public GameObject C_L1_1;
     public GameObject C_L1_2;
@@ -86,6 +89,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (c_LZeroOne >= 1)
+        {
+            C_L0_1.SetActive(true);
+        }
 
         if (c_LOneOne >= 1)
         {
@@ -324,6 +331,10 @@ public class Player : MonoBehaviour
 
 
      }
+    public void Updatec_LZeroOne(int ZeroOne)
+    {
+        c_LZeroOne = ZeroOne;
+    }
     public void Updatec_LOneOne(int OneOne)
     {
         c_LOneOne = OneOne;

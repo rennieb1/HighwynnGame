@@ -20,21 +20,26 @@ namespace Highwynn {
             timeToLive -= Time.deltaTime;
         }
 
-        void OnCollisionEnter2D(Collision2D other) {
-            Debug.Log(other.gameObject.name);
-            
-            EnemyBehavior enemy = other.gameObject.GetComponent<EnemyBehavior>();
-            if (enemy != null) {
-                //Damage enemy
-                enemy.Hit(damage);
-            }       
-            
-            if (other.gameObject != owner) {
-                Destroy(gameObject);
-            }
-        }
+            void OnCollisionEnter2D(Collision2D other) 
+            {
+                Debug.Log(other.gameObject.name);
 
-        public GameObject SetOwner {
+                EnemyBehavior enemy = other.gameObject.GetComponent<EnemyBehavior>();
+                if (enemy != null) 
+                {
+                    //Damage enemy
+                    enemy.Hit(damage);
+                }       
+
+                if (other.gameObject != owner) 
+                {
+                    Destroy(gameObject);
+                }
+              }
+
+          
+        public GameObject SetOwner 
+        {
             set { owner = value; }
         }
     }
