@@ -16,6 +16,7 @@ namespace Highwynn
         private bool canAirJump = false;
         private bool hasAirJumped = false;
         [SerializeField] private Wisp companion;
+        public float airJumpForce = 200f;
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -135,7 +136,7 @@ namespace Highwynn
                 canAirJump = false;
                 hasAirJumped = true;
                 m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0.0f);
-                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                m_Rigidbody2D.AddForce(new Vector2(0f, airJumpForce));
             }
 
             // If the player should jump...
