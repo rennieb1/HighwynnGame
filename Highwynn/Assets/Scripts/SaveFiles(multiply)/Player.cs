@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Player : MonoBehaviour
 {
     public int level = 1;
-    public int health = 3;
+    public float health = 0;
+    public float maxHealth = 100f;
+
+    public Image Bar;
 
     public int c_LZeroOne;
 
@@ -81,14 +85,25 @@ public class Player : MonoBehaviour
     public GameObject C_L6_2;
     public GameObject C_L6_3;
     public GameObject C_L6_4;
+    public Text healthbar;
 
     void Awake()
     {
         LoadPlayer();
+        health = maxHealth;
+
+        InvokeRepeating("decreaseHealth", 0f, 4f);
     }
+
+
 
     void Update()
     {
+        if (health >= maxHealth)
+        {
+            maxHealth = health;
+        }
+        
         if (c_LZeroOne >= 1)
         {
             C_L0_1.SetActive(true);
@@ -238,13 +253,13 @@ public class Player : MonoBehaviour
         PlayerData player = SaveLoad.LoadPlayer();
 
         level = player.level;
-        health = player.health;
+     /*   health = player.health;
 
         Vector3 position;
         position.x = player.position[0];
         position.y = player.position[1];
         position.z = player.position[2];
-
+        */
 
         c_LOneOne = player.c_LOneOne;
         c_LOneTwo = player.c_LOneTwo;
@@ -286,13 +301,13 @@ public class Player : MonoBehaviour
             PlayerData player = SaveLoad.LoadPlayer();
 
             level = 1;
-            health = 5;
+   /*         health = 5;
 
             Vector3 position;
             position.x = player.position[0];
             position.y = player.position[1];
             position.z = player.position[2];
-
+            */
 
         c_LOneOne = 0;
         c_LOneTwo = 0;
@@ -395,15 +410,53 @@ public class Player : MonoBehaviour
     {
         if(level >= levelcount)
         {
-            level = level;
+            
         }
         else 
         {
             level = levelcount;
         }
-        
-        
+               
     }
+    public void decreaseHealth()
+    {
+        health -= 1;
+        float calc_health = health / maxHealth;
+        SetHealth(calc_health);
+        if (health >= 0)
+        {
+            Die();
+        }
+
+
+    }
+
+    public void increasehealth()
+    {
+        if (health >= maxHealth)
+        {
+            Debug.Log("maxhealth already");
+        }
+        else
+        {
+            health += 1;
+            Debug.Log("health added");
+        }
+
+    }
+    void SetHealth(float myhealth)
+    {
+        Bar.fillAmount = myhealth;
+    }
+
+    void Die()
+    {
+
+    }
+
+
+
+
 
 
 }
