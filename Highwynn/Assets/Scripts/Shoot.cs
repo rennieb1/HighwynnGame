@@ -14,6 +14,7 @@ namespace Highwynn {
         private float timeBetweenShotsCounter;
         private bool canShoot;
         private PlatformerCharacter2D character;
+        public bool addPlayerVelocity = true;
 
         // Use this for initialization
         void Start () {
@@ -34,7 +35,10 @@ namespace Highwynn {
 
                 bulletInstance.GetComponent<Fireball>().SetOwner = gameObject;
 
-                bulletInstance.velocity = new Vector2(character.GetComponent<Rigidbody2D>().velocity.x, 0.0f);
+                // Determine if player's current velocity is added to the fireball
+                if (addPlayerVelocity) {
+                    bulletInstance.velocity = new Vector2(character.GetComponent<Rigidbody2D>().velocity.x, 0.0f);
+                }
 
                 if (character.FacingRight) {
                     bulletInstance.GetComponent<Rigidbody2D>().AddForce(projectileSpawnPoint.right * projectileVelocity);     
