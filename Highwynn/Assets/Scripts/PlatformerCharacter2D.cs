@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections;
 
 namespace Highwynn
 {
@@ -17,6 +18,9 @@ namespace Highwynn
         private bool hasAirJumped = false;
         [SerializeField] private Wisp companion;
         public float airJumpForce = 200f;
+        private Collision2D currentGround;
+        private Collider2D currentGroundCollider;
+        private bool dropping = false;
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -151,6 +155,26 @@ namespace Highwynn
             }
         }
 
+        public IEnumerator DropThrough() {
+            if (currentGroundCollider.gameObject.tag == "dropThroughGround") {
+                dropping = true;
+                
+                Debug.Log("Dropping!");
+                CircleCollider2D feet = gameObject.GetComponent<CircleCollider2D>();
+                BoxCollider2D body = gameObject.GetComponent<BoxCollider2D>();
+                Physics2D.IgnoreCollision(feet, currentGroundCollider, true);
+                Physics2D.IgnoreCollision(body, currentGroundCollider, true);
+
+                yield return new WaitForSeconds(1.0f);
+
+                Debug.Log("Re-enable Collisions");
+                Physics2D.IgnoreCollision(feet, currentGroundCollider, false);
+                Physics2D.IgnoreCollision(body, currentGroundCollider, false);
+
+                dropping = false;
+            }
+        }
+
         private void Flip()
         {
             // Switch the way the player is labelled as facing.
@@ -162,15 +186,25 @@ namespace Highwynn
             transform.localScale = theScale;
         }
 
-        void OnCollisionEnter2D(Collision2D col)
+        void OnCollisionEnter2D(Collision2D other)
         {
-            if (col.gameObject.tag.Equals("Enemy"))
+            if (!dropping) {
+                currentGroundCollider = other.collider;
+            }
+
+            if (other.gameObject.tag.Equals("Enemy"))
             {
               //  gameOverText.SetActive(true);
               //  restartButton.SetActive(true);
                 Instantiate(hurtParticle, transform.position, Quaternion.identity);
                 gameObject.SetActive(false);
                 HighwynnGameManager.Instance().ResetPlayerToLastCheckpoint();
+            }
+        }
+
+        void OnCollisionStay2D(Collision2D other) {
+            if (currentGround != other) {
+                currentGround = other;
             }
         }
 

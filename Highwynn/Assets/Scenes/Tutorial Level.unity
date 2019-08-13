@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -668,6 +668,7 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 483092491}
   projectileVelocity: 500
   timeBetweenShots: 0.2
+  addPlayerVelocity: 1
 --- !u!1 &83657460
 GameObject:
   m_ObjectHideFlags: 0
@@ -4651,7 +4652,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &516529405 stripped
 MonoBehaviour:
@@ -7505,6 +7506,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.56285
       objectReference: {fileID: 0}
+    - target: {fileID: 6307933198479414099, guid: fb1f2436dc0904b40b05f7e0ed73407a,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307933198479414098, guid: fb1f2436dc0904b40b05f7e0ed73407a,
+        type: 3}
+      propertyPath: m_FillCenter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6307933199299180738, guid: fb1f2436dc0904b40b05f7e0ed73407a,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -7524,16 +7535,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -300
-      objectReference: {fileID: 0}
-    - target: {fileID: 6307933199299180743, guid: fb1f2436dc0904b40b05f7e0ed73407a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 516529407}
-    - target: {fileID: 6307933199299180743, guid: fb1f2436dc0904b40b05f7e0ed73407a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Resume
       objectReference: {fileID: 0}
     - target: {fileID: 6307933198191631996, guid: fb1f2436dc0904b40b05f7e0ed73407a,
         type: 3}
@@ -7575,15 +7576,15 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -540
       objectReference: {fileID: 0}
-    - target: {fileID: 6307933198479414099, guid: fb1f2436dc0904b40b05f7e0ed73407a,
+    - target: {fileID: 6307933199299180743, guid: fb1f2436dc0904b40b05f7e0ed73407a,
         type: 3}
-      propertyPath: m_CullTransparentMesh
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6307933198479414098, guid: fb1f2436dc0904b40b05f7e0ed73407a,
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 516529407}
+    - target: {fileID: 6307933199299180743, guid: fb1f2436dc0904b40b05f7e0ed73407a,
         type: 3}
-      propertyPath: m_FillCenter
-      value: 0
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb1f2436dc0904b40b05f7e0ed73407a, type: 3}
@@ -9449,7 +9450,7 @@ GameObject:
   - component: {fileID: 1053865701}
   m_Layer: 0
   m_Name: H_EA_Log001
-  m_TagString: Untagged
+  m_TagString: dropThroughGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17476,7 +17477,7 @@ Transform:
   - {fileID: 2066358296}
   - {fileID: 1744183479}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3127406656391024359
 Transform:
@@ -17728,7 +17729,7 @@ PrefabInstance:
     - target: {fileID: 5350411041505384357, guid: b2482bb61b839574592249fd8ecc1ec8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5350411041505384357, guid: b2482bb61b839574592249fd8ecc1ec8,
         type: 3}
