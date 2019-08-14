@@ -8,6 +8,7 @@ namespace Highwynn
 
     public class TextDrawer : MonoBehaviour
     {
+        [TextArea(10, 15)]
         public string outputMessage;
         public float typeDelay = 0.125f;
         public Color highlightColour;

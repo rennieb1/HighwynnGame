@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec277e43ae3a53f41840b93422b59009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outputMessage: It's only a small gap! Press [spacebar] to jump over it!
+  outputMessage: New Text [Here]
   typeDelay: 0.05
+  highlightColour: {r: 0, g: 0, b: 0, a: 0}
   outputBox: {fileID: 0}
