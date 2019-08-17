@@ -19,7 +19,7 @@ public class HighwynnGameManager : MonoBehaviour
         if (_instance != null)
         {
             if (_instance != this)
-            {
+           {
                 Debug.Log("There can be only one");
             
                 Destroy(gameObject);
@@ -30,11 +30,11 @@ public class HighwynnGameManager : MonoBehaviour
         {
             Debug.Log("First initialisation of manager");
             _instance = this;
-            DontDestroyOnLoad(gameObject); 
+ //           DontDestroyOnLoad(gameObject); 
         }
         
-    }
-
+    } 
+    
     // Start is called before the first frame update
     void Start()
     {

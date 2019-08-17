@@ -8,10 +8,13 @@ public class SaveScript : MonoBehaviour
     [SerializeField]
     private Text saveText = null;
     private bool saveAllowed;
+    public Player Player;
     // Start is called before the first frame update
     void Start()
     {
         saveText.gameObject.SetActive(false);
+        Player = GameObject.FindObjectOfType<Player>();
+
     }
 /*
     // Update is called once per frame
@@ -59,6 +62,7 @@ public class SaveScript : MonoBehaviour
     private void Save()
     {
         //Destroy(gameObject);
+        Player.SavePlayer();
         HighwynnGameManager.Instance().SetCheckpoint(gameObject);
     }
 }

@@ -7,8 +7,11 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public int level = 1;
+    public int lives = 3;
     public float health = 0;
     public float maxHealth = 100f;
+
+    public GameObject gameOverPanel;
 
     public Image Bar;
 
@@ -92,7 +95,7 @@ public class Player : MonoBehaviour
         LoadPlayer();
         health = maxHealth;
 
-        InvokeRepeating("decreaseHealth", 0f, 4f);
+    //    InvokeRepeating("decreaseHealth", 0f, 4f);
     }
 
 
@@ -247,10 +250,12 @@ public class Player : MonoBehaviour
     public void SavePlayer()
     {
         SaveLoad.SavePlayer(this);
+        Debug.Log("save");
     }
     public void LoadPlayer()
     {
         PlayerData player = SaveLoad.LoadPlayer();
+        Debug.Log("load");
 
         level = player.level;
      /*   health = player.health;
@@ -298,7 +303,7 @@ public class Player : MonoBehaviour
     }
      public void NewLoadPlayer()
      {
-            PlayerData player = SaveLoad.LoadPlayer();
+            
 
             level = 1;
    /*         health = 5;
@@ -343,6 +348,9 @@ public class Player : MonoBehaviour
         c_LSixTwo = 0;
         c_LSixThree = 0;
         c_LSixFour = 0;
+
+        SavePlayer();
+
 
 
      }
@@ -417,46 +425,80 @@ public class Player : MonoBehaviour
             level = levelcount;
         }
                
-    }
-    public void decreaseHealth()
-    {
-        health -= 1;
-        float calc_health = health / maxHealth;
-        SetHealth(calc_health);
-        if (health >= 0)
-        {
-            Die();
-        }
+    }/*
+       public void decreaseHealth()
+       {
+           health -= 1;
+           float calc_health = health / maxHealth;
+           SetHealth(calc_health);
+       
 
 
-    }
+       } 
 
-    public void increasehealth()
-    {
-        if (health >= maxHealth)
-        {
-            Debug.Log("maxhealth already");
-        }
-        else
-        {
-            health += 1;
-            Debug.Log("health added");
-        }
+     public void increasehealth()
+     {
+         if (health >= maxHealth)
+         {
+             Debug.Log("maxhealth already");
+         }
+         else
+         {
+             health += 1;
+             Debug.Log("health added");
+         }
 
-    }
+     } 
+     */
     void SetHealth(float myhealth)
     {
         Bar.fillAmount = myhealth;
     }
+    
 
-    void Die()
+
+
+    public void Update_Health(int ModifyHealth)
     {
 
+        health = health + ModifyHealth;
+        float calc_health = health / maxHealth;
+
+        SetHealth(calc_health);
+        if (health >= maxHealth)
+        {
+            Debug.Log("maxhealth already");
+            health = maxHealth;
+        }
+
+        
+        if (health <= 0)
+        {
+            Debug.Log("players life hit 0 Player Dies");
+            Die();
+
+                       
+        }
     }
+    public void Die()
+    {
+        HighwynnGameManager.Instance().ResetPlayerToLastCheckpoint();
+        lives = lives - 1;
+        health = maxHealth;
+        float calc_health = health / maxHealth;
+
+        SetHealth(calc_health);
 
 
-
-
+        if (lives == 0)
+                
+            {
+         //   Destroy (GameObject.FindWithTag("Player"));
+                Time.timeScale = 0;
+                Debug.Log("GAMEOVER");
+                gameOverPanel.SetActive(true);
+            }
+    }
 
 
 }
