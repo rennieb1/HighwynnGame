@@ -3410,19 +3410,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &633918098750363809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633918098750363810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 849b36f1cbb561b4c9cc4463b2f46b6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gamePauseMenu: {fileID: 0}
 --- !u!1 &633918098750363810
 GameObject:
   m_ObjectHideFlags: 0
@@ -3433,8 +3420,6 @@ GameObject:
   m_Component:
   - component: {fileID: 633918098750363808}
   - component: {fileID: 633918098750363811}
-  - component: {fileID: 633918098750363809}
-  - component: {fileID: 6035856152614062346}
   m_Layer: 0
   m_Name: GameManagerBR
   m_TagString: Untagged
@@ -3454,7 +3439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e3dd07db1aa03f4e9bf57a69cfdda92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 1
+  level: 0
   lives: 3
   health: 3
   maxHealth: 100
@@ -3486,6 +3471,7 @@ MonoBehaviour:
   c_LSixThree: 0
   c_LSixFour: 0
   C_L0_1: {fileID: 1381909218}
+  LoadLevelButton: {fileID: 3477332259536960770}
   C_L1_1: {fileID: 263604078}
   C_L1_2: {fileID: 59105939}
   C_L1_3: {fileID: 693951800}
@@ -3515,7 +3501,6 @@ MonoBehaviour:
   C_L6_2: {fileID: 1906761715}
   C_L6_3: {fileID: 1242957184}
   C_L6_4: {fileID: 1409903382}
-  healthbar: {fileID: 0}
 --- !u!1001 &811482540043286137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4574,7 +4559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3477332259536960771
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5129,6 +5114,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6150,18 +6146,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f33b580c8b88104e8fef95dc12ee5c3, type: 3}
---- !u!114 &6035856152614062346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633918098750363810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf29cdde330b29a4ba3c9a14da70d3da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7919818102155961143
 PrefabInstance:
   m_ObjectHideFlags: 0

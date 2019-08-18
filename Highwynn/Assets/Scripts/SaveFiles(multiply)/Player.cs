@@ -6,10 +6,12 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public int level = 1;
+    public int level;
     public int lives = 3;
     public float health = 0;
     public float maxHealth = 100f;
+
+    public static int loadValue;
 
     public GameObject gameOverPanel;
 
@@ -54,6 +56,7 @@ public class Player : MonoBehaviour
 
     public GameObject C_L0_1;
 
+    public GameObject LoadLevelButton;
     public GameObject C_L1_1;
     public GameObject C_L1_2;
     public GameObject C_L1_3;
@@ -88,11 +91,12 @@ public class Player : MonoBehaviour
     public GameObject C_L6_2;
     public GameObject C_L6_3;
     public GameObject C_L6_4;
-    public Text healthbar;
+  //  public Text healthbar;
 
     void Awake()
     {
         LoadPlayer();
+        
         health = maxHealth;
 
     //    InvokeRepeating("decreaseHealth", 0f, 4f);
@@ -106,7 +110,12 @@ public class Player : MonoBehaviour
         {
             maxHealth = health;
         }
-        
+
+        if (level >= 1)
+        {
+            LoadLevelButton.SetActive(true);
+        }
+
         if (c_LZeroOne >= 1)
         {
             C_L0_1.SetActive(true);
@@ -254,58 +263,63 @@ public class Player : MonoBehaviour
     }
     public void LoadPlayer()
     {
-        PlayerData player = SaveLoad.LoadPlayer();
-        Debug.Log("load");
+        if (loadValue <= 1)
+        {
+            PlayerData player = SaveLoad.LoadPlayer();
+            Debug.Log("load");
 
-        level = player.level;
-     /*   health = player.health;
+            level = player.level;
+            /*   health = player.health;
 
-        Vector3 position;
-        position.x = player.position[0];
-        position.y = player.position[1];
-        position.z = player.position[2];
-        */
+               Vector3 position;
+               position.x = player.position[0];
+               position.y = player.position[1];
+               position.z = player.position[2];
+               */
 
-        c_LOneOne = player.c_LOneOne;
-        c_LOneTwo = player.c_LOneTwo;
-        c_LOneThree = player.c_LOneThree;
-        c_LOneFour = player.c_LOneFour;
-
-
-        c_LTwoOne = player.c_LTwoOne;
-        c_LTwoTwo = player.c_LTwoTwo;
-        c_LTwoThree = player.c_LTwoThree;
-        c_LTwoFour = player.c_LTwoFour;
+            c_LOneOne = player.c_LOneOne;
+            c_LOneTwo = player.c_LOneTwo;
+            c_LOneThree = player.c_LOneThree;
+            c_LOneFour = player.c_LOneFour;
 
 
-        c_LThreeOne = player.c_LThreeOne;
-        c_LThreeTwo = player.c_LThreeTwo;
-        c_LThreeThree = player.c_LThreeThree;
-        c_LThreeFour = player.c_LThreeFour;
+            c_LTwoOne = player.c_LTwoOne;
+            c_LTwoTwo = player.c_LTwoTwo;
+            c_LTwoThree = player.c_LTwoThree;
+            c_LTwoFour = player.c_LTwoFour;
 
 
-        c_LFourOne = player.c_LFourOne;
-        c_LFourTwo = player.c_LFourTwo;
-        c_LFourThree = player.c_LFourThree;
-        c_LFourFour = player.c_LFourFour;
+            c_LThreeOne = player.c_LThreeOne;
+            c_LThreeTwo = player.c_LThreeTwo;
+            c_LThreeThree = player.c_LThreeThree;
+            c_LThreeFour = player.c_LThreeFour;
 
 
-        c_LFiveOne = player.c_LFiveOne;
-        c_LFiveTwo = player.c_LFiveTwo;
-        c_LFiveThree = player.c_LFiveThree;
-        c_LFiveFour = player.c_LFiveFour;
+            c_LFourOne = player.c_LFourOne;
+            c_LFourTwo = player.c_LFourTwo;
+            c_LFourThree = player.c_LFourThree;
+            c_LFourFour = player.c_LFourFour;
 
 
-        c_LSixOne = player.c_LSixOne;
-        c_LSixTwo = player.c_LSixTwo;
-        c_LSixThree = player.c_LSixThree;
-        c_LSixFour = player.c_LSixFour;
+            c_LFiveOne = player.c_LFiveOne;
+            c_LFiveTwo = player.c_LFiveTwo;
+            c_LFiveThree = player.c_LFiveThree;
+            c_LFiveFour = player.c_LFiveFour;
+
+
+            c_LSixOne = player.c_LSixOne;
+            c_LSixTwo = player.c_LSixTwo;
+            c_LSixThree = player.c_LSixThree;
+            c_LSixFour = player.c_LSixFour;
+        }
+        else
+        {
+            SaveLoad.SavePlayer(this);
+        }
     }
      public void NewLoadPlayer()
      {
-            
-
-            level = 1;
+        level = 0;
    /*         health = 5;
 
             Vector3 position;
@@ -349,11 +363,13 @@ public class Player : MonoBehaviour
         c_LSixThree = 0;
         c_LSixFour = 0;
 
-        SavePlayer();
+        SaveLoad.SavePlayer(this);
 
 
 
-     }
+
+
+    }
     public void Updatec_LZeroOne(int ZeroOne)
     {
         c_LZeroOne = ZeroOne;

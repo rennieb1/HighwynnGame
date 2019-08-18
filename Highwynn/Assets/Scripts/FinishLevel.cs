@@ -25,8 +25,10 @@ public class FinishLevel : MonoBehaviour
         if (collision.tag == "Player")
         {
             Player.Updatec_Lcount(LevelCount);
+            Player.SavePlayer();
             Winlevel.SetActive(true);
             Time.timeScale = 0;
+
 
 
         }
