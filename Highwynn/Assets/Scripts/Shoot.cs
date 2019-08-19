@@ -37,7 +37,8 @@ namespace Highwynn {
 
                 // Determine if player's current velocity is added to the fireball
                 if (addPlayerVelocity) {
-                    bulletInstance.velocity = new Vector2(character.GetComponent<Rigidbody2D>().velocity.x, 0.0f);
+                    // bulletInstance.velocity = new Vector2(character.GetComponent<Rigidbody2D>().velocity.x, 0.0f);
+                    bulletInstance.velocity = character.GetComponent<Rigidbody2D>().velocity;
                 }
 
                 if (character.FacingRight) {

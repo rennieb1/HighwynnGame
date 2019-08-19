@@ -9244,7 +9244,7 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 483092491}
   projectileVelocity: 1000
   timeBetweenShots: 0.1
-  addPlayerVelocity: 0
+  addPlayerVelocity: 1
 --- !u!1 &6459920632984380182
 GameObject:
   m_ObjectHideFlags: 0
