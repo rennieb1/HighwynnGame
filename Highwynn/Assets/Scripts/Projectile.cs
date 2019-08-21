@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Highwynn {
 
-    public class Fireball : MonoBehaviour
+    public class Projectile : MonoBehaviour
     {
         public float timeToLive = 1.0f;
         public float damage = 5.0f;
@@ -20,22 +20,20 @@ namespace Highwynn {
             timeToLive -= Time.deltaTime;
         }
 
-            void OnCollisionEnter2D(Collision2D other) 
+        void OnCollisionEnter2D(Collision2D other) 
+        {
+            EnemyBehavior enemy = other.gameObject.GetComponent<EnemyBehavior>();
+            if (enemy != null) 
             {
-                Debug.Log(other.gameObject.name);
+                //Damage enemy
+                enemy.Hit(damage);
+            }       
 
-                EnemyBehavior enemy = other.gameObject.GetComponent<EnemyBehavior>();
-                if (enemy != null) 
-                {
-                    //Damage enemy
-                    enemy.Hit(damage);
-                }       
-
-                if (other.gameObject != owner) 
-                {
-                    Destroy(gameObject);
-                }
-              }
+            if (other.gameObject != owner) 
+            {
+                Destroy(gameObject);
+            }
+        }
 
           
         public GameObject SetOwner 

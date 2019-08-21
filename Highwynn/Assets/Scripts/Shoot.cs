@@ -33,7 +33,7 @@ namespace Highwynn {
                         Quaternion.Euler(new Vector3(0, 0, transform.localEulerAngles.z))
                 ) as Rigidbody2D;
 
-                bulletInstance.GetComponent<Fireball>().SetOwner = gameObject;
+                bulletInstance.GetComponent<Projectile>().SetOwner = gameObject;
 
                 // Determine if player's current velocity is added to the fireball
                 if (addPlayerVelocity) {
