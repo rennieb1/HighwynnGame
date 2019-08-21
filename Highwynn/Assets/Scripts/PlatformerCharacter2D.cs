@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Highwynn
 {
@@ -18,9 +19,9 @@ namespace Highwynn
         private bool hasAirJumped = false;
         [SerializeField] private Wisp companion;
         public float airJumpForce = 200f;
-        private Collision2D currentGround;
-        private Collider2D currentGroundCollider;
-        private bool dropping = false;
+        private List<Collider2D> currentColliders;
+        private CircleCollider2D feet;
+        private BoxCollider2D body;
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -40,6 +41,10 @@ namespace Highwynn
             m_CeilingCheck = transform.Find("CeilingCheck");
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
+            feet = gameObject.GetComponent<CircleCollider2D>();
+            body = gameObject.GetComponent<BoxCollider2D>();
+
+            currentColliders = new List<Collider2D>();
         }
 
         void Start()
@@ -155,24 +160,26 @@ namespace Highwynn
             }
         }
 
-        public IEnumerator DropThrough() {
-            if (currentGroundCollider.gameObject.tag == "dropThroughGround") {
-                dropping = true;
-                
-                Debug.Log("Dropping!");
-                CircleCollider2D feet = gameObject.GetComponent<CircleCollider2D>();
-                BoxCollider2D body = gameObject.GetComponent<BoxCollider2D>();
-                Physics2D.IgnoreCollision(feet, currentGroundCollider, true);
-                Physics2D.IgnoreCollision(body, currentGroundCollider, true);
-
-                yield return new WaitForSeconds(1.0f);
-
-                Debug.Log("Re-enable Collisions");
-                Physics2D.IgnoreCollision(feet, currentGroundCollider, false);
-                Physics2D.IgnoreCollision(body, currentGroundCollider, false);
-
-                dropping = false;
+        public void DropThrough() {
+            // Loop through each collider, and for any that the player can fall through...
+            foreach (Collider2D col in currentColliders) {
+                if (col.tag == "dropThroughGround") {
+                    // Fall through
+                    StartCoroutine(Drop(col));
+                }
             }
+        }
+
+        private IEnumerator Drop(Collider2D col) {
+            // Disable collisions between player feet, body & dropDown collider
+            Physics2D.IgnoreCollision(feet, col, true);
+            Physics2D.IgnoreCollision(body, col, true);
+
+            yield return new WaitForSeconds(1.0f);
+
+            // Re-enable collisions between player feet, body & dropDown collider
+            Physics2D.IgnoreCollision(feet, col, false);
+            Physics2D.IgnoreCollision(body, col, false);
         }
 
         private void Flip()
@@ -188,9 +195,8 @@ namespace Highwynn
 
         void OnCollisionEnter2D(Collision2D other)
         {
-            if (!dropping) {
-                currentGroundCollider = other.collider;
-            }
+            // Add current collider to list of colliders
+            currentColliders.Add(other.collider);
 
             if (other.gameObject.tag.Equals("Enemy"))
             {
@@ -202,10 +208,10 @@ namespace Highwynn
             }
         }
 
-        void OnCollisionStay2D(Collision2D other) {
-            if (currentGround != other) {
-                currentGround = other;
-            }
+        void OnCollisionExit2D(Collision2D other) 
+        {
+            // Remove current collider from list
+            currentColliders.Remove(other.collider);
         }
 
         public bool FacingRight {

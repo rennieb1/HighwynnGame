@@ -52,7 +52,7 @@ public class HighwynnGameManager : MonoBehaviour
     {
         if (player != null && currentSavePoint != null)
         {
-            Debug.Log("Resetting player to last checkpoint");
+            // Debug.Log("Resetting player to last checkpoint");
             player.transform.position = currentSavePoint.transform.position;
             player.SetActive(true);
         }
@@ -60,7 +60,7 @@ public class HighwynnGameManager : MonoBehaviour
 
     public void SetCheckpoint(GameObject checkpoint)
     {
-        Debug.Log("Saving Checkpoint");
+        // Debug.Log("Saving Checkpoint");
         currentSavePoint = checkpoint;
     }
 }

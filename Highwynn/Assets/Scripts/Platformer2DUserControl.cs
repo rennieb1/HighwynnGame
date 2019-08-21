@@ -50,7 +50,7 @@ namespace Highwynn
                     downAxisInUse = true;
 
                     if (buttonCooldown > 0 && buttonCount == 1) {
-                        StartCoroutine(m_Character.DropThrough());
+                        m_Character.DropThrough();
                     }
                     else {
                         buttonCooldown = 0.5f;

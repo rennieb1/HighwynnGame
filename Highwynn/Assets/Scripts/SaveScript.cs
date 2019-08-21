@@ -31,7 +31,7 @@ public class SaveScript : MonoBehaviour
         if (collision.tag == "Fire")
         {
             saveText.gameObject.SetActive(true);
-            Debug.Log("Fire Collided with Save");
+            // Debug.Log("Fire Collided with Save");
             //    saveAllowed = true;
             Save();
           //  Destroy(gameObject);
@@ -39,7 +39,7 @@ public class SaveScript : MonoBehaviour
         if (collision.gameObject.name.Equals("Player"))
         {
             saveText.gameObject.SetActive(true);
-            Debug.Log("player Collided Save");
+            // Debug.Log("player Collided Save");
             //   saveAllowed = true;
             Save();
             
@@ -57,7 +57,7 @@ public class SaveScript : MonoBehaviour
         {
             saveText.gameObject.SetActive(false);
          //   saveAllowed = false;
-            Debug.Log("Fire Collidered with Save"); 
+            // Debug.Log("Fire Collidered with Save"); 
         }
     }
 
