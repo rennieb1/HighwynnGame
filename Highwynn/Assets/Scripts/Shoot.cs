@@ -25,7 +25,7 @@ namespace Highwynn {
     
         // Update is called once per frame
         void Update () {
-            if (Input.GetKeyDown(KeyCode.F) && canShoot)
+            if (Input.GetButtonDown("Fire1") && canShoot)
             {
                 Rigidbody2D bulletInstance = Instantiate(
                         projectile, 
