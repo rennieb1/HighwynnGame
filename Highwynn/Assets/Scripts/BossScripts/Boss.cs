@@ -9,12 +9,13 @@ public class Boss : MonoBehaviour
     public int health;
     public int ModifyHealth;
     private float timeBtwDamage = 1.5f;
+    public int damage;
 
     public Player Player;
 
     public Slider healthBar;
     private Animator anim;
-    public bool isDead;
+    public bool isDead = false;
     
 
     private void Start()
@@ -52,16 +53,15 @@ public class Boss : MonoBehaviour
         {
             if (timeBtwDamage <= 0)
             {
-                Player.Update_Health(ModifyHealth);
-                
-            }
-            if (other.tag == "Fire")
-            {
-            health = -10;
+                Player.Update_Health(ModifyHealth);               
             }
 
         }
-        
+        if (other.tag == "Fire")
+        {
+            health = health - damage;
+            Destroy(GameObject.FindWithTag("Fire"));
+        }
     }
 
 }
