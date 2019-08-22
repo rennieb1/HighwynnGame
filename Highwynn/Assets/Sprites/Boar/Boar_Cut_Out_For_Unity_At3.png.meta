@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 59f734ed0eebb04449132d327275499c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8353405293615067586
+    second: Boar_Cut_Out_For_Unity_At3_0
+  - first:
+      213: 2476315879969722503
+    second: Boar_Cut_Out_For_Unity_At3_1
+  - first:
+      213: 1663418754758170293
+    second: Boar_Cut_Out_For_Unity_At3_2
+  - first:
+      213: 5275648979185983122
+    second: Boar_Cut_Out_For_Unity_At3_3
+  - first:
+      213: 3940171867498628887
+    second: Boar_Cut_Out_For_Unity_At3_4
+  - first:
+      213: 2582341097611173367
+    second: Boar_Cut_Out_For_Unity_At3_5
+  - first:
+      213: -8654911356868135953
+    second: Boar_Cut_Out_For_Unity_At3_6
+  - first:
+      213: -7488098619763379960
+    second: Boar_Cut_Out_For_Unity_At3_7
+  - first:
+      213: -7740208068599657282
+    second: Boar_Cut_Out_For_Unity_At3_8
+  - first:
+      213: 8383479411995641226
+    second: Boar_Cut_Out_For_Unity_At3_9
+  - first:
+      213: -5618702458617511134
+    second: Boar_Cut_Out_For_Unity_At3_10
+  - first:
+      213: -6165842231211270564
+    second: Boar_Cut_Out_For_Unity_At3_11
+  - first:
+      213: 3966210112290471806
+    second: Boar_Cut_Out_For_Unity_At3_12
+  - first:
+      213: -7498175137411212412
+    second: Boar_Cut_Out_For_Unity_At3_13
+  - first:
+      213: -5039321234660321633
+    second: Boar_Cut_Out_For_Unity_At3_14
+  - first:
+      213: -5879949008602645649
+    second: Boar_Cut_Out_For_Unity_At3_15
+  - first:
+      213: -2583129377692303234
+    second: Boar_Cut_Out_For_Unity_At3_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 881
+        width: 921
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cddd6148134dd24086a8227a6379c7e
+      internalID: 8353405293615067586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_1
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1072
+        width: 428
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89bfdbf90c061c045bdf318633fbc75a
+      internalID: 2476315879969722503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 387
+        width: 240
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5794139502ae364f9dd95c6f3d95b44
+      internalID: 1663418754758170293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 375
+        width: 230
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5525eba8507d64aacb895c55c18589
+      internalID: 5275648979185983122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_4
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 380
+        width: 249
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964526d4270893a40b66735fa9ee28f4
+      internalID: 3940171867498628887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_5
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 351
+        width: 193
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b66b1d1e860ef44fb9a8e0eba7060f4
+      internalID: 2582341097611173367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_6
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 706
+        width: 367
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49011861cf31dc442805bb11012085bd
+      internalID: -8654911356868135953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_7
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 555
+        width: 75
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c385b78f5badf45837687748cb1967
+      internalID: -7488098619763379960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 148
+        width: 83
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19950346f3ffde2499b61809bdab3895
+      internalID: -7740208068599657282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_9
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 152
+        width: 107
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c58605ae49d50042bbbdafe9644bd4f
+      internalID: 8383479411995641226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_10
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 216
+        width: 78
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c40b6b61544db443b54f9ebe43755c8
+      internalID: -5618702458617511134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_11
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 216
+        width: 57
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41fd754b2ccfc5448b563e3048300d6
+      internalID: -6165842231211270564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_12
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 87
+        width: 142
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0482e701c37269749bb0b90b0681a3a3
+      internalID: 3966210112290471806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_13
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 66
+        width: 72
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da294301df418e4b95c72b3911380fe
+      internalID: -7498175137411212412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_14
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 111
+        width: 83
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51822e0020eaa340aee34c5de3db35b
+      internalID: -5039321234660321633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_15
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 110
+        width: 66
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbd5e71386a3394b8a8145390ee46e4
+      internalID: -5879949008602645649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_Cut_Out_For_Unity_At3_16
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 58
+        width: 76
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f81c5e97328d434cababd16f870279d
+      internalID: -2583129377692303234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 235e183c4d017c145a0cf20f2b82f9d2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
