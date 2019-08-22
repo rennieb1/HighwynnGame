@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7528595612418089787}
   - component: {fileID: 7528595612418089786}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Tusks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 7528595612625878993}
   - component: {fileID: 7528595612625878995}
   - component: {fileID: 7528595612625878992}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Attack_Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,13 +118,14 @@ GameObject:
   - component: {fileID: 7528595613198391990}
   - component: {fileID: 7528595613198391991}
   - component: {fileID: 7528595613198391988}
-  - component: {fileID: 7528595613198391989}
+  - component: {fileID: 5530013123322439284}
   - component: {fileID: 7528595613198391986}
   - component: {fileID: 7528595613198391987}
   - component: {fileID: 7528595613198391993}
-  m_Layer: 9
+  - component: {fileID: 3732806655034584687}
+  m_Layer: 0
   m_Name: EnemyBoar
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,33 +215,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &7528595613198391989
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7528595613198391984}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.1009264, y: -0.3709076}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 17.92, y: 11.08}
-    newSize: {x: 17.92, y: 11.08}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5.6843233, y: 3.3542762}
-  m_EdgeRadius: 0
---- !u!58 &7528595613198391986
+--- !u!58 &5530013123322439284
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -251,6 +226,22 @@ CircleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.08162699, y: 0}
+  serializedVersion: 2
+  m_Radius: 4.688003
+--- !u!58 &7528595613198391986
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528595613198391984}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -289,3 +280,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3732806655034584687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528595613198391984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b296708cf8b7e5e44895ea67ffcb17e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ModifyHealth: -20
+  Player: {fileID: 0}
