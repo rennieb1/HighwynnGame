@@ -26233,6 +26233,7 @@ MonoBehaviour:
   ceilingCollide: 0
   companion: {fileID: 870756236}
   airJumpForce: 700
+  companionTravelDistance: 20
   fireRight: {fileID: 0}
   fireLef: {fileID: 0}
   hurtParticle: {fileID: 1775989249}

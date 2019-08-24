@@ -61,7 +61,7 @@ namespace Highwynn
             }
 
             // Reset companion follow when no axis input
-            if (vRight == 0.0f && hRight == 0.0f) 
+            if (vRight == 0.0f && hRight == 0.0f && scoutRoutine == null) 
             {
                 // If companion isn't following, make it follow
                 if (!m_Character.Companion.IsFollow()) {
