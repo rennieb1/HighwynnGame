@@ -17,11 +17,14 @@ namespace Highwynn
         [SerializeField] private bool ceilingCollide = false;
         private bool canAirJump = false;
         private bool hasAirJumped = false;
-        [SerializeField] private Wisp companion;
+        [SerializeField] 
+        private Wisp companion;
         public float airJumpForce = 200f;
         private List<Collider2D> currentColliders;
         private CircleCollider2D feet;
         private BoxCollider2D body;
+        [SerializeField]
+        private float companionTravelDistance = 5.0f;
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -220,6 +223,10 @@ namespace Highwynn
 
         public Wisp Companion {
             get { return companion; }
+        }
+
+        public float CompanionDistance {
+            get { return companionTravelDistance; }
         }
     }
 }

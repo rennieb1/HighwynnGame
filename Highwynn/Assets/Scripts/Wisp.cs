@@ -62,6 +62,21 @@ namespace Highwynn
 
         }
 
+        public void ScoutController(Vector3 endPosition) {
+            Vector3 startPosition = transform.position;
+
+            follow.followTarget = false;
+            follow.targetPosition = endPosition;
+        }
+
+        public bool IsFollow() {
+            return follow.followTarget;
+        }
+
+        public void SetFollow(bool toFollow) {
+            follow.followTarget = toFollow;
+        }
+
         // Handle wisp colour changes (and other behaviours?) on trigger entry
         void OnTriggerEnter2D(Collider2D other) {
 

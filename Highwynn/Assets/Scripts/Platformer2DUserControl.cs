@@ -15,7 +15,6 @@ namespace Highwynn
         private float buttonCooldown = 0.5f;
         private int buttonCount = 0;
 
-
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
@@ -30,7 +29,7 @@ namespace Highwynn
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
 
-            // On main click
+            // Companion scouting direction PC
             if (Input.GetMouseButtonDown(0)) {
                 // Get mouse position
                 Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -45,10 +44,39 @@ namespace Highwynn
                 }
             }
 
-            if (CrossPlatformInputManager.GetAxisRaw("Vertical") < 0.0f) {
+            // Companion scouting direction for controllers
+            // Get right-stick vertical & horizontal values
+            float vRight = CrossPlatformInputManager.GetAxis("VerticalRight");
+            float hRight = CrossPlatformInputManager.GetAxis("HorizontalRight");
+            if (vRight != 0.0f || hRight != 0.0f) 
+            {
+                // Get player position
+                // Add distance multiplied by axis input to the x or y values of position to calc new position
+                Vector3 targetPosition = m_Character.gameObject.transform.position;
+                targetPosition.x += m_Character.CompanionDistance * CrossPlatformInputManager.GetAxis("HorizontalRight");
+                targetPosition.y += m_Character.CompanionDistance * CrossPlatformInputManager.GetAxis("VerticalRight");
+
+                // Non-Coroutine scout function
+                m_Character.Companion.ScoutController(new Vector2(targetPosition.x, targetPosition.y));
+            }
+
+            // Reset companion follow when no axis input
+            if (vRight == 0.0f && hRight == 0.0f) 
+            {
+                // If companion isn't following, make it follow
+                if (!m_Character.Companion.IsFollow()) {
+                    m_Character.Companion.SetFollow(true);
+                }
+            }
+
+            // Determine if player is trying to "drop-down"
+            float v = CrossPlatformInputManager.GetAxisRaw("Vertical");
+            if (v < 0.0f) {
                 if (!downAxisInUse) {
                     downAxisInUse = true;
 
+                    // If cooldown hasn't finished, and button count is high enough allow drop-through
+                    // Otherwise reset cooldown and increment button count
                     if (buttonCooldown > 0 && buttonCount == 1) {
                         m_Character.DropThrough();
                     }
@@ -60,10 +88,12 @@ namespace Highwynn
                 }
             }
 
-            if (CrossPlatformInputManager.GetAxisRaw("Vertical") >= 0.0f) {
+            // For "drop-down"
+            if (v >= 0.0f) {
                 downAxisInUse = false;
             }
 
+            // Count "drop-down" cooldown timer. Reset button count if cooldown runs out
             if (buttonCooldown > 0) {
                 buttonCooldown -= Time.deltaTime;
             }
