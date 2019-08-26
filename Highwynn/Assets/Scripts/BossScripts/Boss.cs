@@ -26,7 +26,12 @@ public class Boss : MonoBehaviour
 
     private void Update()
     {
-        
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("SpitFire")) {
+            if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5f && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.6f) {
+                // Spit here
+                Debug.Log("Spit");
+            }
+        }
 
         if (health <= 0)
         {
