@@ -16,7 +16,12 @@ public class Boss : MonoBehaviour
     public Slider healthBar;
     private Animator anim;
     public bool isDead = false;
-    
+
+    public GameObject projectile;
+    public Transform target;
+    public Transform spawn;
+    public float shootSpeed = 0.5f;
+    public bool hasShot = false;
 
     private void Start()
     {
@@ -28,9 +33,17 @@ public class Boss : MonoBehaviour
     {
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("SpitFire")) {
             if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5f && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.6f) {
-                // Spit here
-                Debug.Log("Spit");
+                if (!hasShot) {
+                    // Spit here
+                    Debug.Log("Spit");
+                    GameObject p = Instantiate(projectile, spawn.position, Quaternion.identity);
+                    p.GetComponent<Rigidbody2D>().AddForce(Vector3.Normalize((target.gameObject.transform.position - p.gameObject.transform.position)) * shootSpeed);
+                    hasShot = true;
+                }
             }
+        }
+        else {
+            hasShot = false;
         }
 
         if (health <= 0)
