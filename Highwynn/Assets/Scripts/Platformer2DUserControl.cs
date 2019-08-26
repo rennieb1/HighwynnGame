@@ -70,8 +70,8 @@ namespace Highwynn
             }
 
             // Determine if player is trying to "drop-down"
-            float v = CrossPlatformInputManager.GetAxisRaw("Vertical");
-            if (v < 0.0f) {
+            float v = CrossPlatformInputManager.GetAxis("Vertical");
+            if (v <= -0.5f) {
                 if (!downAxisInUse) {
                     downAxisInUse = true;
 
