@@ -1,0 +1,878 @@
+fileFormatVersion: 2
+guid: e70182e6229d7584c89f7461d17be638
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 883458005983033471
+    second: H_CAM_DragonSpriteSheet01_0
+  - first:
+      213: 8212110280672305955
+    second: H_CAM_DragonSpriteSheet01_1
+  - first:
+      213: -1187747600839049122
+    second: H_CAM_DragonSpriteSheet01_2
+  - first:
+      213: 4401769026269359144
+    second: H_CAM_DragonSpriteSheet01_3
+  - first:
+      213: -7497517523391747007
+    second: H_CAM_DragonSpriteSheet01_4
+  - first:
+      213: -4622154960115284792
+    second: H_CAM_DragonSpriteSheet01_5
+  - first:
+      213: -2176152321113432070
+    second: H_CAM_DragonSpriteSheet01_6
+  - first:
+      213: 4381603222465717351
+    second: H_CAM_DragonSpriteSheet01_7
+  - first:
+      213: -8203689020562037762
+    second: H_CAM_DragonSpriteSheet01_8
+  - first:
+      213: -2638460576428698086
+    second: H_CAM_DragonSpriteSheet01_9
+  - first:
+      213: 6147246547243430772
+    second: H_CAM_DragonSpriteSheet01_10
+  - first:
+      213: 8747944654466118871
+    second: H_CAM_DragonSpriteSheet01_11
+  - first:
+      213: 1713029279465243683
+    second: H_CAM_DragonSpriteSheet01_12
+  - first:
+      213: 561250886370543392
+    second: H_CAM_DragonSpriteSheet01_13
+  - first:
+      213: -3826454455481458755
+    second: H_CAM_DragonSpriteSheet01_14
+  - first:
+      213: -5908486168557132323
+    second: H_CAM_DragonSpriteSheet01_15
+  - first:
+      213: 3272264919167055778
+    second: H_CAM_DragonSpriteSheet01_16
+  - first:
+      213: 2274534519418009882
+    second: H_CAM_DragonSpriteSheet01_17
+  - first:
+      213: -8974348644017176677
+    second: H_CAM_DragonSpriteSheet01_18
+  - first:
+      213: 3218534249558694113
+    second: H_CAM_DragonSpriteSheet01_19
+  - first:
+      213: -1506985996711953748
+    second: H_CAM_DragonSpriteSheet01_20
+  - first:
+      213: 197731228372934304
+    second: H_CAM_DragonSpriteSheet01_21
+  - first:
+      213: 7794840185296794316
+    second: H_CAM_DragonSpriteSheet01_22
+  - first:
+      213: 2179197457308745573
+    second: H_CAM_DragonSpriteSheet01_23
+  - first:
+      213: -5562902099931228715
+    second: H_CAM_DragonSpriteSheet01_24
+  - first:
+      213: 8288221245923046799
+    second: H_CAM_DragonSpriteSheet01_25
+  - first:
+      213: -3643046622264760647
+    second: H_CAM_DragonSpriteSheet01_26
+  - first:
+      213: -2577202663005076592
+    second: H_CAM_DragonSpriteSheet01_27
+  - first:
+      213: 4428957511212065179
+    second: H_CAM_DragonSpriteSheet01_28
+  - first:
+      213: -2622964401067598391
+    second: H_CAM_DragonSpriteSheet01_29
+  - first:
+      213: 7006968899217676573
+    second: H_CAM_DragonSpriteSheet01_30
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 782
+        width: 329
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdddaceebd6fa0c498bb520c95bada1e
+      internalID: 883458005983033471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 806
+        width: 507
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea83cf558955f9d4f890baa53b205abc
+      internalID: 8212110280672305955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_2
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 876
+        width: 181
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de652dd8984b7549ba437406998f962
+      internalID: -1187747600839049122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_3
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 939
+        width: 383
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f84bb8fa8bfd594eac0989e3b04f0a7
+      internalID: 4401769026269359144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 665
+        width: 166
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4541d7c26ffdc41a73ffc4b6c5dac1
+      internalID: -7497517523391747007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 574
+        width: 201
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47663a2e78185a7409e3246dd1c871cf
+      internalID: -4622154960115284792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_6
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 576
+        width: 190
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a487095a13285b41b0abcabb6876d66
+      internalID: -2176152321113432070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_7
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 550
+        width: 195
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101413597bbcb314a81359fb14ba0e29
+      internalID: 4381603222465717351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_8
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 684
+        width: 182
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fffda79b7722f4d94f2c68fa1cd2c6
+      internalID: -8203689020562037762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_9
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 685
+        width: 397
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051ae5a238c79c44aa5ec7710845d420
+      internalID: -2638460576428698086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_10
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 566
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1aa4f8b1cbaf034392873f484bcf2ef
+      internalID: 6147246547243430772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_11
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 531
+        width: 211
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9805028627d7b9e4aa1437d7b3d39589
+      internalID: 8747944654466118871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_12
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 329
+        width: 508
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b23688d85d16f4fbc03bb9efab1975
+      internalID: 1713029279465243683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 385
+        width: 126
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56d42d1576657b469df7570bac65f3e
+      internalID: 561250886370543392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_14
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 383
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb276c8168e5ff49b0e47316f53e503
+      internalID: -3826454455481458755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_15
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 385
+        width: 75
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a974ca966368e4cb629613ca19e24b
+      internalID: -5908486168557132323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_16
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 322
+        width: 177
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7171af64dcee0d2418f0ed37feef0f92
+      internalID: 3272264919167055778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_17
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 338
+        width: 111
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f615d8db28189c9449af1530a40c7597
+      internalID: 2274534519418009882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_18
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 343
+        width: 113
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bd1f1dc658f3b46bbfdc4ee80abb11
+      internalID: -8974348644017176677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_19
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 363
+        width: 224
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8f50e0c2814be49b43f469486b344b
+      internalID: 3218534249558694113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_20
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 187
+        width: 126
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8622d7f7dda65bc4985b291d1cc86017
+      internalID: -1506985996711953748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_21
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 187
+        width: 73
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3ec2af04e8c254a9834e4cbb3c0750
+      internalID: 197731228372934304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_22
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 259
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84385160ec46b52449d6c730c547e356
+      internalID: 7794840185296794316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_23
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 82
+        width: 190
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b9d6a1baf92534e8c09a3ddb12fd3f
+      internalID: 2179197457308745573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_24
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 263
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88d51509da88114d82f769cb7b26339
+      internalID: -5562902099931228715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_25
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 192
+        width: 259
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91d179ca2b441844bd83c723bc9c830
+      internalID: 8288221245923046799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_26
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 67
+        width: 348
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c481ea23195d23d4dbd41d6b3c0a658c
+      internalID: -3643046622264760647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_27
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 189
+        width: 75
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95ab670b9dd89741b650f4e1d6a9e36
+      internalID: -2577202663005076592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_28
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 83
+        width: 177
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c193254207adf924cbc3869ff5d540fd
+      internalID: 4428957511212065179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_29
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 220
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4831f70bb28f4b49953a3d46e1d3fa6
+      internalID: -2622964401067598391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H_CAM_DragonSpriteSheet01_30
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 83
+        width: 112
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f76ba16a6c0224fb482f6c1828641f
+      internalID: 7006968899217676573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6265b2f06ae7be14a9224787e9152006
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

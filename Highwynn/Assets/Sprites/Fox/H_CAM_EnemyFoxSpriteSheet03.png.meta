@@ -1,0 +1,614 @@
+fileFormatVersion: 2
+guid: f44c0e6b68996af40acb9e30cb8f8f3f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4703451523077800901
+    second: Fox_Body
+  - first:
+      213: -5569923602683092644
+    second: fox head top
+  - first:
+      213: 8761469947670322375
+    second: Fox_Neck
+  - first:
+      213: 2652502695754396627
+    second: Fox_Head_Bottom
+  - first:
+      213: 1061879259794724991
+    second: Fox_Fore_Ear
+  - first:
+      213: 6926468353322025926
+    second: Fox_Off_Ear
+  - first:
+      213: -7026718577030709752
+    second: Fox_Fore_Hind_Top
+  - first:
+      213: -1474948461611723945
+    second: Fox_Off_Hind_Top
+  - first:
+      213: -1570847479509167981
+    second: Fox_Off_Front_Top
+  - first:
+      213: 2089906189853260122
+    second: Fox_Fore_Leg_Top_Front
+  - first:
+      213: 3523843774083100909
+    second: Fox_Tail_Top
+  - first:
+      213: -6170974584083564721
+    second: Fox_Fore_Hind_Lower
+  - first:
+      213: 1963759413629421982
+    second: Fox_Fore_Hind_Paw
+  - first:
+      213: 969814106817367803
+    second: Fox_Off_Hind_Lower
+  - first:
+      213: 728759707962548431
+    second: Fox_Off_Hind_Paw
+  - first:
+      213: 4661240938330507823
+    second: Fox_Off_Fore_Lower
+  - first:
+      213: 2255183868478678171
+    second: Fox_Off_Fore_paw
+  - first:
+      213: 607004616961367188
+    second: Fox_Fore_Lower_Leg_Front
+  - first:
+      213: 7015734428567738668
+    second: Fox_Fore_Paw_Front
+  - first:
+      213: -7839890841526171799
+    second: Fox_Tail_Base
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fox_Body
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 629
+        width: 730
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152dc1d5643d3cb48a56f080c3ed5b81
+      internalID: 4703451523077800901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fox head top
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 778
+        width: 291
+        height: 198
+      alignment: 9
+      pivot: {x: 0.22514547, y: 0.5982592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1441f604d3d13a6419d44ee91d869bf3
+      internalID: -5569923602683092644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Neck
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 606
+        width: 257
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041048b565f4bab40bacb7a98065e43b
+      internalID: 8761469947670322375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Head_Bottom
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 679
+        width: 248
+        height: 78
+      alignment: 9
+      pivot: {x: 0.14262316, y: 0.63857013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f93596ca2db9c94ca2be4c33ccb9b0a
+      internalID: 2652502695754396627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Fore_Ear
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 627
+        width: 96
+        height: 139
+      alignment: 9
+      pivot: {x: 0.45496622, y: 0.26672363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1526853c3af163b42b3ab7e2c896528f
+      internalID: 1061879259794724991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Off_Ear
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 658
+        width: 108
+        height: 109
+      alignment: 9
+      pivot: {x: 0.21978195, y: 0.24218358}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67f36c9ff145db499bee58032e3ba57
+      internalID: 6926468353322025926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Fore_Hind_Top
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 201
+        width: 211
+        height: 422
+      alignment: 9
+      pivot: {x: 0.4282849, y: 0.8432075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a62d640a9fd1d4aa198855f23cbc66
+      internalID: -7026718577030709752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Off_Hind_Top
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 181
+        width: 218
+        height: 418
+      alignment: 9
+      pivot: {x: 0.5297482, y: 0.7792621}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fdef657f3f88147ae933a2955ada27
+      internalID: -1474948461611723945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Off_Front_Top
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 181
+        width: 165
+        height: 395
+      alignment: 9
+      pivot: {x: 0.48689926, y: 0.70248777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7e0fa5535a85444ba1814f6da5a6df
+      internalID: -1570847479509167981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Fore_Leg_Top_Front
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 165
+        width: 171
+        height: 493
+      alignment: 9
+      pivot: {x: 0.47471717, y: 0.7981649}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec9e615f0a3e5949ba2f75ac59b8b90
+      internalID: 2089906189853260122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Tail_Top
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 331
+        width: 377
+        height: 211
+      alignment: 9
+      pivot: {x: 0.9185778, y: 0.13118003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a523a3c30ce1d074391f67902b9a5830
+      internalID: 3523843774083100909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Fore_Hind_Lower
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 23
+        width: 70
+        height: 158
+      alignment: 9
+      pivot: {x: 0.40735573, y: 0.7873138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7dca8b3858d1149817cb1c91a3036f
+      internalID: -6170974584083564721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Fore_Hind_Paw
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 23
+        width: 76
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae33363e38acb974a8814cfe3dc7bf1e
+      internalID: 1963759413629421982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Off_Hind_Lower
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 21
+        width: 107
+        height: 147
+      alignment: 9
+      pivot: {x: 0.25756723, y: 0.7499917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9896eb6fccf754c95e992894528a94
+      internalID: 969814106817367803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Off_Hind_Paw
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 21
+        width: 76
+        height: 42
+      alignment: 9
+      pivot: {x: 0.2724537, y: 0.3970611}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38223a92b8d20ae478b36b1036887b18
+      internalID: 728759707962548431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Off_Fore_Lower
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 37
+        width: 58
+        height: 116
+      alignment: 9
+      pivot: {x: 0.3881878, y: 0.7608937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdc762e6b97a9b4d86b41ed7608427d
+      internalID: 4661240938330507823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Off_Fore_paw
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 23
+        width: 86
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f400cae8f4d830449ab2ac8b7c52b1c6
+      internalID: 2255183868478678171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Fore_Lower_Leg_Front
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 34
+        width: 60
+        height: 103
+      alignment: 9
+      pivot: {x: 0.46397197, y: 0.6678985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d630fdf7d4a23147b2b6cd8f29b0be8
+      internalID: 607004616961367188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Fore_Paw_Front
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 19
+        width: 84
+        height: 45
+      alignment: 9
+      pivot: {x: 0.2941255, y: 0.4519617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c0aa54d70c0cf4d99bb2db4947671a
+      internalID: 7015734428567738668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_Tail_Base
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 15
+        width: 348
+        height: 263
+      alignment: 9
+      pivot: {x: 0.8913416, y: 0.8041167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7f5ca9abcbe664bb3d23d82cb3e7a8
+      internalID: -7839890841526171799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c9ebb35c0a582bd439d194b3762982e9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
