@@ -42,7 +42,8 @@ namespace Highwynn {
                 }
 
                 if (character.FacingRight) {
-                    bulletInstance.GetComponent<Rigidbody2D>().AddForce(projectileSpawnPoint.right * projectileVelocity);     
+                    bulletInstance.GetComponent<Rigidbody2D>().AddForce(projectileSpawnPoint.right * projectileVelocity);
+                    bulletInstance.GetComponent<Rigidbody2D>().SetRotation(180);
                 }
                 else {
                     bulletInstance.GetComponent<Rigidbody2D>().AddForce(-projectileSpawnPoint.right * projectileVelocity);

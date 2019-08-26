@@ -8,12 +8,17 @@ public class SaveScript : MonoBehaviour
     [SerializeField]
     private Text saveText = null;
     private bool saveAllowed;
+    public GameObject flame;
+   
+
     //public Player Player;
     // Start is called before the first frame update
     void Start()
     {
         saveText.gameObject.SetActive(false);
-      //  Player = GameObject.FindObjectOfType<Player>();
+        flame.gameObject.SetActive(false);
+        //  Player = GameObject.FindObjectOfType<Player>();
+        
 
     }
 /*
@@ -31,6 +36,8 @@ public class SaveScript : MonoBehaviour
         if (collision.tag == "Fire")
         {
             saveText.gameObject.SetActive(true);
+            flame.gameObject.SetActive(true);
+            
             // Debug.Log("Fire Collided with Save");
             //    saveAllowed = true;
             Save();
@@ -39,6 +46,9 @@ public class SaveScript : MonoBehaviour
         if (collision.gameObject.name.Equals("Player"))
         {
             saveText.gameObject.SetActive(true);
+            flame.gameObject.SetActive(true);
+            
+            
             // Debug.Log("player Collided Save");
             //   saveAllowed = true;
             Save();
