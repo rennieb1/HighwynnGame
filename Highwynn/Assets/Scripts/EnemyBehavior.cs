@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    public float health = 5;
-    public float moveSpeed = 3f;
+    public float health = 5.0f;
+    public float moveSpeed = 3.0f;
+    public float viewDistance = 5.0f;
+    public Transform eye;
+    public LayerMask mask;
     Transform leftWayPoint, rightWayPoint;
     Vector3 localScale;
     bool movingRight = true;
     Rigidbody2D rb;
     public static bool isAttacking = false;
     Animator anim;
+    float timeSinceLastSeen = 0.0f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,13 +24,49 @@ public class EnemyBehavior : MonoBehaviour
         anim = GetComponent<Animator> ();
         localScale = transform.localScale;
         rb = GetComponent<Rigidbody2D> ();
-        leftWayPoint = GameObject.Find ("LeftWayPoint").GetComponent<Transform> ();
-        rightWayPoint = GameObject.Find ("RightWayPoint").GetComponent<Transform> ();
+        //leftWayPoint = GameObject.Find ("LeftWayPoint").GetComponent<Transform> ();
+        //rightWayPoint = GameObject.Find ("RightWayPoint").GetComponent<Transform> ();
+    }
+
+    void FixedUpdate() 
+    {
+
+        Vector2 sinUp = (Vector2.up * 0.25f) * Mathf.Sin(Time.time * 10.0f);
+
+        RaycastHit2D seen = Physics2D.Raycast(eye.position, 
+                movingRight ? Vector2.right + sinUp : -Vector2.right + sinUp, 
+                viewDistance,
+                mask);
+
+        Debug.DrawRay(eye.position, 
+                movingRight ? viewDistance * (Vector2.right + sinUp) : viewDistance * (-Vector2.right + sinUp), 
+                Color.red, 
+                1.0f);
+
+        if (seen.collider != null) {
+            Debug.Log(seen.collider.tag + " -- " + seen.collider.name);
+            if (anim.GetCurrentAnimatorClipInfo(0)[0].clip.name == "BoarIdle") {
+                anim.SetTrigger("seePlayer");
+            }
+            anim.SetBool("lostPlayer", false);
+            timeSinceLastSeen = 0.0f;
+        }
+        else {
+            if (!anim.GetBool("lostPlayer") && timeSinceLastSeen > 0.5f) {
+                anim.SetBool("lostPlayer", true);
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (anim.GetCurrentAnimatorClipInfo(0)[0].clip.name == "BoarSeePlayer") {
+            anim.ResetTrigger("seePlayer");
+        }
+        timeSinceLastSeen += Time.deltaTime;
+        /*
         if (transform.position.x > rightWayPoint.position.x)
         {
             movingRight = false;
@@ -51,6 +92,7 @@ public class EnemyBehavior : MonoBehaviour
         {
             anim.SetBool ("isAttacking", false);
         }
+        */
     }
 
     void MoveRight()
