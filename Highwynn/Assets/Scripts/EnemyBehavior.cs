@@ -7,6 +7,8 @@ public class EnemyBehavior : MonoBehaviour
     public float health = 5.0f;
     public float moveSpeed = 3.0f;
     public float viewDistance = 5.0f;
+    [Range(0.1f, 1.5f)]
+    public float viewHeight = 0.25f;
     public Transform eye;
     public LayerMask mask;
     Transform leftWayPoint, rightWayPoint;
@@ -31,7 +33,7 @@ public class EnemyBehavior : MonoBehaviour
     void FixedUpdate() 
     {
 
-        Vector2 sinUp = (Vector2.up * 0.25f) * Mathf.Sin(Time.time * 10.0f);
+        Vector2 sinUp = (Vector2.up * viewHeight) * Mathf.Sin(Time.time * 10.0f);
 
         RaycastHit2D seen = Physics2D.Raycast(eye.position, 
                 movingRight ? Vector2.right + sinUp : -Vector2.right + sinUp, 
@@ -44,7 +46,6 @@ public class EnemyBehavior : MonoBehaviour
                 1.0f);
 
         if (seen.collider != null) {
-            Debug.Log(seen.collider.tag + " -- " + seen.collider.name);
             if (anim.GetCurrentAnimatorClipInfo(0)[0].clip.name == "BoarIdle") {
                 anim.SetTrigger("seePlayer");
             }
