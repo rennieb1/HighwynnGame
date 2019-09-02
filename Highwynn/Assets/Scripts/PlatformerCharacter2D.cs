@@ -27,10 +27,10 @@ namespace Highwynn
         [SerializeField]
         private float companionTravelDistance = 5.0f;
         // Player Mana members
-        public float mana = 100.0f;
+        private float mana = 100.0f;
         [SerializeField]
         private float manaRechargeDelay = 1.0f;
-        public float manaRechargeTimer = 0.0f;
+        private float manaRechargeTimer = 0.0f;
         [SerializeField]
         private float manaRechargeRate = 2.0f;
         [SerializeField]
