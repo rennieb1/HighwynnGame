@@ -53,8 +53,8 @@ namespace Highwynn
                 // Get player position
                 // Add distance multiplied by axis input to the x or y values of position to calc new position
                 Vector3 targetPosition = m_Character.gameObject.transform.position;
-                targetPosition.x += m_Character.CompanionDistance * CrossPlatformInputManager.GetAxis("HorizontalRight");
-                targetPosition.y += m_Character.CompanionDistance * CrossPlatformInputManager.GetAxis("VerticalRight");
+                targetPosition.x += m_Character.CompanionDistance * hRight;
+                targetPosition.y += m_Character.CompanionDistance * vRight;
 
                 // Non-Coroutine scout function
                 m_Character.Companion.ScoutController(new Vector2(targetPosition.x, targetPosition.y));
