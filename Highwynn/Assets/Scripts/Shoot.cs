@@ -11,6 +11,7 @@ namespace Highwynn {
         public Transform projectileSpawnPoint;
         public float projectileVelocity;
         public float timeBetweenShots;
+        public float shootCost = 30.0f;
         private float timeBetweenShotsCounter;
         private bool canShoot;
         private PlatformerCharacter2D character;
@@ -25,7 +26,9 @@ namespace Highwynn {
     
         // Update is called once per frame
         void Update () {
-            if ((Input.GetButtonDown("Fire1") || Input.GetAxisRaw("Fire1") != 0.0f) && canShoot)
+            if ((Input.GetButtonDown("Fire1") || Input.GetAxisRaw("Fire1") != 0.0f) 
+                && canShoot 
+                && character.ReduceMana(shootCost))
             {
                 Rigidbody2D bulletInstance = Instantiate(
                         projectile, 
@@ -49,7 +52,7 @@ namespace Highwynn {
                     bulletInstance.GetComponent<Rigidbody2D>().AddForce(-projectileSpawnPoint.right * projectileVelocity);
                 }
 
-                canShoot = false;
+                canShoot = false;   
             }
             if (!canShoot)
             {

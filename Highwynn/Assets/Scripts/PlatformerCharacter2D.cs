@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -25,6 +26,20 @@ namespace Highwynn
         private BoxCollider2D body;
         [SerializeField]
         private float companionTravelDistance = 5.0f;
+        // Player Mana members
+        public float mana = 100.0f;
+        [SerializeField]
+        private float manaRechargeDelay = 1.0f;
+        public float manaRechargeTimer = 0.0f;
+        [SerializeField]
+        private float manaRechargeRate = 2.0f;
+        [SerializeField]
+        private Slider manaBar;
+        [SerializeField]
+        private Slider manaRequirement;
+        private Color manaReqColour;
+        private float manaReqRevealTimer = 0.0f;
+        private bool manaReqReveal = false;
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -37,6 +52,8 @@ namespace Highwynn
 
         public GameObject fireRight, fireLef, /*gameOverText, restartButton,*/ hurtParticle;
 
+        float t;
+
         private void Awake()
         {
             // Setting up references.
@@ -48,12 +65,47 @@ namespace Highwynn
             body = gameObject.GetComponent<BoxCollider2D>();
 
             currentColliders = new List<Collider2D>();
+            manaReqColour = manaRequirement.fillRect.GetComponent<Image>().color;
+            manaReqColour.a = 0.0f;
+            manaRequirement.fillRect.GetComponent<Image>().color = manaReqColour;
         }
 
         void Start()
         {
        //     gameOverText.SetActive(false);
         //    restartButton.SetActive(false);
+        }
+
+        private void Update() {
+            // Mana recharge
+            if (manaRechargeTimer < manaRechargeDelay) {
+                manaRechargeTimer += Time.deltaTime;
+            }
+            else if (mana < 100.0f) {
+                mana += Time.deltaTime * manaRechargeRate;
+                mana = Mathf.Clamp(mana, 0.0f, 100.0f);
+            }
+
+            // Mana bar value
+            manaBar.value = mana / 100.0f;
+
+            // Mana Requirement bar indicator
+            if (manaReqReveal) {
+                
+                t += Time.deltaTime;
+                
+                manaReqColour.a = Mathf.Abs(Mathf.Sin(t));
+                manaRequirement.fillRect.GetComponent<Image>().color = manaReqColour;
+
+                manaReqRevealTimer += Time.deltaTime;
+                if (manaReqRevealTimer >= 6.0f) {
+                    manaReqReveal = false;
+                    manaReqRevealTimer = 0.0f;
+                    manaReqColour.a = 0.0f;
+                    manaRequirement.fillRect.GetComponent<Image>().color = manaReqColour;
+                    manaRequirement.value = 0.0f;
+                }
+            }
         }
 
         private void FixedUpdate()
@@ -215,6 +267,24 @@ namespace Highwynn
         {
             // Remove current collider from list
             currentColliders.Remove(other.collider);
+        }
+
+        public bool ReduceMana(float cost) {
+            if (mana >= cost) {
+                mana -= Mathf.Abs(cost);
+                mana = Mathf.Clamp(mana, 0.0f, 100.0f);
+                manaRechargeTimer = 0.0f;
+                return true;
+            }
+            else {
+                if (!manaReqReveal) {
+                    manaRequirement.value = Mathf.Abs(cost) / 100.0f;
+                    manaReqReveal = true;
+                    t = 0.0f;
+                }
+
+                return false;
+            }
         }
 
         public bool FacingRight {
