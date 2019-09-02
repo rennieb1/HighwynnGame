@@ -63,6 +63,7 @@ public class StorkBossMainScript : MonoBehaviour
         if (other.gameObject.CompareTag("Vines"))
         {
             health = 50;
+            anim.Play("Swark");
         }
         
     }

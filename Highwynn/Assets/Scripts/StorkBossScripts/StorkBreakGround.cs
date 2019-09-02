@@ -18,17 +18,15 @@ public class StorkBreakGround : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        {
+        
             if (storkBoss.isBreakable == true)
-            {
-                storkBoss.isBroken = true;
+            {   
                 animator.SetTrigger("Swark");
+                storkBoss.isBroken = true;
+                
             }
-            else
-            {
-                animator.SetTrigger("Idle");
-            }
-        }   
+
+           
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
