@@ -6,6 +6,7 @@ public class HealthModifier : MonoBehaviour
 {
     public int ModifyHealth;
     public Player Player;
+    public float timer;
 
     // Start is called before the first frame update
     void Awake()
@@ -15,18 +16,27 @@ public class HealthModifier : MonoBehaviour
     }
     void Update()
     {
-
+        timer -= Time.deltaTime;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            Player.Update_Health(ModifyHealth);
 
             if (ModifyHealth >= 0)
             {
-                Destroy(gameObject);
+               Player.Update_Health(ModifyHealth);
+               Destroy(gameObject);
+            }
+            if (ModifyHealth <= 0)
+            {
+                if (timer <= 0)
+                {
+                    Player.Update_Health(ModifyHealth);
+                    timer = 3f;
+                    
+                }
             }
        } 
     }
