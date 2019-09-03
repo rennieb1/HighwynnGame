@@ -5,8 +5,9 @@ using UnityEngine;
 public class StorkBossMainScript : MonoBehaviour
 {
     public int health;
-    public int damage;
-    private float timeBtwDamage = 1.5f;
+    // public int damage;
+    //  private float timeBtwDamage = 1.5f;
+    public int damageTakenPerHit = 10;
 
 
     public bool isClose = false;// Close attack range(GREEN BOX) and the triger for the breakable floor
@@ -49,12 +50,10 @@ public class StorkBossMainScript : MonoBehaviour
             if (isDead == false)
             {
                 anim.Play("Dead");
+                gameObject.layer = 10;
             }        
         }
-        if (timeBtwDamage > 0)
-        {
-            timeBtwDamage -= Time.deltaTime;
-        }
+
         
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -64,6 +63,11 @@ public class StorkBossMainScript : MonoBehaviour
         {
             health = 50;
             anim.Play("Swark");
+        }
+        if(other.gameObject.CompareTag("Fire"))
+        {
+            health = health - damageTakenPerHit;
+            Destroy(other);
         }
         
     }

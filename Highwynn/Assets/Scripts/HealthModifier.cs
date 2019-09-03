@@ -7,11 +7,15 @@ public class HealthModifier : MonoBehaviour
     public int ModifyHealth;
     public Player Player;
     public float timer;
+  //  public float forcex;
+   // public float forcey;
 
     // Start is called before the first frame update
     void Awake()
     {
         Player = GameObject.FindObjectOfType<Player>();
+        
+         
 
     }
     void Update()
@@ -35,7 +39,9 @@ public class HealthModifier : MonoBehaviour
                 {
                     Player.Update_Health(ModifyHealth);
                     timer = 3f;
-                    
+              //      collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (forcey, forcex);
+
+
                 }
             }
        } 
