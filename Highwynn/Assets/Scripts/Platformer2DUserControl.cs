@@ -89,7 +89,7 @@ namespace Highwynn
             }
 
             // For "drop-down"
-            if (v >= 0.0f) {
+            if (v > -0.5f) {
                 downAxisInUse = false;
             }
 
