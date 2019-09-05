@@ -739,7 +739,7 @@ Transform:
   - {fileID: 1134923105}
   - {fileID: 1521548786}
   m_Father: {fileID: 714835054}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &231462113
 GameObject:
@@ -921,8 +921,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234752081}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25999832, y: -1.23, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.16909061, w: 0.9856005}
+  m_LocalPosition: {x: -0.36, y: -1.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2103747535}
@@ -930,7 +930,7 @@ Transform:
   - {fileID: 1609949588}
   m_Father: {fileID: 714835054}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 19.470001}
 --- !u!1001 &284743783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1325,7 +1325,6 @@ Transform:
   - {fileID: 479457444}
   - {fileID: 1908496548}
   - {fileID: 1280975248}
-  - {fileID: 1865659346}
   m_Father: {fileID: 714835054}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1353,13 +1352,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323170827}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.16914164, w: 0.98559177}
   m_LocalPosition: {x: 0.07, y: -1.19, z: 0}
   m_LocalScale: {x: 0.57463, y: 0.57463, z: 0.57463}
   m_Children: []
   m_Father: {fileID: 1983152928}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -19.476002}
 --- !u!212 &323170829
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2205,7 +2204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479457443}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05000305, y: 0.020000458, z: 0}
+  m_LocalPosition: {x: 0.05000305, y: -0.035, z: 0}
   m_LocalScale: {x: 0.58607, y: 0.58607, z: 0.58607}
   m_Children: []
   m_Father: {fileID: 309746504}
@@ -2849,6 +2848,7 @@ Transform:
   - {fileID: 1983152928}
   - {fileID: 1022174324}
   - {fileID: 309746504}
+  - {fileID: 1865659346}
   - {fileID: 206539519}
   - {fileID: 1589974602}
   - {fileID: 762959379}
@@ -2983,7 +2983,7 @@ Transform:
   m_Children:
   - {fileID: 1760410182}
   m_Father: {fileID: 714835054}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &782197883
 GameObject:
@@ -4378,7 +4378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039882705}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.77000046, y: -1.0799999, z: 0}
+  m_LocalPosition: {x: 0.7700005, y: -1.0799999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 831770927}
@@ -5817,7 +5817,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406070948}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.32, y: 1.0299989, z: 0}
+  m_LocalPosition: {x: -0.79, y: 1.029999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 511725826}
@@ -7005,7 +7005,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553293877}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.020000458, y: 0.040000916, z: 0}
+  m_LocalPosition: {x: 0.02000046, y: -0.051, z: 0}
   m_LocalScale: {x: 0.50930154, y: 0.50930154, z: 0.50930154}
   m_Children: []
   m_Father: {fileID: 1865659346}
@@ -7083,15 +7083,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589974601}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09000015, y: -0.63, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.02528159, w: 0.9996804}
+  m_LocalPosition: {x: 0.07, y: -0.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1828779143}
   - {fileID: 442768218}
   m_Father: {fileID: 714835054}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.897}
 --- !u!1 &1609949587
 GameObject:
   m_ObjectHideFlags: 0
@@ -7955,14 +7955,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865659345}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.54, y: 0.05, z: 0}
+  m_LocalPosition: {x: 1.079998, y: -1.5900002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1553293878}
   - {fileID: 426171238}
   - {fileID: 1444188058}
-  m_Father: {fileID: 309746504}
-  m_RootOrder: 3
+  m_Father: {fileID: 714835054}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1890626329
 GameObject:
@@ -8569,7 +8569,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983152927}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.1850709, w: 0.9827252}
   m_LocalPosition: {x: -0.34, y: -1.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8578,7 +8578,7 @@ Transform:
   - {fileID: 323170828}
   m_Father: {fileID: 714835054}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 21.331001}
 --- !u!1 &2013081847
 GameObject:
   m_ObjectHideFlags: 0
@@ -8634,7 +8634,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017613111}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.17000198, y: -0.15999985, z: 0}
+  m_LocalPosition: {x: 0.170002, y: -0.169, z: 0}
   m_LocalScale: {x: 0.55306, y: 0.55306, z: 0.55306}
   m_Children: []
   m_Father: {fileID: 1983152928}
@@ -9987,6 +9987,7 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 483092491}
   projectileVelocity: 1000
   timeBetweenShots: 0.1
+  shootCost: 30
   addPlayerVelocity: 1
 --- !u!1 &6459920632984380182
 GameObject:
@@ -10092,6 +10093,10 @@ MonoBehaviour:
   companion: {fileID: 870756236}
   airJumpForce: 700
   companionTravelDistance: 5
+  manaRechargeDelay: 1
+  manaRechargeRate: 2
+  manaBar: {fileID: 0}
+  manaRequirement: {fileID: 0}
   fireRight: {fileID: 0}
   fireLef: {fileID: 0}
   hurtParticle: {fileID: 1775989249}
