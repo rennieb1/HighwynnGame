@@ -11,6 +11,7 @@ public class EnemyBehavior : MonoBehaviour
     public float viewHeight = 0.25f;
     public Transform eye;
     public LayerMask mask;
+    public bool debug = false;
     Transform leftWayPoint, rightWayPoint;
     Vector3 localScale;
     bool movingRight = true;
@@ -40,10 +41,12 @@ public class EnemyBehavior : MonoBehaviour
                 viewDistance,
                 mask);
 
-        Debug.DrawRay(eye.position, 
-                movingRight ? viewDistance * (Vector2.right + sinUp) : viewDistance * (-Vector2.right + sinUp), 
-                Color.red, 
-                1.0f);
+        if (debug) {
+            Debug.DrawRay(eye.position, 
+                    movingRight ? viewDistance * (Vector2.right + sinUp) : viewDistance * (-Vector2.right + sinUp), 
+                    Color.red, 
+                    1.0f);
+        }
 
         if (seen.collider != null) {
             if (anim.GetCurrentAnimatorClipInfo(0)[0].clip.name == "BoarIdle") {
