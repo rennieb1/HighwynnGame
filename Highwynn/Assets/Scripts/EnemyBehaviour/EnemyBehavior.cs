@@ -2,33 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class EnemyBehavior : MonoBehaviour
 {
-    public float health = 5.0f;
-    public float moveSpeed = 3.0f;
-    public float viewDistance = 5.0f;
+    [SerializeField]
+    private float health = 5.0f;
+    [SerializeField]
+    private float moveSpeed = 3.0f;
+    [SerializeField]
+    private float viewDistance = 5.0f;
+    [SerializeField]
     [Range(0.1f, 1.5f)]
-    public float viewHeight = 0.25f;
-    public Transform eye;
-    public LayerMask mask;
-    public bool debug = false;
-    Transform leftWayPoint, rightWayPoint;
-    Vector3 localScale;
-    bool movingRight = true;
-    Rigidbody2D rb;
-    public static bool isAttacking = false;
-    Animator anim;
-    float timeSinceLastSeen = 0.0f;
-    
+    private float viewHeight = 0.25f;
+    [SerializeField]
+    private Transform eye;
+    [SerializeField]
+    private LayerMask mask = 1 << 12;
+    [SerializeField]
+    private bool debug = false;
 
-    // Start is called before the first frame update
+    private Transform leftWayPoint, rightWayPoint;
+    private Vector3 localScale;
+    private bool movingRight = true;
+    private Rigidbody2D rb;
+    private bool isAttacking = false;
+    private float timeSinceLastSeen = 0.0f;
+    private bool playerSeen = false;
+
+    protected Animator anim;
+    protected RaycastHit2D seen;
+    
     void Start()
     {
         anim = GetComponent<Animator> ();
         localScale = transform.localScale;
         rb = GetComponent<Rigidbody2D> ();
-        //leftWayPoint = GameObject.Find ("LeftWayPoint").GetComponent<Transform> ();
-        //rightWayPoint = GameObject.Find ("RightWayPoint").GetComponent<Transform> ();
+    }
+
+    void Update()
+    {
+        timeSinceLastSeen += Time.deltaTime;
+        UpdateBehaviour();
     }
 
     void FixedUpdate() 
@@ -36,7 +51,7 @@ public class EnemyBehavior : MonoBehaviour
 
         Vector2 sinUp = (Vector2.up * viewHeight) * Mathf.Sin(Time.time * 10.0f);
 
-        RaycastHit2D seen = Physics2D.Raycast(eye.position, 
+        seen = Physics2D.Raycast(eye.position, 
                 movingRight ? Vector2.right + sinUp : -Vector2.right + sinUp, 
                 viewDistance,
                 mask);
@@ -49,56 +64,31 @@ public class EnemyBehavior : MonoBehaviour
         }
 
         if (seen.collider != null) {
-            if (anim.GetCurrentAnimatorClipInfo(0)[0].clip.name == "BoarIdle") {
-                anim.SetTrigger("seePlayer");
-            }
-            anim.SetBool("lostPlayer", false);
+            PlayerSeen();
             timeSinceLastSeen = 0.0f;
+            playerSeen = true;
         }
         else {
-            if (!anim.GetBool("lostPlayer") && timeSinceLastSeen > 0.5f) {
-                anim.SetBool("lostPlayer", true);
+            if (playerSeen && timeSinceLastSeen > 0.5f) {
+                PlayerLost();
+                playerSeen = false;
             }
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-        if (anim.GetCurrentAnimatorClipInfo(0)[0].clip.name == "BoarSeePlayer") {
-            anim.ResetTrigger("seePlayer");
-        }
-        timeSinceLastSeen += Time.deltaTime;
-        /*
-        if (transform.position.x > rightWayPoint.position.x)
-        {
-            movingRight = false;
-        }
-        if (transform.position.x < leftWayPoint.position.x)
-        {
-            movingRight = true;
-        }
-        if (movingRight)
-        {
-            MoveRight();
-        }
-        else
-        {
-            MoveLeft();
-        }
-
-        if (isAttacking)
-        {
-            anim.SetBool ("isAttacking", true);
-        }
-        else
-        {
-            anim.SetBool ("isAttacking", false);
-        }
-        */
+    protected virtual void PlayerSeen() {
+        Debug.Log("Default PlayerSeen()");
     }
 
+    protected virtual void PlayerLost() {
+        Debug.Log("Default PlayerLost()");
+    }
+
+    protected virtual void UpdateBehaviour() {
+        Debug.Log("Defaul UpdateBehaviour()");
+    }
+
+    /*
     void MoveRight()
     {
         movingRight = true;
@@ -129,6 +119,7 @@ public class EnemyBehavior : MonoBehaviour
         }
         
     }
+    */
 
     /*
     void OnTriggerEnter2D(Collider2D col) 
@@ -147,8 +138,6 @@ public class EnemyBehavior : MonoBehaviour
     */
 
     public void Hit(float damage) {
-        Debug.Log(name + " takes " + damage + " damage");
-
         health -= damage;
 
         if (health <= 0) {
@@ -156,7 +145,7 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-    void Die()
+    protected virtual void Die()
     {
         Destroy(gameObject);
     }

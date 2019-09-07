@@ -821,6 +821,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 80277226}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &96560140 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7202855637715063752, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1954347445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &99156929
 GameObject:
   m_ObjectHideFlags: 0
@@ -4119,7 +4125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 483092491}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: SpawnPoint
   m_TagString: ground
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
@@ -20629,6 +20635,36 @@ Transform:
   m_Father: {fileID: 61029978}
   m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -29.673002}
+--- !u!1 &1311188091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311188093}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1311188093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311188091}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 107.21892, y: -28.405981, z: -43.453125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1329575012
 GameObject:
   m_ObjectHideFlags: 0
@@ -24397,6 +24433,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1743216542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7202855637480477807, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1954347445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1743216543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743216542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539db56b165c452409339d3e687c3be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  moveSpeed: 3
+  viewDistance: 5
+  viewHeight: 0.25
+  eye: {fileID: 96560140}
+  mask:
+    serializedVersion: 2
+    m_Bits: 4096
+  debug: 1
 --- !u!1 &1744183476
 GameObject:
   m_ObjectHideFlags: 0
@@ -26737,7 +26800,13 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7202855637480477795, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+        type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7202855637480477795, guid: c4400c2ddedae9344ba9d5a1283edbcb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4400c2ddedae9344ba9d5a1283edbcb, type: 3}
 --- !u!1001 &1959521544
 PrefabInstance:
@@ -28281,6 +28350,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particle System
       objectReference: {fileID: 0}
+    - target: {fileID: 1236491544430904765, guid: c77c06ab95ab702408471f94bf01cf91,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1236491544430904766, guid: c77c06ab95ab702408471f94bf01cf91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29098,11 +29172,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.1933984
       objectReference: {fileID: 0}
-    - target: {fileID: 1268012673325229302, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
-        type: 3}
-      propertyPath: m_TagString
-      value: SavePoint
-      objectReference: {fileID: 0}
     - target: {fileID: 5063116835986937861, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -29132,6 +29201,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Intensity
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268012673325229302, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SavePoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6b59960a9f0e324eac7ac55b1ffa2b4, type: 3}
@@ -29321,7 +29395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6459920632984878898}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: CeilingCheck
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
@@ -29345,7 +29419,7 @@ GameObject:
   - component: {fileID: 6459920632995665654}
   - component: {fileID: 6459920632982057366}
   - component: {fileID: 6459920632984380181}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -29380,7 +29454,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6459920632984878902}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}

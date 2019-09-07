@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-     void OnTriggerEnter2D(Collider2D col) 
-    {
-        if (col.gameObject.name.Equals("Player"))
-        {
-            EnemyBehavior.isAttacking = true;
-        }
-    }
+    //  void OnTriggerEnter2D(Collider2D col) 
+    // {
+    //     if (col.gameObject.name.Equals("Player"))
+    //     {
+    //         EnemyBehavior.isAttacking = true;
+    //     }
+    // }
 
-    void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.gameObject.name.Equals("Player"))
-        {
-            EnemyBehavior.isAttacking = false;
-        }
-    }
+    // void OnTriggerExit2D(Collider2D col)
+    // {
+    //     if (col.gameObject.name.Equals("Player"))
+    //     {
+    //         EnemyBehavior.isAttacking = false;
+    //     }
+    // }
 }
