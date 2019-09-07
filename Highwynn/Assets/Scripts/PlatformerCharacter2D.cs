@@ -19,7 +19,7 @@ namespace Highwynn
         private bool canAirJump = false;
         private bool hasAirJumped = false;
         [SerializeField] 
-        private Wisp companion;
+        private Wisp companion = null;
         public float airJumpForce = 200f;
         private List<Collider2D> currentColliders;
         private CircleCollider2D feet;
@@ -34,9 +34,9 @@ namespace Highwynn
         [SerializeField]
         private float manaRechargeRate = 2.0f;
         [SerializeField]
-        private Slider manaBar;
+        private Slider manaBar = null;
         [SerializeField]
-        private Slider manaRequirement;
+        private Slider manaRequirement = null;
         private Color manaReqColour;
         private float manaReqRevealTimer = 0.0f;
         private bool manaReqReveal = false;

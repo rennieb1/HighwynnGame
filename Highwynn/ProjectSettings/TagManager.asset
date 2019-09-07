@@ -13,6 +13,7 @@ TagManager:
   - dropThroughGround
   - Health
   - BreakableGround
+  - EnemyTurnaround
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Ground
   - dropThroughGround
   - Player
-  - 
+  - EnemyTurnaround
   - 
   - 
   - 

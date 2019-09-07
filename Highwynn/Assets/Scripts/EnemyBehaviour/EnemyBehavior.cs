@@ -9,29 +9,29 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField]
     private float health = 5.0f;
     [SerializeField]
-    private float moveSpeed = 3.0f;
-    [SerializeField]
     private float viewDistance = 5.0f;
     [SerializeField]
     [Range(0.1f, 1.5f)]
     private float viewHeight = 0.25f;
     [SerializeField]
-    private Transform eye;
+    private Transform eye = null;
     [SerializeField]
-    private LayerMask mask = 1 << 12;
+    private LayerMask mask = (1 << 12) | (1 << 13);
     [SerializeField]
     private bool debug = false;
 
     private Transform leftWayPoint, rightWayPoint;
     private Vector3 localScale;
-    private bool movingRight = true;
-    private Rigidbody2D rb;
+    protected bool movingRight = true;
+    protected Rigidbody2D rb;
     private bool isAttacking = false;
     private float timeSinceLastSeen = 0.0f;
     private bool playerSeen = false;
 
     protected Animator anim;
     protected RaycastHit2D seen;
+    protected float distanceToTurnaround = 100.0f;
+    protected bool stopped = false;
     
     void Start()
     {
@@ -64,9 +64,16 @@ public class EnemyBehavior : MonoBehaviour
         }
 
         if (seen.collider != null) {
-            PlayerSeen();
-            timeSinceLastSeen = 0.0f;
-            playerSeen = true;
+            if (seen.collider.tag == "Player") {
+                PlayerSeen();
+                timeSinceLastSeen = 0.0f;
+                playerSeen = true;
+            }
+            else {
+                if (!stopped) {
+                    distanceToTurnaround = Vector2.Distance(transform.position, seen.collider.transform.position);
+                }
+            }
         }
         else {
             if (playerSeen && timeSinceLastSeen > 0.5f) {
@@ -85,7 +92,20 @@ public class EnemyBehavior : MonoBehaviour
     }
 
     protected virtual void UpdateBehaviour() {
-        Debug.Log("Defaul UpdateBehaviour()");
+        Debug.Log("Default UpdateBehaviour()");
+    }
+
+    public void Flip() {
+        if (movingRight) {
+            transform.localScale = localScale;
+        }
+        else {
+            transform.localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
+        }
+    }
+
+    public virtual void Stop() {
+        Debug.Log("Default Stop()");
     }
 
     /*
@@ -121,6 +141,15 @@ public class EnemyBehavior : MonoBehaviour
     }
     */
 
+    protected void Move(float moveSpeed) {
+        if (movingRight) {
+            rb.velocity = new Vector2(1 * moveSpeed, rb.velocity.y);
+        }
+        else {
+            rb.velocity = new Vector2(-1 * moveSpeed, rb.velocity.y);
+        }
+    }
+
     /*
     void OnTriggerEnter2D(Collider2D col) 
     {
@@ -149,4 +178,10 @@ public class EnemyBehavior : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public bool MoveRight {
+        set { movingRight = value; }
+        get { return movingRight; }
+    }
+
 }
