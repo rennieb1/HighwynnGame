@@ -15,9 +15,11 @@ namespace Highwynn
         private float buttonCooldown = 0.5f;
         private int buttonCount = 0;
 
+
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
+
         }
 
 

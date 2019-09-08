@@ -201,6 +201,7 @@ namespace Highwynn
                 hasAirJumped = true;
                 m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0.0f);
                 m_Rigidbody2D.AddForce(new Vector2(0f, airJumpForce));
+                m_Anim.Play("Jumping");//Added By Byron
             }
 
             // If the player should jump...
@@ -212,6 +213,7 @@ namespace Highwynn
                 hasAirJumped = false;
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                m_Anim.Play("Jumping");//Added By Byron
             }
         }
 
