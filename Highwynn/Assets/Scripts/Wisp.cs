@@ -51,8 +51,6 @@ namespace Highwynn
         // Set the wisp's target, and determine it follows said target. Reset to player after time.
         public IEnumerator Scout(Vector3 endPosition) {
 
-            Vector3 startPosition = transform.position;
-
             follow.followTarget = false;
             follow.targetPosition = endPosition;
 
@@ -63,18 +61,8 @@ namespace Highwynn
         }
 
         public void ScoutController(Vector3 endPosition) {
-            Vector3 startPosition = transform.position;
-
             follow.followTarget = false;
             follow.targetPosition = endPosition;
-        }
-
-        public bool IsFollow() {
-            return follow.followTarget;
-        }
-
-        public void SetFollow(bool toFollow) {
-            follow.followTarget = toFollow;
         }
 
         // Handle wisp colour changes (and other behaviours?) on trigger entry
@@ -95,6 +83,11 @@ namespace Highwynn
                     break;
             }
 
+        }
+
+        public bool IsFollowing {
+            get { return follow.followTarget; }
+            set { follow.followTarget = value; }
         }
     }
 }

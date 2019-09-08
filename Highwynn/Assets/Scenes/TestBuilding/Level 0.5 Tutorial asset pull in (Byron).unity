@@ -24574,7 +24574,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 12288
-  debug: 1
+  debug: 0
 --- !u!1 &1744183476
 GameObject:
   m_ObjectHideFlags: 0
@@ -26684,6 +26684,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202855637480477807, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7202855637480477806, guid: c4400c2ddedae9344ba9d5a1283edbcb,
         type: 3}
@@ -29803,7 +29808,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6459920632984380180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 135.7, y: -30.599998, z: 0}
+  m_LocalPosition: {x: -62.08, y: -28.79, z: 0}
   m_LocalScale: {x: 1.7715329, y: 1.7715304, z: -0.000018297}
   m_Children:
   - {fileID: 6459920632984878902}

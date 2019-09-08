@@ -64,8 +64,8 @@ namespace Highwynn
             if (vRight == 0.0f && hRight == 0.0f && scoutRoutine == null) 
             {
                 // If companion isn't following, make it follow
-                if (!m_Character.Companion.IsFollow()) {
-                    m_Character.Companion.SetFollow(true);
+                if (!m_Character.Companion.IsFollowing) {
+                    m_Character.Companion.IsFollowing = true;
                 }
             }
 
