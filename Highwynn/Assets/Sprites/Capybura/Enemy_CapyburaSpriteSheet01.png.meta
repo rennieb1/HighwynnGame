@@ -1,0 +1,534 @@
+fileFormatVersion: 2
+guid: 4168f71086470c94e80385272df36105
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7038136872357435326
+    second: Body
+  - first:
+      213: -7634871553688376876
+    second: Neck
+  - first:
+      213: 1748603123737516511
+    second: Enemy_CapyburaSpriteSheet01_2
+  - first:
+      213: 5255071513856779053
+    second: Enemy_CapyburaSpriteSheet01_3
+  - first:
+      213: 3169099211289740484
+    second: Enemy_CapyburaSpriteSheet01_4
+  - first:
+      213: 8459062392144714538
+    second: Fore_Leg_Upper
+  - first:
+      213: 7746908322033199420
+    second: Enemy_CapyburaSpriteSheet01_6
+  - first:
+      213: 4573876887795084277
+    second: Hind_Leg_top
+  - first:
+      213: 602489715183106471
+    second: Off_Hind_Leg_Top
+  - first:
+      213: -2976075366263759819
+    second: Enemy_CapyburaSpriteSheet01_9
+  - first:
+      213: -927129982923810146
+    second: Off_Fore_Leg_top
+  - first:
+      213: 3420534300863524432
+    second: Head_Top
+  - first:
+      213: 8301380865099619195
+    second: Enemy_CapyburaSpriteSheet01_12
+  - first:
+      213: -2950014001665175883
+    second: Off_Fore_Leg_Lower
+  - first:
+      213: 6644485692087539245
+    second: Enemy_CapyburaSpriteSheet01_14
+  - first:
+      213: -8709669649225189001
+    second: Enemy_CapyburaSpriteSheet01_15
+  - first:
+      213: 8093294368938390276
+    second: Off_Fore_foot
+  - first:
+      213: 2332868472585893725
+    second: Fore_Leg_Lower
+  - first:
+      213: 6381990639013141058
+    second: Hind_Leg_Lower
+  - first:
+      213: -6731607618478050907
+    second: Off_Hind_Lower_Leg
+  - first:
+      213: 2619289293092957777
+    second: Enemy_CapyburaSpriteSheet01_20
+  - first:
+      213: 9051700876958860788
+    second: Hind_Foot
+  - first:
+      213: -3264298034763650448
+    second: Off_Hind_foot
+  - first:
+      213: 3874774219567855134
+    second: Head_Lower_jaw
+  - first:
+      213: -2255721805966479156
+    second: Fore_foot
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Body
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 635
+        width: 766
+        height: 438
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef858d01fc2d5a4498132bfd8a09ae26
+      internalID: -7038136872357435326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neck
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 737
+        width: 283
+        height: 336
+      alignment: 9
+      pivot: {x: 0.19828619, y: 0.48818025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96dcfb48c3fea494f9f0e891380657bb
+      internalID: -7634871553688376876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fore_Leg_Upper
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 275
+        width: 198
+        height: 335
+      alignment: 9
+      pivot: {x: 0.5, y: 0.87935734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d63e84b38f98ad49adb83b2807e9c78
+      internalID: 8459062392144714538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hind_Leg_top
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 245
+        width: 242
+        height: 354
+      alignment: 9
+      pivot: {x: 0.40974098, y: 0.8926523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0843390fc4d0543bd89b462807c64f
+      internalID: 4573876887795084277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Off_Hind_Leg_Top
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 245
+        width: 240
+        height: 355
+      alignment: 9
+      pivot: {x: 0.57446367, y: 0.85239154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df91a59fe5bbe964da568c8ccf2efb5c
+      internalID: 602489715183106471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Off_Fore_Leg_top
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 364
+        width: 161
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5986677, y: 0.8208333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4a1754ecd7f3743ab7e5c24b0b0f39
+      internalID: -927129982923810146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_Top
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 272
+        width: 226
+        height: 300
+      alignment: 9
+      pivot: {x: 0.41213745, y: 0.07638418}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d841fe63cb30d2b49a498f78d790f59e
+      internalID: 3420534300863524432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Off_Fore_Leg_Lower
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 200
+        width: 76
+        height: 109
+      alignment: 9
+      pivot: {x: 0.4216172, y: 0.77326113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885bb98d7a941de49827014c6fc202f9
+      internalID: -2950014001665175883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Off_Fore_foot
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 183
+        width: 132
+        height: 59
+      alignment: 9
+      pivot: {x: 0.25930926, y: 0.6346234}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cff4f403536c24b855b21016a8018d
+      internalID: 8093294368938390276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fore_Leg_Lower
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 150
+        width: 87
+        height: 92
+      alignment: 9
+      pivot: {x: 0.29458234, y: 0.73742026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729defc8bbed41341aa6a6faefe9efb8
+      internalID: 2332868472585893725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hind_Leg_Lower
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 52
+        width: 83
+        height: 128
+      alignment: 9
+      pivot: {x: 0.26075915, y: 0.8568051}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21280b5ce988d734ea14c5df21ee4adb
+      internalID: 6381990639013141058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Off_Hind_Lower_Leg
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 71
+        width: 127
+        height: 129
+      alignment: 9
+      pivot: {x: 0.202927, y: 0.7462881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552c2db3017203f43b949f1b4f049b93
+      internalID: -6731607618478050907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hind_Foot
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 52
+        width: 124
+        height: 74
+      alignment: 9
+      pivot: {x: 0.22776708, y: 0.7683374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78ffdb3ee376164baac00d6b65690a0
+      internalID: 9051700876958860788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Off_Hind_foot
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 63
+        width: 143
+        height: 82
+      alignment: 9
+      pivot: {x: 0.23616594, y: 0.64529485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907622fe3d2af904a88b46cbfea673c9
+      internalID: -3264298034763650448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_Lower_jaw
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 30
+        width: 231
+        height: 105
+      alignment: 9
+      pivot: {x: 0.0959832, y: 0.67020315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2332407a539a6d64f860edbece1bc2da
+      internalID: 3874774219567855134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fore_foot
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 30
+        width: 144
+        height: 73
+      alignment: 9
+      pivot: {x: 0.18284014, y: 0.7448127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3b3af5c430fc046bd3e56e28f25210
+      internalID: -2255721805966479156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6abf98ebdf71988438a0861480296d5d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
