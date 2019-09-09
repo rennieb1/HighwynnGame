@@ -1094,7 +1094,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285397540}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.124285, y: -2.8460405, z: -26.393162}
+  m_LocalPosition: {x: 3.124285, y: -2.8460405, z: -26.39316}
   m_LocalScale: {x: 0.7949834, y: 0.7949834, z: 0.7949834}
   m_Children:
   - {fileID: 461923374}
@@ -3949,7 +3949,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905312778}
-  m_LocalRotation: {x: -0, y: -0, z: -0.07340209, w: 0.9973025}
+  m_LocalRotation: {x: -0, y: -0, z: -0.04494704, w: 0.9989894}
   m_LocalPosition: {x: 1.1050264, y: -2.7506418, z: -26.393162}
   m_LocalScale: {x: 0.7949833, y: 0.7949833, z: 0.7949834}
   m_Children:
@@ -3958,7 +3958,7 @@ Transform:
   - {fileID: 2063131310}
   m_Father: {fileID: 1255757744}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.419001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.1520004}
 --- !u!1 &948594183
 GameObject:
   m_ObjectHideFlags: 0
@@ -4835,7 +4835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143254595}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.0288846, y: -3.0765848, z: -26.393162}
+  m_LocalPosition: {x: 3.0288846, y: -3.0765848, z: -26.39316}
   m_LocalScale: {x: 0.7949834, y: 0.7949834, z: 0.7949834}
   m_Children:
   - {fileID: 794938928}
@@ -5706,7 +5706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331099564}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2498014, y: -2.2577515, z: -26.393162}
+  m_LocalPosition: {x: 2.249801, y: -2.2577515, z: -26.39316}
   m_LocalScale: {x: 0.7949834, y: 0.7949834, z: 0.7949834}
   m_Children:
   - {fileID: 309568070}
@@ -6187,7 +6187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456995584}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9318129, y: -3.426378, z: -18.288193}
+  m_LocalPosition: {x: 1.931813, y: -3.426378, z: -18.28819}
   m_LocalScale: {x: 0.7949834, y: 0.7949834, z: 0.7949834}
   m_Children:
   - {fileID: 978271497}
@@ -6890,7 +6890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540892106}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.8874743, y: -1.6615139, z: -26.393162}
+  m_LocalPosition: {x: 3.8874743, y: -1.661514, z: -26.39316}
   m_LocalScale: {x: 0.7949834, y: 0.7949834, z: 0.7949834}
   m_Children:
   - {fileID: 994882873}
@@ -7338,7 +7338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733941702}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5297341, y: -2.3849502, z: -26.393162}
+  m_LocalPosition: {x: 3.5297341, y: -2.38495, z: -26.39316}
   m_LocalScale: {x: 0.7949834, y: 0.7949834, z: 0.7949834}
   m_Children:
   - {fileID: 151628293}
@@ -9987,6 +9987,7 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 483092491}
   projectileVelocity: 1000
   timeBetweenShots: 0.1
+  shootCost: 30
   addPlayerVelocity: 1
 --- !u!1 &6459920632984380182
 GameObject:
@@ -10091,7 +10092,12 @@ MonoBehaviour:
   ceilingCollide: 0
   companion: {fileID: 870756236}
   airJumpForce: 700
+  body: {fileID: 0}
   companionTravelDistance: 5
+  manaRechargeDelay: 1
+  manaRechargeRate: 2
+  manaBar: {fileID: 0}
+  manaRequirement: {fileID: 0}
   fireRight: {fileID: 0}
   fireLef: {fileID: 0}
   hurtParticle: {fileID: 1775989249}
