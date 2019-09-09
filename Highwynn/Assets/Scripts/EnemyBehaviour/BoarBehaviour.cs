@@ -60,7 +60,7 @@ public class BoarBehaviour : EnemyBehavior
     }
 
     protected override void Die() {
-        Destroy(this);
+        Destroy(gameObject);
     }
 
     public override void Stop() {

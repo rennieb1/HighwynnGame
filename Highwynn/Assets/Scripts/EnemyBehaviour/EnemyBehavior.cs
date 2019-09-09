@@ -49,7 +49,7 @@ public class EnemyBehavior : MonoBehaviour
     void FixedUpdate() 
     {
 
-        Vector2 sinUp = (Vector2.up * viewHeight) * Mathf.Sin(Time.time * 10.0f);
+        Vector2 sinUp = (Vector2.up * viewHeight) * Mathf.Sin(Time.time * 20.0f);
 
         seen = Physics2D.Raycast(eye.position, 
                 movingRight ? Vector2.right + sinUp : -Vector2.right + sinUp, 
@@ -60,7 +60,7 @@ public class EnemyBehavior : MonoBehaviour
             Debug.DrawRay(eye.position, 
                     movingRight ? viewDistance * (Vector2.right + sinUp) : viewDistance * (-Vector2.right + sinUp), 
                     Color.red, 
-                    1.0f);
+                    0.5f);
         }
 
         if (seen.collider != null) {

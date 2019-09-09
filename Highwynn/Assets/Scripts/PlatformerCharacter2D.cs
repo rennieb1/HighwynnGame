@@ -23,6 +23,7 @@ namespace Highwynn
         public float airJumpForce = 200f;
         private List<Collider2D> currentColliders;
         private CircleCollider2D feet;
+        [SerializeField]
         private BoxCollider2D body;
         [SerializeField]
         private float companionTravelDistance = 5.0f;
@@ -62,7 +63,7 @@ namespace Highwynn
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             feet = gameObject.GetComponent<CircleCollider2D>();
-            body = gameObject.GetComponent<BoxCollider2D>();
+            // body = gameObject.GetComponent<BoxCollider2D>();
 
             currentColliders = new List<Collider2D>();
             manaReqColour = manaRequirement.fillRect.GetComponent<Image>().color;
@@ -156,7 +157,15 @@ namespace Highwynn
         public void Move(float move, bool crouch, bool jump)
         {
             // If crouching, check to see if the character can stand up
-            if (!crouch && m_Anim.GetBool("Crouch"))
+            if (!crouch && m_Anim.GetCurrentAnimatorClipInfo(0)[0].clip.name == "CrouchWalk")
+            {
+                // If the character has a ceiling preventing them from standing up, keep them crouching
+                if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
+                {
+                    crouch = true;
+                }
+            }
+                        if (!crouch && m_Anim.GetCurrentAnimatorClipInfo(0)[0].clip.name == "Crouchidle")
             {
                 // If the character has a ceiling preventing them from standing up, keep them crouching
                 if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))

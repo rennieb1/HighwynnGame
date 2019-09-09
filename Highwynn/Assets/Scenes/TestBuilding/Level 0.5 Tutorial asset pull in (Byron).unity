@@ -2507,9 +2507,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 234752082}
+  - component: {fileID: 234752083}
   m_Layer: 12
   m_Name: Dragon_Neck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2531,6 +2532,32 @@ Transform:
   m_Father: {fileID: 714835054}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 19.470001}
+--- !u!61 &234752083
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234752081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1745967, y: 0.28111333}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7704627, y: 3.2246976}
+  m_EdgeRadius: 0
 --- !u!1 &250030620
 GameObject:
   m_ObjectHideFlags: 0
@@ -4491,7 +4518,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7199a82e2a8bd094abcd45f8d6102f50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16486,7 +16513,6 @@ GameObject:
   - component: {fileID: 714835061}
   - component: {fileID: 714835060}
   - component: {fileID: 714835059}
-  - component: {fileID: 714835058}
   - component: {fileID: 714835057}
   - component: {fileID: 714835056}
   m_Layer: 12
@@ -16504,7 +16530,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714835053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.2, y: -30.67, z: -0.63}
+  m_LocalPosition: {x: 127.18, y: -24.2, z: -0.63}
   m_LocalScale: {x: -0.59954, y: 0.59954, z: 0.59954}
   m_Children:
   - {fileID: 1406070949}
@@ -16580,32 +16606,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -2.1529408}
   serializedVersion: 2
   m_Radius: 0.5294914
---- !u!61 &714835058
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714835053}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.47187805, y: -0.5308628}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8820267, y: 2.0617256}
-  m_EdgeRadius: 0
 --- !u!114 &714835059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16659,6 +16659,7 @@ MonoBehaviour:
   ceilingCollide: 0
   companion: {fileID: 870756236}
   airJumpForce: 700
+  body: {fileID: 234752083}
   companionTravelDistance: 20
   manaRechargeDelay: 1
   manaRechargeRate: 2
@@ -18579,7 +18580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911344008}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9781952, y: -1.2647343, z: 0.63}
+  m_LocalPosition: {x: -1.57, y: 0.24, z: 0.63}
   m_LocalScale: {x: -1.7715329, y: 1.7715304, z: -0.000018297}
   m_Children: []
   m_Father: {fileID: 714835054}
@@ -22658,7 +22659,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369705528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 167, y: 5.75, z: 0}
+  m_LocalPosition: {x: 167.15, y: 6.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 61029978}
@@ -26718,7 +26719,22 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 12288
-  debug: 0
+  debug: 1
+--- !u!114 &1743216547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743216542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b296708cf8b7e5e44895ea67ffcb17e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ModifyHealth: -10
+  Player: {fileID: 0}
+  timer: 0
 --- !u!1 &1744183476
 GameObject:
   m_ObjectHideFlags: 0
@@ -29179,7 +29195,7 @@ PrefabInstance:
     - target: {fileID: 7202855637480477807, guid: c4400c2ddedae9344ba9d5a1283edbcb,
         type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7202855637480477807, guid: c4400c2ddedae9344ba9d5a1283edbcb,
         type: 3}
@@ -29486,6 +29502,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 7584279117955799624, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+        type: 3}
+      propertyPath: m_Name
+      value: HealthModifer
+      objectReference: {fileID: 0}
     - target: {fileID: 7202855637001599175, guid: c4400c2ddedae9344ba9d5a1283edbcb,
         type: 3}
       propertyPath: m_Layer
@@ -29604,7 +29625,12 @@ PrefabInstance:
     - target: {fileID: 7202855637480477792, guid: c4400c2ddedae9344ba9d5a1283edbcb,
         type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202855637480477792, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7202855637480477795, guid: c4400c2ddedae9344ba9d5a1283edbcb,
         type: 3}
@@ -29628,6 +29654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7202855637480477795, guid: c4400c2ddedae9344ba9d5a1283edbcb, type: 3}
+    - {fileID: 7121327896291159638, guid: c4400c2ddedae9344ba9d5a1283edbcb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4400c2ddedae9344ba9d5a1283edbcb, type: 3}
 --- !u!1001 &1959521544
 PrefabInstance:
@@ -31735,7 +31762,7 @@ PrefabInstance:
     - target: {fileID: 1313355466477755038, guid: af987c4a22c05d34b9f206c12cb131fd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 62
+      value: 62.00003
       objectReference: {fileID: 0}
     - target: {fileID: 1313355466477755038, guid: af987c4a22c05d34b9f206c12cb131fd,
         type: 3}
@@ -32721,6 +32748,7 @@ MonoBehaviour:
   ceilingCollide: 0
   companion: {fileID: 870756236}
   airJumpForce: 700
+  body: {fileID: 0}
   companionTravelDistance: 20
   manaRechargeDelay: 1
   manaRechargeRate: 2
