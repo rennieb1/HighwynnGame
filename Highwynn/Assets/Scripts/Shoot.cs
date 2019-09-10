@@ -16,12 +16,16 @@ namespace Highwynn {
         private bool canShoot;
         private PlatformerCharacter2D character;
         public bool addPlayerVelocity = true;
+        private Animator m_Anim;
+        private bool fire;
+
 
         // Use this for initialization
         void Start () {
             canShoot = false;
             timeBetweenShotsCounter = timeBetweenShots;
             character = GetComponent<PlatformerCharacter2D>();
+            m_Anim = GetComponent<Animator>();
         }
     
         // Update is called once per frame
@@ -35,6 +39,13 @@ namespace Highwynn {
                         projectileSpawnPoint.position, 
                         Quaternion.Euler(new Vector3(0, 0, transform.localEulerAngles.z))
                 ) as Rigidbody2D;
+
+                if (fire == false)
+                {
+                    m_Anim.Play("HeadAttack");
+                    fire = true;
+                }
+                
 
                 bulletInstance.GetComponent<Projectile>().SetOwner = gameObject;
 
@@ -62,6 +73,11 @@ namespace Highwynn {
                     canShoot = true;
                     timeBetweenShotsCounter = timeBetweenShots;
                 }
+            }
+            if (Input.GetButtonUp("Fire1"))
+            {
+                m_Anim.Play("FinishAttack");
+                fire = false;
             }
         }
     }
