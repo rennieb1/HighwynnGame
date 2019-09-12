@@ -41,6 +41,14 @@ namespace Highwynn
         private Color manaReqColour;
         private float manaReqRevealTimer = 0.0f;
         private bool manaReqReveal = false;
+        private float manaReqColourFadeTimer;
+        [SerializeField]
+        private GameObject fireCone;
+        private bool fireConeTrigger = false;
+        private float fireConeTimer = 0.0f;
+        [SerializeField]
+        private float fireConeCostPerSecond = 4.0f;
+        private float fireConeTimeToCost = 0.05f;
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -52,8 +60,7 @@ namespace Highwynn
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
         public GameObject fireRight, fireLef, /*gameOverText, restartButton,*/ hurtParticle;
-
-        float t;
+        
 
         private void Awake()
         {
@@ -93,9 +100,9 @@ namespace Highwynn
             // Mana Requirement bar indicator
             if (manaReqReveal) {
                 
-                t += Time.deltaTime;
+                manaReqColourFadeTimer += Time.deltaTime;
                 
-                manaReqColour.a = Mathf.Abs(Mathf.Sin(t));
+                manaReqColour.a = Mathf.Abs(Mathf.Sin(manaReqColourFadeTimer));
                 manaRequirement.fillRect.GetComponent<Image>().color = manaReqColour;
 
                 manaReqRevealTimer += Time.deltaTime;
@@ -105,6 +112,27 @@ namespace Highwynn
                     manaReqColour.a = 0.0f;
                     manaRequirement.fillRect.GetComponent<Image>().color = manaReqColour;
                     manaRequirement.value = 0.0f;
+                }
+            }
+
+            if (fireConeTrigger) {
+                fireConeTimer += Time.deltaTime;
+                if (fireConeTimer >= fireConeTimeToCost) {
+                    ReduceMana(fireConeCostPerSecond / (1 / fireConeTimeToCost));
+
+                    fireConeTimer = 0.0f;
+                }
+
+                if (mana > (fireConeCostPerSecond / (1 / fireConeTimeToCost))) {
+                    fireCone.SetActive(true);
+                }
+                else {
+                    fireCone.SetActive(false);
+                }
+            }
+            else {
+                if (fireCone.activeSelf) {
+                    fireCone.SetActive(false);
                 }
             }
         }
@@ -152,6 +180,10 @@ namespace Highwynn
 
             // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+        }
+
+        public void TriggerFireCone(bool trigger) {
+            fireConeTrigger = trigger;
         }
 
         public void Move(float move, bool crouch, bool jump)
@@ -288,11 +320,11 @@ namespace Highwynn
                 return true;
             }
             else {
-                if (!manaReqReveal) {
+                //if (!manaReqReveal) {
                     manaRequirement.value = Mathf.Abs(cost) / 100.0f;
                     manaReqReveal = true;
-                    t = 0.0f;
-                }
+                    manaReqColourFadeTimer = 0.0f;
+                //}
 
                 return false;
             }
