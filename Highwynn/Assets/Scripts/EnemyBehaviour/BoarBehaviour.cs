@@ -5,9 +5,13 @@ using UnityEngine;
 public class BoarBehaviour : EnemyBehavior
 {
     protected override void PlayerSeen() {
-        if (anim.GetCurrentAnimatorClipInfo(0)[0].clip.name == "BoarIdle") {
-            anim.SetBool("seePlayer", true);
+        string clip = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
+        if (clip == "BoarIdle" ||
+            clip == "Walk") {
+            // anim.SetBool("seePlayer", true);
+            anim.Play("BoarSeePlayer");
             anim.ResetTrigger("idleWalk");
+            anim.ResetTrigger("walkIdle");
         }
         anim.SetBool("lostPlayer", false);
     }
@@ -31,9 +35,12 @@ public class BoarBehaviour : EnemyBehavior
             case "RunContinue":
                 Move(40.0f);
                 break;
+            case "BoarStopping":
+                Move(5.0f);
+                break;
         }
 
-        if (distanceToTurnaround < 10.0f) {
+        if (distanceToTurnaround < 5.0f) {
             stopped = true;
 
             if (currentAnim.clip.name == "Walk" || 
@@ -60,7 +67,9 @@ public class BoarBehaviour : EnemyBehavior
     }
 
     protected override void Die() {
-        Destroy(gameObject);
+        // Play death animation/effect
+
+        base.Die();
     }
 
     public override void Stop() {

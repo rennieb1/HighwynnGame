@@ -108,39 +108,6 @@ public class EnemyBehavior : MonoBehaviour
         Debug.Log("Default Stop()");
     }
 
-    /*
-    void MoveRight()
-    {
-        movingRight = true;
-        //localScale.x = localScale;
-        transform.localScale = localScale;
-        if (!isAttacking)
-        {
-            rb.velocity = new Vector2 (1 * moveSpeed, rb.velocity.y);
-        }
-        else
-        {
-            rb.velocity = Vector2.zero;
-        }
-    }
-
-    void MoveLeft()
-    {
-        movingRight = false;
-        //localScale.x =;
-        transform.localScale = new Vector2(-localScale.x, localScale.y);
-        if (!isAttacking)
-        {
-            rb.velocity = new Vector2 (-1 * moveSpeed, rb.velocity.y);
-        }
-        else
-        {
-            rb.velocity = Vector2.zero;
-        }
-        
-    }
-    */
-
     protected void Move(float moveSpeed) {
         if (movingRight) {
             rb.velocity = new Vector2(1 * moveSpeed, rb.velocity.y);
@@ -149,22 +116,6 @@ public class EnemyBehavior : MonoBehaviour
             rb.velocity = new Vector2(-1 * moveSpeed, rb.velocity.y);
         }
     }
-
-    /*
-    void OnTriggerEnter2D(Collider2D col) 
-    {
-        Debug.Log("Fire Collision");
-
-        if (col.gameObject.name.Equals("Fire"))
-        {
-            enemyHealth -= 1;
-        }
-        if (enemyHealth < 1)
-        {
-            Die();
-        }
-    }
-    */
 
     public void Hit(float damage) {
         health -= damage;
