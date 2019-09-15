@@ -65,15 +65,10 @@ public class EnemyBehavior : MonoBehaviour
 
         if (seen.collider != null) {
             if (seen.collider.tag == "Player") {
-                PlayerSeen();
                 timeSinceLastSeen = 0.0f;
                 playerSeen = true;
             }
-            else {
-                if (!stopped) {
-                    distanceToTurnaround = Vector2.Distance(transform.position, seen.collider.transform.position);
-                }
-            }
+            OnSeen(seen.collider, Vector2.Distance(transform.position, seen.collider.transform.position));
         }
         else {
             if (playerSeen && timeSinceLastSeen > 0.5f) {
@@ -83,16 +78,17 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-    protected virtual void PlayerSeen() {
-        Debug.Log("Default PlayerSeen()");
-    }
+    protected virtual void OnSeen(Collider2D other, float distance) {}
 
-    protected virtual void PlayerLost() {
-        Debug.Log("Default PlayerLost()");
-    }
+    protected virtual void PlayerLost() {}
 
-    protected virtual void UpdateBehaviour() {
-        Debug.Log("Default UpdateBehaviour()");
+    protected virtual void UpdateBehaviour() {}
+
+    protected virtual void Stop() {}
+
+    protected virtual void OnDeath()
+    {
+        Destroy(gameObject);
     }
 
     public void Flip() {
@@ -102,10 +98,6 @@ public class EnemyBehavior : MonoBehaviour
         else {
             transform.localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
         }
-    }
-
-    public virtual void Stop() {
-        Debug.Log("Default Stop()");
     }
 
     protected void Move(float moveSpeed) {
@@ -121,13 +113,8 @@ public class EnemyBehavior : MonoBehaviour
         health -= damage;
 
         if (health <= 0) {
-            Die();
+            OnDeath();
         }
-    }
-
-    protected virtual void Die()
-    {
-        Destroy(gameObject);
     }
 
     public bool MoveRight {

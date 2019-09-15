@@ -4,16 +4,40 @@ using UnityEngine;
 
 public class BoarBehaviour : EnemyBehavior
 {
-    protected override void PlayerSeen() {
+    protected override void OnSeen(Collider2D other, float distance) {
         string clip = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
-        if (clip == "BoarIdle" ||
-            clip == "Walk") {
-            // anim.SetBool("seePlayer", true);
-            anim.Play("BoarSeePlayer");
-            anim.ResetTrigger("idleWalk");
-            anim.ResetTrigger("walkIdle");
+
+        if (other.tag == "Player") {
+            Debug.Log("BoarPLayer");
+            
+            if (clip == "BoarIdle" ||
+                clip == "Walk") 
+            {
+                anim.Play("BoarSeePlayer");
+                anim.ResetTrigger("idleWalk");
+                anim.ResetTrigger("walkIdle");
+            }
+            anim.SetBool("lostPlayer", false);
         }
-        anim.SetBool("lostPlayer", false);
+
+        if (other.gameObject.layer == 13) {
+            if (distance < 5.0f) {
+                stopped = true;
+
+                if (clip == "Walk" || 
+                    clip == "BoarIdle") 
+                {
+                    movingRight = !movingRight;
+                    Flip();
+                    stopped = false;
+                }
+                else if (clip == "BoarRun" ||
+                        clip == "RunContinue") 
+                {
+                    Stop();
+                }
+            }
+        }
     }
 
     protected override void UpdateBehaviour() {
@@ -40,6 +64,7 @@ public class BoarBehaviour : EnemyBehavior
                 break;
         }
 
+        /*
         if (distanceToTurnaround < 5.0f) {
             stopped = true;
 
@@ -58,6 +83,7 @@ public class BoarBehaviour : EnemyBehavior
 
             distanceToTurnaround = 100.0f;
         }
+        */
     }
 
     protected override void PlayerLost() {
@@ -66,13 +92,13 @@ public class BoarBehaviour : EnemyBehavior
         }
     }
 
-    protected override void Die() {
+    protected override void OnDeath() {
         // Play death animation/effect
 
-        base.Die();
+        base.OnDeath();
     }
 
-    public override void Stop() {
+    protected override void Stop() {
         anim.Play("BoarStopping");
     }
 
