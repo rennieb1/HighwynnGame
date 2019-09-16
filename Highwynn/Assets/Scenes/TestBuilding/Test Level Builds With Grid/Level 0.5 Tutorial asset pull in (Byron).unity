@@ -15994,7 +15994,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714835053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 139.3, y: -30.68, z: 0.19}
+  m_LocalPosition: {x: 180.14, y: -30.68, z: 0.19}
   m_LocalScale: {x: -0.48229587, y: 0.48229587, z: 0.48229587}
   m_Children:
   - {fileID: 234752082}
@@ -16127,6 +16127,8 @@ MonoBehaviour:
   manaRechargeRate: 2
   manaBar: {fileID: 452897553}
   manaRequirement: {fileID: 1760014091}
+  fireCone: {fileID: 0}
+  fireConeCostPerSecond: 4
   fireRight: {fileID: 0}
   fireLef: {fileID: 0}
   hurtParticle: {fileID: 348342206}
@@ -30730,6 +30732,8 @@ MonoBehaviour:
   manaRechargeRate: 2
   manaBar: {fileID: 452897553}
   manaRequirement: {fileID: 1760014091}
+  fireCone: {fileID: 0}
+  fireConeCostPerSecond: 4
   fireRight: {fileID: 0}
   fireLef: {fileID: 0}
   hurtParticle: {fileID: 1775989249}
