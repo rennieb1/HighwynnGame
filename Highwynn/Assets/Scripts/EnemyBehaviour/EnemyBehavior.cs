@@ -22,16 +22,15 @@ public class EnemyBehavior : MonoBehaviour
 
     private Transform leftWayPoint, rightWayPoint;
     private Vector3 localScale;
-    protected bool movingRight = true;
-    protected Rigidbody2D rb;
     private bool isAttacking = false;
     private float timeSinceLastSeen = 0.0f;
     private bool playerSeen = false;
 
     protected Animator anim;
-    protected RaycastHit2D seen;
     protected float distanceToTurnaround = 100.0f;
     protected bool stopped = false;
+    protected bool movingRight = true;
+    protected Rigidbody2D rb;
     
     void Start()
     {
@@ -51,7 +50,7 @@ public class EnemyBehavior : MonoBehaviour
 
         Vector2 sinUp = (Vector2.up * viewHeight) * Mathf.Sin(Time.time * 20.0f);
 
-        seen = Physics2D.Raycast(eye.position, 
+        RaycastHit2D seen = Physics2D.Raycast(eye.position, 
                 movingRight ? Vector2.right + sinUp : -Vector2.right + sinUp, 
                 viewDistance,
                 mask);
@@ -60,7 +59,7 @@ public class EnemyBehavior : MonoBehaviour
             Debug.DrawRay(eye.position, 
                     movingRight ? viewDistance * (Vector2.right + sinUp) : viewDistance * (-Vector2.right + sinUp), 
                     Color.red, 
-                    0.5f);
+                    0.0f);
         }
 
         if (seen.collider != null) {
