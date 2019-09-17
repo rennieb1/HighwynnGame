@@ -41,8 +41,9 @@ namespace Highwynn {
 
                 if (fire == false)
                 {
-                    m_Anim.Play("HeadAttack");
                     fire = true;
+                    m_Anim.Play("HeadAttack");
+                    
                 }
                 
 

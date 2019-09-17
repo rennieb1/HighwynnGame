@@ -1787,7 +1787,7 @@ MonoBehaviour:
     type: 3}
   projectileSpawnPoint: {fileID: 4818006701113600742}
   projectileVelocity: 800
-  timeBetweenShots: 0
+  timeBetweenShots: 0.1
   shootCost: 10
   addPlayerVelocity: 1
 --- !u!1 &4818006700826616933

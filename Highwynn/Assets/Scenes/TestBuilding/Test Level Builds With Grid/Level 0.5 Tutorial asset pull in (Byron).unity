@@ -22076,17 +22076,17 @@ PrefabInstance:
     - target: {fileID: 4818006700782677786, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
       propertyPath: manaRechargeDelay
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -54.2
+      value: -56.06
       objectReference: {fileID: 0}
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -31.25
+      value: -31.16
       objectReference: {fileID: 0}
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
@@ -23615,7 +23615,7 @@ PrefabInstance:
     - target: {fileID: 3489041873833412083, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6758370532284853341, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
         type: 3}
@@ -23626,6 +23626,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Intensity
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856002218288089524, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
+        type: 3}
+      propertyPath: m_Name
+      value: LightSource
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856002218288089524, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6b59960a9f0e324eac7ac55b1ffa2b4, type: 3}
@@ -27618,6 +27628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 688538380}
   sceneName: Level 0.5 Tutorial asset pull in (Byron)
+  player: {fileID: 0}
 --- !u!114 &6561615017410006356
 MonoBehaviour:
   m_ObjectHideFlags: 0
