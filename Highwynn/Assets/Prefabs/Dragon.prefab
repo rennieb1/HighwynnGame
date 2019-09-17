@@ -1636,6 +1636,7 @@ GameObject:
   - component: {fileID: 4818006700782677788}
   - component: {fileID: 4818006700782677790}
   - component: {fileID: 4818006700782677791}
+  - component: {fileID: 2944991846118078312}
   m_Layer: 12
   m_Name: Dragon
   m_TagString: Player
@@ -1770,6 +1771,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &2944991846118078312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4818006700782677762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13361495fa8a971478d1c7555f68a6a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1491920406167567939, guid: 95087833495a30d48a1a9fa0489e9f94,
+    type: 3}
+  projectileSpawnPoint: {fileID: 4818006701113600742}
+  projectileVelocity: 800
+  timeBetweenShots: 0
+  shootCost: 10
+  addPlayerVelocity: 1
 --- !u!1 &4818006700826616933
 GameObject:
   m_ObjectHideFlags: 0

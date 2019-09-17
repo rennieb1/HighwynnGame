@@ -79,12 +79,15 @@ namespace Highwynn {
                 fire = false;
             }
 
-            if (Input.GetButtonDown("Fire2") || Input.GetAxisRaw("Fire2") != 0.0f) 
+            if (Input.GetButtonDown("Fire2")) //|| Input.GetAxisRaw("Fire2") != 0.0f) 
             {
                 character.TriggerFireCone(true);
+                m_Anim.Play("HeadAttack");
             }
-            if (Input.GetButtonUp("Fire2") || Input.GetAxisRaw("Fire2") == 0.0f) {
+            if (Input.GetButtonUp("Fire2")) //|| Input.GetAxisRaw("Fire2") == 0.0f) 
+            {
                 character.TriggerFireCone(false);
+                m_Anim.Play("FinishAttack");
             }
         }
     }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22068,15 +22068,25 @@ PrefabInstance:
       propertyPath: m_AirControl
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4818006700782677786, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+        type: 3}
+      propertyPath: manaRechargeRate
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818006700782677786, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+        type: 3}
+      propertyPath: manaRechargeDelay
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.3
+      value: -54.2
       objectReference: {fileID: 0}
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -24.175
+      value: -31.25
       objectReference: {fileID: 0}
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
@@ -22127,6 +22137,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818006700377421123, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944991846118078312, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+        type: 3}
+      propertyPath: projectileVelocity
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944991846118078312, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1491920406167567939, guid: 95087833495a30d48a1a9fa0489e9f94,
+        type: 3}
+    - target: {fileID: 2944991846118078312, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+        type: 3}
+      propertyPath: timeBetweenShots
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944991846118078312, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+        type: 3}
+      propertyPath: shootCost
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e971af2ddbc10541a5a699d5bfedeef, type: 3}
@@ -27410,11 +27446,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.1933984
       objectReference: {fileID: 0}
-    - target: {fileID: 1268012673325229302, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
-        type: 3}
-      propertyPath: m_TagString
-      value: SavePoint
-      objectReference: {fileID: 0}
     - target: {fileID: 5063116835986937861, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -27444,6 +27475,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Intensity
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268012673325229302, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SavePoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6b59960a9f0e324eac7ac55b1ffa2b4, type: 3}
