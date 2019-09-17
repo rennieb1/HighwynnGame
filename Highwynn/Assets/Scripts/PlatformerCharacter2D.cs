@@ -80,6 +80,7 @@ namespace Highwynn
 
         void Start()
         {
+            
        //     gameOverText.SetActive(false);
         //    restartButton.SetActive(false);
         }

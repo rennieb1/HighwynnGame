@@ -1636,7 +1636,6 @@ GameObject:
   - component: {fileID: 4818006700782677788}
   - component: {fileID: 4818006700782677790}
   - component: {fileID: 4818006700782677791}
-  - component: {fileID: 4818006700782677789}
   m_Layer: 12
   m_Name: Dragon
   m_TagString: Player
@@ -1771,25 +1770,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &4818006700782677789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4818006700782677762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13361495fa8a971478d1c7555f68a6a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 1491920406167567939, guid: 95087833495a30d48a1a9fa0489e9f94,
-    type: 3}
-  projectileSpawnPoint: {fileID: 4818006701113600742}
-  projectileVelocity: 1000
-  timeBetweenShots: 0.1
-  shootCost: 30
-  addPlayerVelocity: 1
 --- !u!1 &4818006700826616933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,21 +2824,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.46593255
       objectReference: {fileID: 0}
-    - target: {fileID: 6498561590501700444, guid: 3312d1bd9a7316748bf39a17918c9117,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6498561590501700444, guid: 3312d1bd9a7316748bf39a17918c9117,
-        type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6498561590501700444, guid: 3312d1bd9a7316748bf39a17918c9117,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2493776669558556542, guid: 3312d1bd9a7316748bf39a17918c9117,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2873,6 +2838,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498561590501700444, guid: 3312d1bd9a7316748bf39a17918c9117,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498561590501700444, guid: 3312d1bd9a7316748bf39a17918c9117,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498561590501700444, guid: 3312d1bd9a7316748bf39a17918c9117,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3312d1bd9a7316748bf39a17918c9117, type: 3}
