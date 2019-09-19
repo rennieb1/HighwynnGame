@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: e47325293c46c854b9860c98175231d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4756175479797982141
+    second: Head_Top
+  - first:
+      213: 2640329124585140612
+    second: Wing
+  - first:
+      213: -1154798413548659842
+    second: Fore_Leg_Top
+  - first:
+      213: -5522233473447986788
+    second: Off_Leg_Top
+  - first:
+      213: 6602861826078073359
+    second: Head_Lower_Jaw
+  - first:
+      213: -5673618120071735642
+    second: Body
+  - first:
+      213: 1410734720340560455
+    second: Fore_Leg_Lower
+  - first:
+      213: -8250852693041534087
+    second: Off_Leg_Lower
+  - first:
+      213: -5604123060169900112
+    second: Neck_Top
+  - first:
+      213: 5790154478991746134
+    second: Neck_Mid
+  - first:
+      213: -7952757167870759048
+    second: Neck_Lower
+  - first:
+      213: 6365164718726859941
+    second: Fore_Leg_Foot
+  - first:
+      213: 8256232757400304815
+    second: Off_Leg_Foot
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Head_Top
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 591
+        width: 308
+        height: 170
+      alignment: 9
+      pivot: {x: 0.9216493, y: 0.7716194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63b8fd34cb328347901086b69be3683
+      internalID: -4756175479797982141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wing
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 420
+        width: 491
+        height: 342
+      alignment: 9
+      pivot: {x: 0.17084822, y: 0.7995654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1520a744f29bab419a1e3bde5c8d485
+      internalID: 2640329124585140612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fore_Leg_Top
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 482
+        width: 121
+        height: 279
+      alignment: 9
+      pivot: {x: 0.42844713, y: 0.92927295}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac70439d71621a34285001deb635b30c
+      internalID: -1154798413548659842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Off_Leg_Top
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 477
+        width: 121
+        height: 284
+      alignment: 9
+      pivot: {x: 0.3688198, y: 0.9471197}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666089de3be2d134e836c1419789c379
+      internalID: -5522233473447986788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_Lower_Jaw
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 389
+        width: 299
+        height: 153
+      alignment: 9
+      pivot: {x: 0.9150369, y: 0.8300929}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f3fb9ed3a475d47a70f212cce46618
+      internalID: 6602861826078073359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 13
+        width: 517
+        height: 383
+      alignment: 9
+      pivot: {x: 0.4413877, y: 0.5527459}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b95b5668435514885fa480913ac0d3
+      internalID: -5673618120071735642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fore_Leg_Lower
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 222
+        width: 52
+        height: 232
+      alignment: 9
+      pivot: {x: 0.6942456, y: 0.8794036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e15f01258171b429d9ea5f076af78a
+      internalID: 1410734720340560455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Off_Leg_Lower
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 238
+        width: 49
+        height: 216
+      alignment: 9
+      pivot: {x: 0.7061394, y: 0.9342294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9570282e16cc794991f5b5513165bdc
+      internalID: -8250852693041534087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neck_Top
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 235
+        width: 82
+        height: 103
+      alignment: 9
+      pivot: {x: 0.35922152, y: 0.19179098}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5607191aac756a4facec82b529c24c2
+      internalID: -5604123060169900112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neck_Mid
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 226
+        width: 113
+        height: 122
+      alignment: 9
+      pivot: {x: 0.2573754, y: 0.1451695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe444b12a68e9e469904f65add79199
+      internalID: 5790154478991746134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neck_Lower
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 38
+        width: 107
+        height: 166
+      alignment: 9
+      pivot: {x: 0.5404573, y: 0.2652987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65c1a8e1067dfd4584b84dfb263d62d
+      internalID: -7952757167870759048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fore_Leg_Foot
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 149
+        width: 129
+        height: 45
+      alignment: 9
+      pivot: {x: 0.757275, y: 0.75652874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e883f01cb3165499f13fad28140ba4
+      internalID: 6365164718726859941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Off_Leg_Foot
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 160
+        width: 129
+        height: 44
+      alignment: 9
+      pivot: {x: 0.72371703, y: 0.72956467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6572a14cbfe7af41a1ef547aef7e202
+      internalID: 8256232757400304815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d13dd8c13a28f634d938e354bb157fc1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
