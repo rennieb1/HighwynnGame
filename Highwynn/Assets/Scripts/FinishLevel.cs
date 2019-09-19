@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FinishLevel : MonoBehaviour
 {
-    public GameObject Winlevel;
+   // public GameObject Winlevel;
     public int LevelCount = 1;
     public Player Player;
 
@@ -26,7 +26,7 @@ public class FinishLevel : MonoBehaviour
         {
             Player.Updatec_Lcount(LevelCount);
             Player.SavePlayer();
-            Winlevel.SetActive(true);
+          //  Winlevel.SetActive(true);
             Time.timeScale = 0;
 
 

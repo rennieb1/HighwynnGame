@@ -40,8 +40,7 @@ namespace Highwynn {
                 ) as Rigidbody2D;
 
                 if (fire == false)
-                {
-                    fire = true;
+                {fire = true;
                     m_Anim.Play("HeadAttack");
                     
                 }

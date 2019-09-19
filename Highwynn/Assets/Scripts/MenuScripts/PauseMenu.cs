@@ -13,7 +13,7 @@ public GameObject gamePauseMenu;
         if (Input.GetKeyDown(KeyCode.P))
         {
             if (gameIsPaused)
-            {
+            { 
                 Resume();
             }
             else
@@ -50,5 +50,7 @@ public GameObject gamePauseMenu;
         gameIsPaused = true;
       
     }
+
+
 
 }

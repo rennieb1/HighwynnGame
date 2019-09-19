@@ -43,7 +43,7 @@ public class SaveScript : MonoBehaviour
             Save();
           //  Destroy(gameObject);
         }
-        if (collision.gameObject.name.Equals("Player"))
+        if (collision.tag == "Player")
         {
             saveText.gameObject.SetActive(true);
             flame.gameObject.SetActive(true);
@@ -58,7 +58,7 @@ public class SaveScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Equals("Player"))
+        if (collision.tag == "Player")
         {
             saveText.gameObject.SetActive(false);
         //    saveAllowed = false;

@@ -1322,7 +1322,6 @@ GameObject:
   - component: {fileID: 7202855637480477806}
   - component: {fileID: 7202855637480477793}
   - component: {fileID: 7202855637480477792}
-  - component: {fileID: 7202855637480477795}
   - component: {fileID: 500451581382611188}
   m_Layer: 0
   m_Name: Boar
@@ -1382,34 +1381,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 150
-  m_LinearDrag: 0
+  m_LinearDrag: 100
   m_AngularDrag: 1
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &7202855637480477795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7202855637480477807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 539db56b165c452409339d3e687c3be6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 5
-  viewDistance: 5
-  viewHeight: 0.25
-  eye: {fileID: 7202855637715063752}
-  mask:
-    serializedVersion: 2
-    m_Bits: 12288
-  debug: 0
+  m_Constraints: 4
 --- !u!114 &500451581382611188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,7 +1401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b296708cf8b7e5e44895ea67ffcb17e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ModifyHealth: 0
+  ModifyHealth: -20
   Player: {fileID: 0}
   timer: 0
 --- !u!1 &7202855637552143667

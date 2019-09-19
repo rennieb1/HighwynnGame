@@ -488,7 +488,7 @@ public class Player : MonoBehaviour
         }
 
         
-        if (health <= 0)
+        if (health >= 0)
         {
             Debug.Log("players life hit 0 Player Dies");
             Die();

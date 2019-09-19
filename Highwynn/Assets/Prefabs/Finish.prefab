@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5350411041505384357}
   - component: {fileID: 5350411041505384356}
   - component: {fileID: 5350411041505384411}
-  - component: {fileID: 5350411041505384410}
+  - component: {fileID: 7687556270111726888}
+  - component: {fileID: 43814698462301206}
   m_Layer: 0
   m_Name: Finish
   m_TagString: Untagged
@@ -97,7 +98,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.28
---- !u!114 &5350411041505384410
+--- !u!114 &7687556270111726888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350411041505384409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebd70454337cd79438f96c1122a67082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionAnim: {fileID: 0}
+  sceneName: Level 0.5 Tutorial asset pull in (Byron)
+  player: {fileID: 0}
+  fadeOutPanel: {fileID: 0}
+--- !u!114 &43814698462301206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,4 +127,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Winlevel: {fileID: 0}
+  LevelCount: 1
   Player: {fileID: 0}
