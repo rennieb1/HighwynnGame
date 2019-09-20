@@ -36,7 +36,37 @@ namespace Highwynn
         }
 
         protected override void OnDeath() {
+            anim.Play("Death");
+            StartCoroutine(DelayDeath());
+
+            // base.OnDeath();
+        }
+
+        private IEnumerator DelayDeath() {
+
+            Debug.Log(anim.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+            yield return new WaitForSeconds(anim.GetCurrentAnimatorClipInfo(0)[0].clip.length + 1.0f);
+
             base.OnDeath();
+
         }
     }
+
+    /*
+    Idle:
+        Walk_Continuous
+
+    See Player:
+        Walk_Continuous --> WalkToRun_Start
+        WalkToRun_Start --> Run_Continuous
+        
+    Lose Player:
+        Run_Continuous --> Run_End
+        
+    If Player Within Range:
+        [Any_State] --> BiteAttack
+        
+    On Death
+        [Any_State] --> Death
+    */
 }
