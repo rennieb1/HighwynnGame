@@ -13,12 +13,18 @@ namespace Highwynn
         [SerializeField]
         private float viewDistance = 5.0f;
         [SerializeField]
+        protected float attackDistance = 2.5f;
+        [SerializeField]
+        protected float turnDistance = 1.0f;
+        [SerializeField]
         [Range(0.1f, 1.5f)]
         private float viewHeight = 0.25f;
         [SerializeField]
         private Transform eye = null;
         [SerializeField]
         private LayerMask mask = (1 << 12) | (1 << 13);
+
+        [Header("Debug Options")]
         [SerializeField]
         private bool debug = false;
 
@@ -61,7 +67,17 @@ namespace Highwynn
                 Debug.DrawRay(eye.position, 
                         movingRight ? viewDistance * (Vector2.right + sinUp) : viewDistance * (-Vector2.right + sinUp), 
                         Color.red, 
-                        0.5f);
+                        0.0f);
+
+                Debug.DrawRay(eye.position, 
+                        movingRight ? attackDistance * (Vector2.right + sinUp) : attackDistance * (-Vector2.right + sinUp), 
+                        Color.blue, 
+                        0.0f);
+
+                Debug.DrawRay(eye.position, 
+                        movingRight ? turnDistance * (Vector2.right + sinUp) : turnDistance * (-Vector2.right + sinUp), 
+                        Color.green, 
+                        0.0f);
             }
 
             if (seen.collider != null) {

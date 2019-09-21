@@ -22,7 +22,6 @@ namespace Highwynn {
 
         void OnCollisionEnter2D(Collision2D other) 
         {
-            Debug.Log("Projectile OnCollisionEnter2D");
             EnemyBehavior enemy = other.gameObject.GetComponent<EnemyBehavior>();
             if (enemy != null) 
             {

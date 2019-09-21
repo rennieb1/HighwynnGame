@@ -23,7 +23,7 @@ namespace Highwynn
             }
 
             if (other.gameObject.layer == 13) {
-                if (distance < 5.0f) {
+                if (distance < turnDistance) {
                     stopped = true;
 
                     if (clip == "Walk" || 
@@ -92,7 +92,7 @@ namespace Highwynn
         }
 
         private void DecideDirection() {
-            movingRight = (Random.value >= 0.5f);
+            movingRight = Random.value >= 0.5f;
 
             Flip();
         }
