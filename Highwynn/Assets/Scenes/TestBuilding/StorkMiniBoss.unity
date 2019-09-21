@@ -811,12 +811,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &179681081 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4851736778213420228, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
-    type: 3}
-  m_PrefabInstance: {fileID: 4851736776758542897}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &206539518
 GameObject:
   m_ObjectHideFlags: 0
@@ -10164,12 +10158,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1775989249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1236491544430904765, guid: c77c06ab95ab702408471f94bf01cf91,
-    type: 3}
-  m_PrefabInstance: {fileID: 1236491544812287932}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1775989252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1236491544430904766, guid: c77c06ab95ab702408471f94bf01cf91,
@@ -11646,7 +11634,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 179681081}
+  - {fileID: 4851736776758542898}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12614,21 +12602,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050173502}
     m_Modifications:
-    - target: {fileID: 4851736778213420227, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
-        type: 3}
-      propertyPath: m_Name
-      value: Save Point
-      objectReference: {fileID: 0}
-    - target: {fileID: 4851736778213420227, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
-        type: 3}
-      propertyPath: m_TagString
-      value: SavePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 4851736778213420227, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4851736778213420228, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12694,6 +12667,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.000030841027
       objectReference: {fileID: 0}
+    - target: {fileID: 4851736778213420227, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
+        type: 3}
+      propertyPath: m_Name
+      value: Save Point
+      objectReference: {fileID: 0}
+    - target: {fileID: 4851736778213420227, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SavePoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 4851736778213420227, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4851736778213420231, guid: c6b59960a9f0e324eac7ac55b1ffa2b4,
         type: 3}
       propertyPath: saveText
@@ -12706,6 +12694,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6b59960a9f0e324eac7ac55b1ffa2b4, type: 3}
+--- !u!4 &4851736776758542898 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 4851736776758542897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &6035856154647688629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12951,9 +12944,6 @@ MonoBehaviour:
   manaRequirement: {fileID: 0}
   fireCone: {fileID: 0}
   fireConeCostPerSecond: 4
-  fireRight: {fileID: 0}
-  fireLef: {fileID: 0}
-  hurtParticle: {fileID: 1775989249}
 --- !u!114 &6459920632995665654
 MonoBehaviour:
   m_ObjectHideFlags: 0
