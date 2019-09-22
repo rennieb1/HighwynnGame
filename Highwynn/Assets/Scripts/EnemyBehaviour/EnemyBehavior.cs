@@ -10,12 +10,14 @@ namespace Highwynn
     {
         [SerializeField]
         private float health = 5.0f;
+
+        [Header("View Distances")]
         [SerializeField]
-        private float viewDistance = 5.0f;
+        private float longViewDistance = 5.0f;
         [SerializeField]
-        protected float attackDistance = 2.5f;
+        protected float mediumViewDistance = 2.5f;
         [SerializeField]
-        protected float turnDistance = 1.0f;
+        protected float shortViewDistance = 1.0f;
         [SerializeField]
         [Range(0.1f, 1.5f)]
         private float viewHeight = 0.25f;
@@ -50,64 +52,77 @@ namespace Highwynn
         void Update()
         {
             timeSinceLastSeen += Time.deltaTime;
+            // Update behaviour implemented in children
             UpdateBehaviour();
         }
 
+        // Physics update
         void FixedUpdate() 
         {
-
+            // Use sine wave to determine raycast angle
             Vector2 sinUp = (Vector2.up * viewHeight) * Mathf.Sin(Time.time * 20.0f);
 
+            //Fire raycast, right if movingRight = true, left otherwise
             RaycastHit2D seen = Physics2D.Raycast(eye.position, 
                     movingRight ? Vector2.right + sinUp : -Vector2.right + sinUp, 
-                    viewDistance,
+                    longViewDistance,
                     mask);
 
+            // Draws debug rays for the long, medium, and short view distances
             if (debug) {
                 Debug.DrawRay(eye.position, 
-                        movingRight ? viewDistance * (Vector2.right + sinUp) : viewDistance * (-Vector2.right + sinUp), 
+                        movingRight ? longViewDistance * (Vector2.right + sinUp) : longViewDistance * (-Vector2.right + sinUp), 
                         Color.red, 
-                        0.0f);
+                        0.5f);
 
                 Debug.DrawRay(eye.position, 
-                        movingRight ? attackDistance * (Vector2.right + sinUp) : attackDistance * (-Vector2.right + sinUp), 
+                        movingRight ? mediumViewDistance * (Vector2.right + sinUp) : mediumViewDistance * (-Vector2.right + sinUp), 
                         Color.blue, 
-                        0.0f);
+                        0.5f);
 
                 Debug.DrawRay(eye.position, 
-                        movingRight ? turnDistance * (Vector2.right + sinUp) : turnDistance * (-Vector2.right + sinUp), 
+                        movingRight ? shortViewDistance * (Vector2.right + sinUp) : shortViewDistance * (-Vector2.right + sinUp), 
                         Color.green, 
-                        0.0f);
+                        0.5f);
             }
 
+            // If the raycast hit something on the viewable layers, this will not be null
             if (seen.collider != null) {
                 if (seen.collider.tag == "Player") {
                     timeSinceLastSeen = 0.0f;
                     playerSeen = true;
                 }
+                // OnSeen implemented in children
                 OnSeen(seen.collider, Vector2.Distance(transform.position, seen.collider.transform.position));
             }
             else {
                 if (playerSeen && timeSinceLastSeen > 0.5f) {
+                    // PlayerLost implemented in children
                     PlayerLost();
                     playerSeen = false;
                 }
             }
         }
 
+        // Implemented in children
         protected virtual void OnSeen(Collider2D other, float distance) {}
 
+        // Implemented in children
         protected virtual void PlayerLost() {}
 
+        // Implemented in children
         protected virtual void UpdateBehaviour() {}
 
+        // Implemented in children
         protected virtual void Stop() {}
 
+        // Implemented in children, with default destroy behaviour
         protected virtual void OnDeath()
         {
             Destroy(gameObject);
         }
 
+        // Used to change facing, left or right
         public void Flip() {
             if (movingRight) {
                 transform.localScale = localScale;
@@ -117,6 +132,7 @@ namespace Highwynn
             }
         }
 
+        // Available to children only, used to move in faced direction. Negative values could be used to reverse enemies
         protected void Move(float moveSpeed) {
             if (movingRight) {
                 rb.velocity = new Vector2(1 * moveSpeed, rb.velocity.y);
@@ -126,14 +142,17 @@ namespace Highwynn
             }
         }
 
+        // Standard damage function, calls OnDeath when health is low enough
         public void Hit(float damage) {
             health -= Mathf.Abs(damage);
 
             if (health <= 0) {
+                // Implemented by children
                 OnDeath();
             }
         }
 
+        // Attribute used to determine move direction for non-children
         public bool MoveRight {
             set { movingRight = value; }
             get { return movingRight; }

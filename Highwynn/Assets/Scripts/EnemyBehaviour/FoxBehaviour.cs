@@ -6,35 +6,40 @@ namespace Highwynn
 {
     public class FoxBehaviour : EnemyBehavior
     {
-        private float timer = 0.0f;
-        private float speed = 2.0f;
-        private bool postBite = false;
+        private float idleTimer = 0.0f; // Determines how long to idle before deciding on direction
+        private float speed = 2.0f; // Default movement speed
+        private bool postBite = false; // Determines if Foxy has just pounced and bitten
 
+        //////////////////////////////////////////////// Overridden Classes /////////////////////////////////////////////////////////
         // Overrides base class OnSeen
         // Passes seen collider, and distance to collider
         protected override void OnSeen(Collider2D other, float distance) {
-            string clip = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
+            // Get name of current animation
+            string name = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
 
             if (other.tag == "Player") {
-                Debug.Log("Player");
-                if (clip == "Walk_Continous" || // Misspelling - Continuous
-                    (distance > attackDistance && postBite))
+                // If walking, or far from player and just bit
+                if (name == "Walk_Continous" || // Misspelling - Continuous
+                    (distance > mediumViewDistance && postBite))
                 {
                     anim.Play("WalkToRun_Start");
                     postBite = false;
                 }
 
-                if (distance <= attackDistance) {
-                    if (clip != "BiteAttack") {
+                // If Foxy is within the medium (attack) distance of the player
+                if (distance <= mediumViewDistance) {
+                    if (name != "BiteAttack") {
                         speed = 0.0f;
                         anim.Play("BiteAttack");
                     }
                 }   
             }
 
+            // Layer 13 is the EnemyTurnaround layer. This marks where an enemy should turn
             if (other.gameObject.layer == 13) {
-                if (distance < turnDistance) {
+                if (distance < shortViewDistance) {
                     movingRight = !movingRight;
+                    // Flip is a base-class function
                     Flip();
                 }
             }
@@ -47,9 +52,11 @@ namespace Highwynn
 
         // Overrides base class UpdateBehaviour
         protected override void UpdateBehaviour() {
-            AnimatorClipInfo currentAnim = anim.GetCurrentAnimatorClipInfo(0)[0];
+            // Get current animation name
+            string name = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
 
-            switch(currentAnim.clip.name) {
+            // Dynamically set enemy speed based on current animation
+            switch(name) {
                 case "WalkToRun_Start":
                     speed = 2.5f;
                     break;
@@ -61,35 +68,28 @@ namespace Highwynn
                     break;
             }
 
+            // Move the enemy with the current speed -- Move is a base-class function
             Move(speed);
 
-            timer += Time.deltaTime;
+            // Increment timer
+            idleTimer += Time.deltaTime;
         }
 
         // Overrides base class OnDeath
         protected override void OnDeath() {
             speed = 0.0f;
             anim.Play("Death");
+            // Delay gameObject destruction so anim can finish playing
             StartCoroutine(DelayDeath());
         }
 
-        // Used by OnDeath function to delay base.OnDeath
-        private IEnumerator DelayDeath() {
-
-            Debug.Log(anim.GetCurrentAnimatorClipInfo(0)[0].clip.length);
-            yield return new WaitForSeconds(anim.GetCurrentAnimatorClipInfo(0)[0].clip.length + 1.0f);
-
-            base.OnDeath();
-
-        }
-
-        //// Animation Events
+        //////////////////////////////////////////////////// Animation Events /////////////////////////////////////////////////////
         // Event runs when Idle anim finishes (for Foxy, this is Walk_Continuous)
         // Foxy decides if it is time to change direction
         private void EndIdle() {
-            if (timer > 5.0f) {
+            if (idleTimer > 5.0f) {
                 DecideDirection();
-                timer = 0.0f;
+                idleTimer = 0.0f;
             }
         }
 
@@ -111,6 +111,16 @@ namespace Highwynn
             postBite = true;
         }
 
+        //////////////////////////////////////////////////// Helpers /////////////////////////////////////////////////////
+        // Used by OnDeath function to delay base.OnDeath
+        private IEnumerator DelayDeath() {
+            // Delay by animation length + 1 second
+            yield return new WaitForSeconds(anim.GetCurrentAnimatorClipInfo(0)[0].clip.length + 1.0f);
+
+            // Call base-class OnDeath to destroy gameObject
+            base.OnDeath();
+        }
+
         // Used by EndIdle animation event to determine move direction
         private void DecideDirection() {
             movingRight = Random.value >= 0.5f;
@@ -119,6 +129,7 @@ namespace Highwynn
         }
     }
 
+    // Description of animation logic
     /*
     Idle:
         Walk_Continuous

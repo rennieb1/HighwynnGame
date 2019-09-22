@@ -6,14 +6,15 @@ namespace Highwynn
 {
     public class BoarBehaviour : EnemyBehavior
     {
+        //////////////////////////////////////////////// Overridden Classes /////////////////////////////////////////////////////////
         protected override void OnSeen(Collider2D other, float distance) {
-            string clip = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
+            // Get name of current animation
+            string name = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
 
             if (other.tag == "Player") {
-                Debug.Log("BoarPLayer");
-                
-                if (clip == "BoarIdle" ||
-                    clip == "Walk") 
+                // If boar idling or walking, they have seen player so play BoarSeePlayer
+                if (name == "BoarIdle" ||
+                    name == "Walk") 
                 {
                     anim.Play("BoarSeePlayer");
                     anim.ResetTrigger("idleWalk");
@@ -22,19 +23,21 @@ namespace Highwynn
                 anim.SetBool("lostPlayer", false);
             }
 
+            // Layer 13 is EnemyTurnaround, this means boar has seen it and must turn
             if (other.gameObject.layer == 13) {
-                if (distance < turnDistance) {
+                // If the object is within the short view distance (so very close)
+                if (distance < shortViewDistance) {
                     stopped = true;
 
-                    if (clip == "Walk" || 
-                        clip == "BoarIdle") 
+                    if (name == "Walk" || 
+                        name == "BoarIdle") 
                     {
                         movingRight = !movingRight;
                         Flip();
                         stopped = false;
                     }
-                    else if (clip == "BoarRun" ||
-                            clip == "RunContinue") 
+                    else if (name == "BoarRun" ||
+                             name == "RunContinue") 
                     {
                         Stop();
                     }
@@ -42,10 +45,13 @@ namespace Highwynn
             }
         }
 
+        // Overrides base class UpdateBehaviour
         protected override void UpdateBehaviour() {
-            AnimatorClipInfo currentAnim = anim.GetCurrentAnimatorClipInfo(0)[0];
+            // Get name of current animation
+            string name = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
 
-            switch(currentAnim.clip.name) {
+            // Dynamically set boar move speed based on animation name
+            switch(name) {
                 case "BoarSeePlayer":
                     anim.SetBool("seePlayer", false);
                     break;
@@ -67,23 +73,28 @@ namespace Highwynn
             }
         }
 
+        // Overrides base class PlayerLost
         protected override void PlayerLost() {
             if (!anim.GetBool("lostPlayer")) {
                 anim.SetBool("lostPlayer", true);
             }
         }
 
+        // Overrides base class OnDeath
         protected override void OnDeath() {
             // Play death animation/effect
 
             base.OnDeath();
         }
 
+        // Overrides base class Stop
+        // Called within script to stop boar
         protected override void Stop() {
             anim.Play("BoarStopping");
         }
 
-        // Animation Event
+        //////////////////////////////////////////////////// Animation Events /////////////////////////////////////////////////////
+        // End of idle & walking animations, to decide if moving or idling again
         void EndIdle() {
             if (!anim.GetBool("seePlayer")) {
                 DecideDirection();
@@ -91,12 +102,25 @@ namespace Highwynn
             }
         }
 
+        // End of stop animation
+        void OnStopped() {
+            if (stopped) {
+                movingRight = !movingRight;
+                Flip();
+            }
+
+            stopped = false;
+        }
+
+        //////////////////////////////////////////////////// Helpers /////////////////////////////////////////////////////
+        // Used by EndIdle to determine move direction (left or right)
         private void DecideDirection() {
             movingRight = Random.value >= 0.5f;
-
+            // Flip is a base-class function
             Flip();
         }
 
+        // Used by EndIdle to determine if moving or idling
         private void DecideMove() {
             bool move = (Random.value >= 0.5f);
             if (move) {
@@ -109,24 +133,36 @@ namespace Highwynn
             }
         }
 
+        // Collision detection to ensure rushing boar can't pass EnemyTurnaround markers
         void OnColliderEnter2D(Collider2D other) {
             if (other.gameObject.tag == "EnemyTurnaround") {
                 Stop();
             }
         }
 
-        void OnCollisionEnter2D(Collision2D other) {
-            Debug.Log("Collision!");
-            Debug.Log(other.gameObject.name);
-        }
+        // Description of animation logic
+        /*
+        Idle:
+            Walk_Continuous
 
-        void OnStopped() {
-            if (stopped) {
-                movingRight = !movingRight;
-                Flip();
-            }
+        See Player:
+            Walk_Continuous --> WalkToRun_Start
+            [Player not in attack range, just pounced] --> WalkToRun_Start
+            WalkToRun_Start --> Run_Continuous
+            
+        Lose Player:
+            Run_Continuous --> Run_End
+            
+        If Player Within Range:
+            [Any_State] --> BiteAttack
 
-            stopped = false;
-        }
+        During BiteAttack:
+            0 speed until pounce
+            Pounce fast [16.0f]
+            0 speed when landed
+            
+        On Death
+            [Any_State] --> Death
+        */
     }
 }
