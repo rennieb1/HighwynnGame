@@ -27,7 +27,7 @@ public class FinishLevel : MonoBehaviour
             Player.Updatec_Lcount(LevelCount);
             Player.SavePlayer();
           //  Winlevel.SetActive(true);
-            Time.timeScale = 0;
+           // Time.timeScale = 0;
 
 
 

@@ -42718,6 +42718,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6307933198479414099, guid: fb1f2436dc0904b40b05f7e0ed73407a,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307933198479414098, guid: fb1f2436dc0904b40b05f7e0ed73407a,
+        type: 3}
+      propertyPath: m_FillCenter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6307933199299180738, guid: fb1f2436dc0904b40b05f7e0ed73407a,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -42787,16 +42797,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Resume
-      objectReference: {fileID: 0}
-    - target: {fileID: 6307933198479414099, guid: fb1f2436dc0904b40b05f7e0ed73407a,
-        type: 3}
-      propertyPath: m_CullTransparentMesh
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6307933198479414098, guid: fb1f2436dc0904b40b05f7e0ed73407a,
-        type: 3}
-      propertyPath: m_FillCenter
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6307933198174788371, guid: fb1f2436dc0904b40b05f7e0ed73407a,
         type: 3}
@@ -44681,21 +44681,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dragon
       objectReference: {fileID: 0}
-    - target: {fileID: 4818006700782677786, guid: 1e971af2ddbc10541a5a699d5bfedeef,
-        type: 3}
-      propertyPath: companion
-      value: 
-      objectReference: {fileID: 870756236}
-    - target: {fileID: 4818006700782677786, guid: 1e971af2ddbc10541a5a699d5bfedeef,
-        type: 3}
-      propertyPath: manaBar
-      value: 
-      objectReference: {fileID: 791201062}
-    - target: {fileID: 4818006700782677786, guid: 1e971af2ddbc10541a5a699d5bfedeef,
-        type: 3}
-      propertyPath: manaRequirement
-      value: 
-      objectReference: {fileID: 1471441009}
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44751,20 +44736,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4818006701113600743, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+    - target: {fileID: 4818006700782677786, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: companion
+      value: 
+      objectReference: {fileID: 870756236}
+    - target: {fileID: 4818006700782677786, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+        type: 3}
+      propertyPath: manaBar
+      value: 
+      objectReference: {fileID: 791201062}
+    - target: {fileID: 4818006700782677786, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+        type: 3}
+      propertyPath: manaRequirement
+      value: 
+      objectReference: {fileID: 1471441009}
+    - target: {fileID: 4818006700771821378, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 4818006700377421123, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4818006700771821378, guid: 1e971af2ddbc10541a5a699d5bfedeef,
+    - target: {fileID: 4818006701113600743, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.65
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e971af2ddbc10541a5a699d5bfedeef, type: 3}
@@ -46987,26 +46987,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7687556270111726888, guid: b2482bb61b839574592249fd8ecc1ec8,
-        type: 3}
-      propertyPath: sceneName
-      value: Level 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7687556270111726888, guid: b2482bb61b839574592249fd8ecc1ec8,
-        type: 3}
-      propertyPath: transitionAnim
-      value: 
-      objectReference: {fileID: 688538380}
-    - target: {fileID: 7687556270111726888, guid: b2482bb61b839574592249fd8ecc1ec8,
-        type: 3}
-      propertyPath: fadeInPanel
-      value: 
-      objectReference: {fileID: 688538378}
-    - target: {fileID: 7687556270111726888, guid: b2482bb61b839574592249fd8ecc1ec8,
-        type: 3}
-      propertyPath: fadeOutPanel
-      value: 
-      objectReference: {fileID: 688538378}
     - target: {fileID: 0}
       propertyPath: Winlevel
       value: 
@@ -47110,6 +47090,31 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7687556270111726888, guid: b2482bb61b839574592249fd8ecc1ec8,
+        type: 3}
+      propertyPath: sceneName
+      value: Level 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687556270111726888, guid: b2482bb61b839574592249fd8ecc1ec8,
+        type: 3}
+      propertyPath: transitionAnim
+      value: 
+      objectReference: {fileID: 688538380}
+    - target: {fileID: 7687556270111726888, guid: b2482bb61b839574592249fd8ecc1ec8,
+        type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 688538378}
+    - target: {fileID: 7687556270111726888, guid: b2482bb61b839574592249fd8ecc1ec8,
+        type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 688538378}
+    - target: {fileID: 7687556270111726888, guid: b2482bb61b839574592249fd8ecc1ec8,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 688538380}
     - target: {fileID: 43814698462301206, guid: b2482bb61b839574592249fd8ecc1ec8,
         type: 3}
       propertyPath: LevelCount

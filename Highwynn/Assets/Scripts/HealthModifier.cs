@@ -32,6 +32,8 @@ public class HealthModifier : MonoBehaviour
             {
                Player.Update_Health(ModifyHealth);
                Destroy(gameObject);
+               Debug.Log ("health " + Player.health);
+               
             }
             if (ModifyHealth <= 0)
             {
@@ -39,6 +41,7 @@ public class HealthModifier : MonoBehaviour
                 {
                     Player.Update_Health(ModifyHealth);
                     timer = 3f;
+                    Debug.Log("health "+ Player.health);
               //      collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (forcey, forcex);
 
 

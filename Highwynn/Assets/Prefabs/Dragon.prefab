@@ -2770,6 +2770,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireCone
       objectReference: {fileID: 0}
+    - target: {fileID: 6498561590501700447, guid: 3312d1bd9a7316748bf39a17918c9117,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6498561590501700443, guid: 3312d1bd9a7316748bf39a17918c9117,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2788,22 +2793,22 @@ PrefabInstance:
     - target: {fileID: 6498561590501700443, guid: 3312d1bd9a7316748bf39a17918c9117,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.29214153
+      value: -0.29214272
       objectReference: {fileID: 0}
     - target: {fileID: 6498561590501700443, guid: 3312d1bd9a7316748bf39a17918c9117,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.64393586
+      value: 0.6439353
       objectReference: {fileID: 0}
     - target: {fileID: 6498561590501700443, guid: 3312d1bd9a7316748bf39a17918c9117,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.64393586
+      value: -0.64393526
       objectReference: {fileID: 0}
     - target: {fileID: 6498561590501700443, guid: 3312d1bd9a7316748bf39a17918c9117,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.29214153
+      value: 0.29214266
       objectReference: {fileID: 0}
     - target: {fileID: 6498561590501700443, guid: 3312d1bd9a7316748bf39a17918c9117,
         type: 3}
