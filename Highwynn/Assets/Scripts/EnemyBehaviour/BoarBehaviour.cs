@@ -145,26 +145,21 @@ namespace Highwynn
         // Description of animation logic
         /*
         Idle:
-            Walk_Continuous
-
+            Idle State
+            Idle --> Walk
+            Walk --> Idle
+        
         See Player:
-            Walk_Continuous --> WalkToRun_Start
-            [Player not in attack range, just pounced] --> WalkToRun_Start
-            WalkToRun_Start --> Run_Continuous
-            
-        Lose Player:
-            Run_Continuous --> Run_End
-            
-        If Player Within Range:
-            [Any_State] --> BiteAttack
+            Idle --> Run
 
-        During BiteAttack:
-            0 speed until pounce
-            Pounce fast [16.0f]
-            0 speed when landed
-            
-        On Death
-            [Any_State] --> Death
+        Lose Player:
+            Run --> Stop
+
+        Reach Turn Point:
+            Run --> Stop
+
+        Death:
+            NO DEATH ANIMATION
         */
     }
 }

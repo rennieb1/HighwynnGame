@@ -53,7 +53,6 @@ namespace Highwynn
 
         // Overrides base class PlayerLost
         protected override void PlayerLost() {
-            Debug.Log("PlayerLost");
             anim.Play("Idle");
         }
 
