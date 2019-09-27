@@ -82,6 +82,8 @@ namespace Highwynn
 
         // Overrides base class OnDeath
         protected override void OnDeath() {
+            // "dying" prevents the "sight" update loop
+            dying = true;
             // Play death animation/effect
 
             base.OnDeath();

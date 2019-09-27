@@ -6,6 +6,9 @@ namespace Highwynn
 {
     public class CapyburraBehaviour : EnemyBehavior
     {
+        [Header("Capyburra Attributes")]
+        [SerializeField]
+        private CapyDen capyDen;
         private float idleTimer = 0.0f;
         private float speed  = 2.0f;
 
@@ -13,11 +16,12 @@ namespace Highwynn
         // Overrides base class OnSeen
         // Passes seen collider, and distance to collider
         protected override void OnSeen(Collider2D other, float distance) {
-            Debug.Log(distance);
             // Get name of current animation
             string name = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
 
             if (other.tag == "Player") {
+                capyDen.SummonFrens(this);
+
                 if (distance > shortViewDistance) {
                     // If idling or walking 
                     if (name == "Idle" ||
@@ -81,7 +85,10 @@ namespace Highwynn
 
         // Overrides base class OnDeath
         protected override void OnDeath() {
-
+            // "dying" prevents the "sight" update loop
+            dying = true;
+            speed = 0.0f;
+            anim.Play("Dead");
         }
 
         //////////////////////////////////////////////////// Animation Events /////////////////////////////////////////////////////
@@ -101,6 +108,10 @@ namespace Highwynn
             idleTimer = 0.0f;
         }
 
+        private void EndDeath() {
+            base.OnDeath();
+        }
+
         //////////////////////////////////////////////////// Helpers /////////////////////////////////////////////////////
         // Used by EndSniff animation event to determine move direction
         private void DecideDirection() {
@@ -118,6 +129,10 @@ namespace Highwynn
             else {
                 anim.Play("Idle");
             }
+        }
+
+        public CapyDen SetDen {
+            set { capyDen = value; }
         }
     }
 

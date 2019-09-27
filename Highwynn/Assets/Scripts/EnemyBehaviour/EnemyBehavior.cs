@@ -8,10 +8,9 @@ namespace Highwynn
     [RequireComponent(typeof(Rigidbody2D))]
     public class EnemyBehavior : MonoBehaviour
     {
+        [Header("Base Attributes")]
         [SerializeField]
         private float health = 5.0f;
-
-        [Header("View Distances")]
         [SerializeField]
         private float longViewDistance = 5.0f;
         [SerializeField]
@@ -43,6 +42,7 @@ namespace Highwynn
         protected bool stopped = false;
         protected bool movingRight = true;
         protected Rigidbody2D rb;
+        protected bool dying = false;
         
         void Start()
         {
@@ -61,47 +61,49 @@ namespace Highwynn
         // Physics update
         void FixedUpdate() 
         {
-            // Use sine wave to determine raycast angle
-            Vector2 sinUp = (Vector2.up * viewHeight) * Mathf.Sin(Time.time * oscillationFrequency);
+            if (!dying) {
+                // Use sine wave to determine raycast angle
+                Vector2 sinUp = (Vector2.up * viewHeight) * Mathf.Sin(Time.time * oscillationFrequency);
 
-            //Fire raycast, right if movingRight = true, left otherwise
-            RaycastHit2D seen = Physics2D.Raycast(eye.position, 
-                    movingRight ? Vector2.right + sinUp : -Vector2.right + sinUp, 
-                    longViewDistance,
-                    mask);
+                //Fire raycast, right if movingRight = true, left otherwise
+                RaycastHit2D seen = Physics2D.Raycast(eye.position, 
+                        movingRight ? Vector2.right + sinUp : -Vector2.right + sinUp, 
+                        longViewDistance,
+                        mask);
 
-            // Draws debug rays for the long, medium, and short view distances
-            if (debug) {
-                Debug.DrawRay(eye.position, 
-                        movingRight ? longViewDistance * (Vector2.right + sinUp) : longViewDistance * (-Vector2.right + sinUp), 
-                        Color.red, 
-                        0.5f);
+                // Draws debug rays for the long, medium, and short view distances
+                if (debug) {
+                    Debug.DrawRay(eye.position, 
+                            movingRight ? longViewDistance * (Vector2.right + sinUp) : longViewDistance * (-Vector2.right + sinUp), 
+                            Color.red, 
+                            0.5f);
 
-                Debug.DrawRay(eye.position, 
-                        movingRight ? mediumViewDistance * (Vector2.right + sinUp) : mediumViewDistance * (-Vector2.right + sinUp), 
-                        Color.blue, 
-                        0.5f);
+                    Debug.DrawRay(eye.position, 
+                            movingRight ? mediumViewDistance * (Vector2.right + sinUp) : mediumViewDistance * (-Vector2.right + sinUp), 
+                            Color.blue, 
+                            0.5f);
 
-                Debug.DrawRay(eye.position, 
-                        movingRight ? shortViewDistance * (Vector2.right + sinUp) : shortViewDistance * (-Vector2.right + sinUp), 
-                        Color.green, 
-                        0.5f);
-            }
-
-            // If the raycast hit something on the viewable layers, this will not be null
-            if (seen.collider != null) {
-                if (seen.collider.tag == "Player") {
-                    timeSinceLastSeen = 0.0f;
-                    playerSeen = true;
+                    Debug.DrawRay(eye.position, 
+                            movingRight ? shortViewDistance * (Vector2.right + sinUp) : shortViewDistance * (-Vector2.right + sinUp), 
+                            Color.green, 
+                            0.5f);
                 }
-                // OnSeen implemented in children
-                OnSeen(seen.collider, seen.distance);
-            }
-            else {
-                if (playerSeen && timeSinceLastSeen > 0.5f) {
-                    // PlayerLost implemented in children
-                    PlayerLost();
-                    playerSeen = false;
+
+                // If the raycast hit something on the viewable layers, this will not be null
+                if (seen.collider != null) {
+                    if (seen.collider.tag == "Player") {
+                        timeSinceLastSeen = 0.0f;
+                        playerSeen = true;
+                    }
+                    // OnSeen implemented in children
+                    OnSeen(seen.collider, seen.distance);
+                }
+                else {
+                    if (playerSeen && timeSinceLastSeen > 0.5f) {
+                        // PlayerLost implemented in children
+                        PlayerLost();
+                        playerSeen = false;
+                    }
                 }
             }
         }
