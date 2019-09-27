@@ -22,6 +22,8 @@ namespace Highwynn
         [Range(0.1f, 1.5f)]
         private float viewHeight = 0.25f;
         [SerializeField]
+        private float oscillationFrequency = 20.0f;
+        [SerializeField]
         private Transform eye = null;
         [SerializeField]
         private LayerMask mask = (1 << 12) | (1 << 13);
@@ -60,7 +62,7 @@ namespace Highwynn
         void FixedUpdate() 
         {
             // Use sine wave to determine raycast angle
-            Vector2 sinUp = (Vector2.up * viewHeight) * Mathf.Sin(Time.time * 20.0f);
+            Vector2 sinUp = (Vector2.up * viewHeight) * Mathf.Sin(Time.time * oscillationFrequency);
 
             //Fire raycast, right if movingRight = true, left otherwise
             RaycastHit2D seen = Physics2D.Raycast(eye.position, 
@@ -93,7 +95,7 @@ namespace Highwynn
                     playerSeen = true;
                 }
                 // OnSeen implemented in children
-                OnSeen(seen.collider, Vector2.Distance(transform.position, seen.collider.transform.position));
+                OnSeen(seen.collider, seen.distance);
             }
             else {
                 if (playerSeen && timeSinceLastSeen > 0.5f) {

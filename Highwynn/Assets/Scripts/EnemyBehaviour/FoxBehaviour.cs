@@ -124,7 +124,7 @@ namespace Highwynn
         // Used by EndIdle animation event to determine move direction
         private void DecideDirection() {
             movingRight = Random.value >= 0.5f;
-
+            // Flip is a base-class function
             Flip();
         }
     }
