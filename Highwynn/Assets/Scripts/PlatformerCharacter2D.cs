@@ -292,7 +292,7 @@ namespace Highwynn
             transform.localScale = theScale;
         }
 
-        void OnCollisionEnter2D(Collision2D other)
+       /* void OnCollisionEnter2D(Collision2D other)
         {
             // Add current collider to list of colliders
             currentColliders.Add(other.collider);
@@ -305,7 +305,7 @@ namespace Highwynn
                 gameObject.SetActive(false);
                 HighwynnGameManager.Instance().ResetPlayerToLastCheckpoint();
             }
-        }
+        } */
 
         void OnCollisionExit2D(Collision2D other) 
         {

@@ -620,9 +620,9 @@ GameObject:
   m_Component:
   - component: {fileID: 99156930}
   - component: {fileID: 99156931}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MushroomType1_03 (21)
-  m_TagString: Untagged
+  m_TagString: EnemyTurnaround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -702,7 +702,7 @@ GameObject:
   - component: {fileID: 100675477}
   m_Layer: 13
   m_Name: MushroomType1_03 (20)
-  m_TagString: Untagged
+  m_TagString: EnemyTurnaround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4328,6 +4328,7 @@ MonoBehaviour:
   C_L0_1: {fileID: 1549910160684161311}
   LoadLevelButton: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799,
     type: 3}
+  LoadLevelButton2: {fileID: 0}
   C_L1_1: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
   C_L1_2: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
   C_L1_3: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
@@ -15535,9 +15536,9 @@ GameObject:
   m_Component:
   - component: {fileID: 720606157}
   - component: {fileID: 720606158}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MushroomType1_03 (22)
-  m_TagString: Untagged
+  m_TagString: EnemyTurnaround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17793,9 +17794,9 @@ GameObject:
   m_Component:
   - component: {fileID: 938448152}
   - component: {fileID: 938448153}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MushroomType1_03 (19)
-  m_TagString: Untagged
+  m_TagString: EnemyTurnaround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18269,9 +18270,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1046740087}
   - component: {fileID: 1046740086}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MushroomType1_03 (2)
-  m_TagString: Untagged
+  m_TagString: EnemyTurnaround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20633,9 +20634,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1285286496}
   - component: {fileID: 1285286495}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MushroomType1_03 (3)
-  m_TagString: Untagged
+  m_TagString: EnemyTurnaround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22703,9 +22704,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1539911713}
   - component: {fileID: 1539911712}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MushroomType1_03 (4)
-  m_TagString: Untagged
+  m_TagString: EnemyTurnaround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23204,9 +23205,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1570712123}
   - component: {fileID: 1570712124}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MushroomType1_03 (18)
-  m_TagString: Untagged
+  m_TagString: EnemyTurnaround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23332,12 +23333,12 @@ PrefabInstance:
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -55.71
+      value: 68.34
       objectReference: {fileID: 0}
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -31.22
+      value: -23.2
       objectReference: {fileID: 0}
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
@@ -25194,9 +25195,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1828355717}
   - component: {fileID: 1828355716}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MushroomType1_03 (1)
-  m_TagString: Untagged
+  m_TagString: EnemyTurnaround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26163,7 +26164,7 @@ GameObject:
   - component: {fileID: 1929782988}
   m_Layer: 13
   m_Name: MushroomType1_02 (4)
-  m_TagString: Untagged
+  m_TagString: EnemyTurnaround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26441,6 +26442,31 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7202855637480477792, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202855637480477792, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 500451581382611188, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+        type: 3}
+      propertyPath: launchForce
+      value: -2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 500451581382611188, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+        type: 3}
+      propertyPath: moveDirection.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 500451581382611188, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+        type: 3}
+      propertyPath: moveDirection.y
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 7202855636597605666, guid: c4400c2ddedae9344ba9d5a1283edbcb,
         type: 3}
       propertyPath: m_Layer
@@ -26477,6 +26503,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7202855637707996817, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202855637715063753, guid: c4400c2ddedae9344ba9d5a1283edbcb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202855637715063753, guid: c4400c2ddedae9344ba9d5a1283edbcb,
         type: 3}
       propertyPath: m_TagString
       value: Untagged
@@ -26602,16 +26638,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7202855637710072793, guid: c4400c2ddedae9344ba9d5a1283edbcb,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7202855637715063753, guid: c4400c2ddedae9344ba9d5a1283edbcb,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7202855637715063753, guid: c4400c2ddedae9344ba9d5a1283edbcb,
         type: 3}
       propertyPath: m_TagString
       value: Untagged
@@ -28460,7 +28486,7 @@ PrefabInstance:
     - target: {fileID: 1313355466477755038, guid: af987c4a22c05d34b9f206c12cb131fd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 62
+      value: 62.00003
       objectReference: {fileID: 0}
     - target: {fileID: 1313355466477755038, guid: af987c4a22c05d34b9f206c12cb131fd,
         type: 3}
@@ -29202,7 +29228,7 @@ PrefabInstance:
     - target: {fileID: 3770895012745964349, guid: cc07348b09aba1041b06638d068753e8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -44.851254
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3770895012745964349, guid: cc07348b09aba1041b06638d068753e8,
         type: 3}
@@ -29428,7 +29454,7 @@ PrefabInstance:
     - target: {fileID: 8709420105405027073, guid: 7f7b2bd7ef54036468ea488615bc6f88,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.48
+      value: 5.01
       objectReference: {fileID: 0}
     - target: {fileID: 8709420105405027073, guid: 7f7b2bd7ef54036468ea488615bc6f88,
         type: 3}
@@ -29499,6 +29525,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8709420105405027075, guid: 7f7b2bd7ef54036468ea488615bc6f88,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f7b2bd7ef54036468ea488615bc6f88, type: 3}

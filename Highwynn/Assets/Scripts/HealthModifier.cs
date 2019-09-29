@@ -7,15 +7,31 @@ public class HealthModifier : MonoBehaviour
     public int ModifyHealth;
     public Player Player;
     public float timer;
-  //  public float forcex;
-   // public float forcey;
+    public Rigidbody2D rb;
+    [SerializeField]
+    private float forcex;
+    [SerializeField]
+    private float forcey;
+    // public Vector2 moveDirection;
+    // public float launchForce;
+    // public GameObject playercontroller;
+
+
+
+
+
 
     // Start is called before the first frame update
     void Awake()
     {
         Player = GameObject.FindObjectOfType<Player>();
-        
-         
+        rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+       
+
+
+
+
+
 
     }
     void Update()
@@ -39,10 +55,16 @@ public class HealthModifier : MonoBehaviour
             {
                 if (timer <= 0)
                 {
+                    
                     Player.Update_Health(ModifyHealth);
                     timer = 3f;
                     Debug.Log("health "+ Player.health);
-              //      collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (forcey, forcex);
+                    //  moveDirection = rb.transform.position - rb.transform.position;
+                    // rb.AddForce(moveDirection.normalized * launchForce);
+                    // Vector2 direction = (transform.position - collision.transform.position).normalized;
+                    //rb.AddForce(direction * forcex);
+                    rb.velocity = new Vector2(-forcex, forcey);
+
 
 
                 }

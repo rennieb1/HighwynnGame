@@ -186,3 +186,6 @@ MonoBehaviour:
   ModifyHealth: -5
   Player: {fileID: 0}
   timer: 0.1
+  rb: {fileID: 0}
+  forcex: 5
+  forcey: 5

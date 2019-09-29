@@ -1324,6 +1324,9 @@ MonoBehaviour:
   ModifyHealth: -20
   Player: {fileID: 0}
   timer: 0
+  rb: {fileID: 0}
+  forcex: 50
+  forcey: 50
 --- !u!114 &3054276769010611514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,6 +1344,7 @@ MonoBehaviour:
   mediumViewDistance: 2.5
   shortViewDistance: 5
   viewHeight: 0.25
+  oscillationFrequency: 20
   eye: {fileID: 7202855637715063752}
   mask:
     serializedVersion: 2
@@ -2138,3 +2142,6 @@ MonoBehaviour:
   ModifyHealth: -10
   Player: {fileID: 0}
   timer: 0
+  rb: {fileID: 0}
+  forcex: 0
+  forcey: 0

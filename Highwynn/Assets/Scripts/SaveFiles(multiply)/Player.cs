@@ -57,6 +57,7 @@ public class Player : MonoBehaviour
     public GameObject C_L0_1;
 
     public GameObject LoadLevelButton;
+    public GameObject LoadLevelButton2;
     public GameObject C_L1_1;
     public GameObject C_L1_2;
     public GameObject C_L1_3;
@@ -114,6 +115,7 @@ public class Player : MonoBehaviour
         if (level >= 1)
         {
             LoadLevelButton.SetActive(true);
+            LoadLevelButton2.SetActive(true);
         }
 
         if (c_LZeroOne >= 1)

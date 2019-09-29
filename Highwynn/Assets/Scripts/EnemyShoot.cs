@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Highwynn
 {
-    [RequireComponent(typeof(BoxCollider2D))]
+   
     public class EnemyShoot : MonoBehaviour
     {
         public float shootDelay = 1.0f;
