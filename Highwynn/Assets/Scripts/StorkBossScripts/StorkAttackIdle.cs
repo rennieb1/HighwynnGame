@@ -44,7 +44,7 @@ public class StorkAttackIdle : StateMachineBehaviour
                 timer = maxTime;
                 if (timerReset <= 0)
                 {
-                    animator.SetTrigger("Attack3");
+                    animator.SetTrigger("Stork_ReturnIdle");
                     timer = maxTime;
                 }
             }
@@ -64,5 +64,6 @@ public class StorkAttackIdle : StateMachineBehaviour
         animator.ResetTrigger("Attack3");
         animator.ResetTrigger("Attack2");
         animator.ResetTrigger("Attack");
+        animator.ResetTrigger("Stork_ReturnIdle");
     }
 }

@@ -10,9 +10,9 @@ public class StorkBossMainScript : MonoBehaviour
     public int damageTakenPerHit = 10;
 
 
-    public bool isClose = false;// Close attack range(GREEN BOX) and the triger for the breakable floor
-    public bool isMed = false; // Medium distance (Yellow BOX) 
-    public bool isFar = false; // FAR distance (RED BOX) 
+    public bool isClose = false;// Close attack range(GREEN BOX) and the triger for the breakable floor Attack2 in animator
+    public bool isMed = false; // Medium distance (Yellow BOX) ATTACK in animator
+    public bool isFar = false; // FAR distance (RED BOX) Attack3 in animator
     public bool isRange = false; // Is RANGE (GREY BOX) Cause walking
     public bool isWithin = false; // is within in the close/med/FAR area
     public bool isBreakable = false; //Collider ON breakable floor
