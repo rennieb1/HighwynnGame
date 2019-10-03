@@ -1,0 +1,566 @@
+fileFormatVersion: 2
+guid: 51a6082c4844b04448a0d9af4050efce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3776011452931145940
+    second: Skull
+  - first:
+      213: -2947930137210061582
+    second: Lower_Jaw
+  - first:
+      213: -8173379444474790274
+    second: Neck_Top_Sect
+  - first:
+      213: 9176719456088111398
+    second: Neck_Sect05
+  - first:
+      213: -3085870398159999175
+    second: SnakeBoss_SpriteSheet01_4
+  - first:
+      213: 1806211425558603553
+    second: Neck_Sect04
+  - first:
+      213: 8391712724603415886
+    second: SnakeBoss_SpriteSheet01_6
+  - first:
+      213: 8017997007117105810
+    second: SnakeBoss_SpriteSheet01_7
+  - first:
+      213: 3833514646619628340
+    second: Off_Fang
+  - first:
+      213: -7732385321463078254
+    second: Neck_Sect02
+  - first:
+      213: 860366035552033674
+    second: Neck_Sect01
+  - first:
+      213: 6806222051138591984
+    second: Neck_Sect03
+  - first:
+      213: 6961582983732031827
+    second: Neck_Bottom_Sect
+  - first:
+      213: -5673618120071735642
+    second: Body
+  - first:
+      213: 599503995742865507
+    second: Tail_Tip
+  - first:
+      213: 1793745202454553210
+    second: SnakeBoss_SpriteSheet01_15
+  - first:
+      213: 183264869833395362
+    second: Tail_Mid
+  - first:
+      213: -2158661918636202631
+    second: Tail_Base
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Skull
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 842
+        width: 213
+        height: 356
+      alignment: 9
+      pivot: {x: 0.28271833, y: 0.86524606}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2352c06f9e57d984e999629fa59cd8a8
+      internalID: 3776011452931145940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lower_Jaw
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 802
+        width: 162
+        height: 391
+      alignment: 9
+      pivot: {x: 0.459188, y: 0.9114619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76af77a6d36c144e976c1415b90ac9f
+      internalID: -2947930137210061582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neck_Top_Sect
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 890
+        width: 218
+        height: 280
+      alignment: 9
+      pivot: {x: 0.7729545, y: 0.8620623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b27f78a03ad9ec41b1f1d05e6c87989
+      internalID: -8173379444474790274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neck_Sect05
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 922
+        width: 201
+        height: 231
+      alignment: 9
+      pivot: {x: 0.8179695, y: 0.7289722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae4ce5fb01bdee41acb4f58f7612e93
+      internalID: 9176719456088111398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnakeBoss_SpriteSheet01_4
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1147
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf285a859833524aa739b3611985d36
+      internalID: -3085870398159999175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neck_Sect04
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 958
+        width: 377
+        height: 193
+      alignment: 9
+      pivot: {x: 0.9033588, y: 0.5913516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3575a3752ca5bb2438c324085e9374be
+      internalID: 1806211425558603553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnakeBoss_SpriteSheet01_6
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1117
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8515ffce4832c439cfcd81efa00847
+      internalID: 8391712724603415886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnakeBoss_SpriteSheet01_7
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 936
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3fdd2d9df682b44f8b52444583ea93e
+      internalID: 8017997007117105810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Off_Fang
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 754
+        width: 61
+        height: 56
+      alignment: 9
+      pivot: {x: 0.28322726, y: 0.3425816}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2002426aa74345643a3a0a615c79cf6f
+      internalID: 3833514646619628340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neck_Sect02
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 493
+        width: 223
+        height: 303
+      alignment: 9
+      pivot: {x: 0.5000003, y: 0.07813951}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da47b384142b7674dac3a837e61fd811
+      internalID: -7732385321463078254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neck_Sect01
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 529
+        width: 242
+        height: 253
+      alignment: 9
+      pivot: {x: 0.35429066, y: 0.116720445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcf65eb69df38e4f8dcd4ca3e662cce
+      internalID: 860366035552033674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neck_Sect03
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 493
+        width: 303
+        height: 260
+      alignment: 9
+      pivot: {x: 0.79821163, y: 0.24570899}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a15e4682b9b36438b563d328149e53
+      internalID: 6806222051138591984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neck_Bottom_Sect
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 493
+        width: 416
+        height: 212
+      alignment: 9
+      pivot: {x: 0.27219772, y: 0.15694672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d838f1c89c7a44a9f9f39492555ac4
+      internalID: 6961582983732031827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 7
+        width: 766
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ea5216e3e86474cb1cc8c0ef64fc50
+      internalID: -5673618120071735642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tail_Tip
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 255
+        width: 151
+        height: 177
+      alignment: 9
+      pivot: {x: 0.6021656, y: 0.1389162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b322e1988498ee5469980b6997bb6b29
+      internalID: 599503995742865507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnakeBoss_SpriteSheet01_15
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 250
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f525d72b846afb4bb699edcb4ca8a04
+      internalID: 1793745202454553210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tail_Mid
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 62
+        width: 186
+        height: 193
+      alignment: 9
+      pivot: {x: 0.21563196, y: 0.28303987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75f9fa56d7295149b1831199098d102
+      internalID: 183264869833395362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tail_Base
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 55
+        width: 288
+        height: 187
+      alignment: 9
+      pivot: {x: 0.13269064, y: 0.51178515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a157d227f7de9d545b511454683ca89f
+      internalID: -2158661918636202631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 27953a8e53f45474f9c1c7987ce97350
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
