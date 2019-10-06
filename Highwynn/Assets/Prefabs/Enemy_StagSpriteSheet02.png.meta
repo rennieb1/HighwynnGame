@@ -1,0 +1,603 @@
+fileFormatVersion: 2
+guid: 6cd406e5f993d874592517fb7e31d4cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5786768510359595117
+    second: Enemy_StagSpriteSheet02_0
+  - first:
+      213: -1295875751738889241
+    second: Enemy_StagSpriteSheet02_1
+  - first:
+      213: 5925479550506979900
+    second: Enemy_StagSpriteSheet02_2
+  - first:
+      213: 5795105500126875416
+    second: Enemy_StagSpriteSheet02_3
+  - first:
+      213: 6899704405177053269
+    second: Enemy_StagSpriteSheet02_4
+  - first:
+      213: 1284765157523564516
+    second: Enemy_StagSpriteSheet02_5
+  - first:
+      213: -4606086036335106777
+    second: Enemy_StagSpriteSheet02_6
+  - first:
+      213: -6971368135643106588
+    second: Enemy_StagSpriteSheet02_7
+  - first:
+      213: -5881970074549696041
+    second: Enemy_StagSpriteSheet02_8
+  - first:
+      213: -1805970961003571105
+    second: Enemy_StagSpriteSheet02_9
+  - first:
+      213: -2320087928118120206
+    second: Enemy_StagSpriteSheet02_10
+  - first:
+      213: 1981983254454699784
+    second: Enemy_StagSpriteSheet02_11
+  - first:
+      213: 5010977999199615994
+    second: Enemy_StagSpriteSheet02_12
+  - first:
+      213: 1436754874039868900
+    second: Enemy_StagSpriteSheet02_13
+  - first:
+      213: -4305597922729701244
+    second: Enemy_StagSpriteSheet02_14
+  - first:
+      213: 919498114816424749
+    second: Enemy_StagSpriteSheet02_15
+  - first:
+      213: -8529543076783857040
+    second: Enemy_StagSpriteSheet02_16
+  - first:
+      213: 4971856649444071835
+    second: Enemy_StagSpriteSheet02_17
+  - first:
+      213: -4088430398786932887
+    second: Enemy_StagSpriteSheet02_18
+  - first:
+      213: -4896162204120242586
+    second: Enemy_StagSpriteSheet02_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 612
+        width: 412
+        height: 388
+      alignment: 9
+      pivot: {x: 0.6460401, y: 0.12782398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e8434a421c3fc419e6c7f2dd6238a8
+      internalID: -5786768510359595117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_1
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 625
+        width: 197
+        height: 375
+      alignment: 9
+      pivot: {x: 0.5, y: 0.78346044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcd23f9ba90c654ab4e072d23ab95ea
+      internalID: -1295875751738889241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_2
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 755
+        width: 153
+        height: 244
+      alignment: 9
+      pivot: {x: 0.5393258, y: 0.7137131}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41dda89af8b2754d9ca5250ecdebdfc
+      internalID: 5925479550506979900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_3
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 556
+        width: 179
+        height: 301
+      alignment: 9
+      pivot: {x: 0.5448182, y: 0.75320077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d433183edff925469832a284c985a28
+      internalID: 5795105500126875416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_4
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 706
+        width: 153
+        height: 206
+      alignment: 9
+      pivot: {x: 0.4737828, y: 0.7531359}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce43f3016b222f4d960ec66cf9e0196
+      internalID: 6899704405177053269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 262
+        width: 225
+        height: 323
+      alignment: 9
+      pivot: {x: 0.19692928, y: 0.36339462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7103668d464130429397b64527f29a1
+      internalID: 1284765157523564516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_6
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 520
+        width: 156
+        height: 65
+      alignment: 9
+      pivot: {x: 0.1657306, y: 0.71598935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241c797df2bb16741b292ea9a23b1738
+      internalID: -4606086036335106777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_7
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 406
+        width: 57
+        height: 206
+      alignment: 9
+      pivot: {x: 0.42962754, y: 0.8797042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3c1f164c5e0364899ac86b1fd1e72f
+      internalID: -6971368135643106588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_8
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 577
+        width: 75
+        height: 169
+      alignment: 9
+      pivot: {x: 0.52674156, y: 0.761086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2106afc69e4d3d46b6178ff865de54f
+      internalID: -5881970074549696041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_9
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 523
+        width: 74
+        height: 171
+      alignment: 9
+      pivot: {x: 0.5271029, y: 0.7932186}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45953465c2560449b747763134750f4
+      internalID: -1805970961003571105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_10
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 423
+        width: 67
+        height: 81
+      alignment: 9
+      pivot: {x: 0.8390439, y: 0.34686354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e19b390c489a2f459cd746f74121ce4
+      internalID: -2320087928118120206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_11
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 409
+        width: 48
+        height: 147
+      alignment: 9
+      pivot: {x: 0.54178363, y: 0.84109104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee6517ca950d0841a1e7560049eb1c0
+      internalID: 1981983254454699784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_12
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 346
+        width: 82
+        height: 198
+      alignment: 9
+      pivot: {x: 0.32878894, y: 0.89504576}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03207ecceb631cd4ca371f8ade84f0e2
+      internalID: 5010977999199615994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_13
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 362
+        width: 61
+        height: 147
+      alignment: 9
+      pivot: {x: 0.43424413, y: 0.8683783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6f3e9b731caf1438cec80dec27b6d3
+      internalID: 1436754874039868900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_14
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 368
+        width: 53
+        height: 33
+      alignment: 9
+      pivot: {x: 0.3486328, y: 0.50000095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7243df5f8e17f04ca5fb07a2cbc79c1
+      internalID: -4305597922729701244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_15
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 355
+        width: 59
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3640271, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be9b3157ee758d47861f22d97576909
+      internalID: 919498114816424749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_16
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 4
+        width: 602
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31de6ac788df0b443807994069ead7d7
+      internalID: -8529543076783857040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_17
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 312
+        width: 53
+        height: 31
+      alignment: 9
+      pivot: {x: 0.34863397, y: 0.500001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1d77a9077398442a349e6c9f928d58
+      internalID: 4971856649444071835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_18
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 312
+        width: 62
+        height: 36
+      alignment: 9
+      pivot: {x: 0.37060547, y: 0.44428846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a5f69835431194c866ce64eca8a8e6
+      internalID: -4088430398786932887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_StagSpriteSheet02_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 63
+        width: 75
+        height: 142
+      alignment: 9
+      pivot: {x: 0.7041974, y: 0.909145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7425ee54f354d949b9bc733fc12d423
+      internalID: -4896162204120242586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d417ef5fd87f1a8478f5633ff40c5c31
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
