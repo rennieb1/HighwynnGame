@@ -720,7 +720,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
-  - component: {fileID: 534669906}
+  - component: {fileID: 534669908}
   - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
@@ -794,26 +794,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &534669906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1914422132}
-  damping: 0
-  lookAheadFactor: 0
-  lookAheadReturnSpeed: 0
-  lookAheadMoveThreshold: 0
-  m_OrthographicCamera: {fileID: 534669904}
-  MinCamerasSize: 10
-  sizeModifer: 0.1
 --- !u!114 &534669907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -833,6 +813,26 @@ MonoBehaviour:
   lookAheadMoveThreshold: 0.1
   m_OrthographicCamera: {fileID: 534669904}
   MaxCamerasSize: 18
+  sizeModifer: 0.1
+--- !u!114 &534669908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc5915789c2efa4a96ab1a785e30631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1914422132}
+  damping: 0
+  lookAheadFactor: 0
+  lookAheadReturnSpeed: 0
+  lookAheadMoveThreshold: 0
+  m_OrthographicCamera: {fileID: 534669904}
+  MinCamerasSize: 10
   sizeModifer: 0.1
 --- !u!1 &621738378
 GameObject:
@@ -4145,7 +4145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lockArea: {fileID: 108948813}
-  camera2DFollow: {fileID: 534669906}
+  camera2DFollow: {fileID: 534669908}
   changeCameraTargets: {fileID: 534669907}
   bigView: 0
 --- !u!212 &861878598
@@ -5476,7 +5476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eac58e5c314b594c98a9ae9572bce03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera2DFollow: {fileID: 534669906}
+  camera2DFollow: {fileID: 534669908}
   changeCameraTargets: {fileID: 534669907}
   activatorCameraShift: {fileID: 861878597}
 --- !u!212 &2059390939

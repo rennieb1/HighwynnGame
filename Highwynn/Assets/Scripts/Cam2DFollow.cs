@@ -1,9 +1,10 @@
+﻿
 using System;
 using UnityEngine;
 
 namespace Highwynn
 {
-    public class Camera2DFollow : MonoBehaviour
+    public class Cam2DFollow : MonoBehaviour
     {
         public Transform target;
         public float damping = 1;
@@ -19,7 +20,7 @@ namespace Highwynn
         public Camera m_OrthographicCamera;
         public float MinCamerasSize;
         public float sizeModifer;
-      //  public float timer;
+        //  public float timer;
 
         // Use this for initialization
         private void Start()
@@ -27,14 +28,32 @@ namespace Highwynn
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
             transform.parent = null;
-
+            damping = 0f;
         }
 
 
         // Update is called once per frame
         private void Update()
         {
+            if (m_OrthographicCamera.orthographicSize >= MinCamerasSize)
+            {
+                damping = 1.5f;
+                lookAheadFactor = 0.0f;
+                lookAheadReturnSpeed = 0.0f;
+                lookAheadMoveThreshold = 0.0f;
+                m_OrthographicCamera.orthographicSize -= sizeModifer;
 
+            }
+            else
+            //   timer -= Time.deltaTime;
+            if (damping >= 0)
+            {
+                damping -= Time.deltaTime;
+                lookAheadFactor = 0;
+                lookAheadReturnSpeed = 0;
+                lookAheadMoveThreshold = 0;
+                //     timer = 0;
+            }
             // only update lookahead pos if accelerating or changed direction
             float xMoveDelta = (target.position - m_LastTargetPosition).x;
 
@@ -42,17 +61,17 @@ namespace Highwynn
 
             if (updateLookAheadTarget)
             {
-                m_LookAheadPos = lookAheadFactor*Vector3.right*Mathf.Sign(xMoveDelta);
+                m_LookAheadPos = lookAheadFactor * Vector3.right * Mathf.Sign(xMoveDelta);
             }
             else
             {
-                m_LookAheadPos = Vector3.MoveTowards(m_LookAheadPos, Vector3.zero, Time.deltaTime*lookAheadReturnSpeed);
+                m_LookAheadPos = Vector3.MoveTowards(m_LookAheadPos, Vector3.zero, Time.deltaTime * lookAheadReturnSpeed);
             }
 
-            Vector3 aheadTargetPos = target.position + m_LookAheadPos + Vector3.forward*m_OffsetZ;
+            Vector3 aheadTargetPos = target.position + m_LookAheadPos + Vector3.forward * m_OffsetZ;
             Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
 
-           
+
 
 
             transform.position = newPos;

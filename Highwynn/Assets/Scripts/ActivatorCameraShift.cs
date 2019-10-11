@@ -5,7 +5,7 @@ using UnityEngine;
 public class ActivatorCameraShift : MonoBehaviour
 {
     public GameObject lockArea;
-    public Highwynn.Camera2DFollow camera2DFollow;
+    public Highwynn.Cam2DFollow camera2DFollow;
     public ChangeCameraTargets changeCameraTargets;
 
     public bool bigView;

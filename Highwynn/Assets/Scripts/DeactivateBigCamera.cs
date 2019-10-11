@@ -6,7 +6,7 @@ public class DeactivateBigCamera : MonoBehaviour
 {
 
     
-    public Highwynn.Camera2DFollow camera2DFollow;
+    public Highwynn.Cam2DFollow camera2DFollow;
     public ChangeCameraTargets changeCameraTargets;
 
 
