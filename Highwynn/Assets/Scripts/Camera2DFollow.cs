@@ -16,18 +16,43 @@ namespace Highwynn
         private Vector3 m_CurrentVelocity;
         private Vector3 m_LookAheadPos;
 
+        public Camera m_OrthographicCamera;
+        public float MinCamerasSize;
+        public float sizeModifer;
+      //  public float timer;
+
         // Use this for initialization
         private void Start()
         {
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
             transform.parent = null;
+            damping = 0f;
         }
 
 
         // Update is called once per frame
         private void Update()
         {
+            if (m_OrthographicCamera.orthographicSize >= MinCamerasSize)
+            {
+                damping = 1.5f;
+                lookAheadFactor = 0.0f;
+                lookAheadReturnSpeed = 0.0f;
+                lookAheadMoveThreshold = 0.0f;
+                m_OrthographicCamera.orthographicSize -= sizeModifer;
+                
+            }
+            else
+             //   timer -= Time.deltaTime;
+            if (damping >= 0)
+            {
+                damping -= Time.deltaTime;
+                lookAheadFactor = 0;
+                lookAheadReturnSpeed = 0;
+                lookAheadMoveThreshold = 0;
+           //     timer = 0;
+            }
             // only update lookahead pos if accelerating or changed direction
             float xMoveDelta = (target.position - m_LastTargetPosition).x;
 
@@ -45,9 +70,15 @@ namespace Highwynn
             Vector3 aheadTargetPos = target.position + m_LookAheadPos + Vector3.forward*m_OffsetZ;
             Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
 
+           
+
+
             transform.position = newPos;
 
             m_LastTargetPosition = target.position;
+
+
+
         }
     }
 }
