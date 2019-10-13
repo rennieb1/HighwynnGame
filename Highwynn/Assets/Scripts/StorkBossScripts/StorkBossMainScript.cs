@@ -69,6 +69,10 @@ public class StorkBossMainScript : MonoBehaviour
             health = health - damageTakenPerHit;
             Destroy(other);
         }
+        if(other.gameObject.CompareTag("BreakableGround"))
+        {
+            FloorBreaking.Play("Breaking");
+        }
         
     }
  
