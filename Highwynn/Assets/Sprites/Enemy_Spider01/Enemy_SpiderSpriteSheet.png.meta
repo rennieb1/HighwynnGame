@@ -1,0 +1,956 @@
+fileFormatVersion: 2
+guid: ad2db2fbb92185843a55a1a5941aba88
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2403128552827864068
+    second: L leg one mid
+  - first:
+      213: -6512514922368301377
+    second: L leg one base
+  - first:
+      213: 4701569246633043376
+    second: R leg one base
+  - first:
+      213: 2954116530159682719
+    second: rightlegonemid
+  - first:
+      213: 5568167615176102752
+    second: Enemy_SpiderSpriteSheet_4
+  - first:
+      213: 233227185538982242
+    second: body
+  - first:
+      213: -2950120629307456871
+    second: Enemy_SpiderSpriteSheet_6
+  - first:
+      213: 5723967415830425249
+    second: rightlegonetop
+  - first:
+      213: 6518368519790755348
+    second: L leg one top
+  - first:
+      213: 3011063139487462580
+    second: Enemy_SpiderSpriteSheet_9
+  - first:
+      213: 3984626025893262036
+    second: leftlegtwotop
+  - first:
+      213: -5020172183130049310
+    second: L_LegTwo_Mid
+  - first:
+      213: 2357223140107896719
+    second: L leg two base
+  - first:
+      213: -6873683274224244699
+    second: R leg two base
+  - first:
+      213: 9034796642996434004
+    second: rightlegtwomid
+  - first:
+      213: -8536999850679138209
+    second: rightlegtwotop
+  - first:
+      213: -7850183435715317824
+    second: Enemy_SpiderSpriteSheet_17
+  - first:
+      213: 5281158721922575735
+    second: leftlegthirdmid
+  - first:
+      213: -2473191316453405730
+    second: Enemy_SpiderSpriteSheet_19
+  - first:
+      213: 4810830572485773468
+    second: leftlegthirdbase
+  - first:
+      213: -5469865761301579694
+    second: rightlegthirdbase
+  - first:
+      213: 5146563952647022424
+    second: rightlegthirdmid
+  - first:
+      213: -6117743312545891232
+    second: rightlegthirdtop
+  - first:
+      213: -6134291648330262951
+    second: leftlegthirdtop
+  - first:
+      213: 951469456936690445
+    second: leftlegfourmid
+  - first:
+      213: -5741576446579254986
+    second: leftlegfourbase
+  - first:
+      213: -9017472632751439552
+    second: rightlegfourbase
+  - first:
+      213: 8570977972245901573
+    second: rightlegfourmid
+  - first:
+      213: 5559935352356009044
+    second: rightlegfourtop
+  - first:
+      213: -1713713629615617641
+    second: leftfrontlegtop
+  - first:
+      213: -7499171326359360247
+    second: rightfrontlegtop
+  - first:
+      213: 4920181814460448315
+    second: leftlegfourtop
+  - first:
+      213: 282524114002596941
+    second: L front leg base
+  - first:
+      213: 2782227009479520946
+    second: rightfrontlegbase
+  - first:
+      213: 1543060906395732762
+    second: leftpincer
+  - first:
+      213: -554921106568623590
+    second: rightpincer
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L leg one mid
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 654
+        width: 104
+        height: 146
+      alignment: 9
+      pivot: {x: 0.86909664, y: 0.1450605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ea3225844fc294baf1f82ce3f99f8b
+      internalID: 2403128552827864068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L leg one base
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 654
+        width: 99
+        height: 147
+      alignment: 9
+      pivot: {x: 0.8295769, y: 0.1605316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d422d1a6a263014e9a171e89c8441b5
+      internalID: -6512514922368301377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R leg one base
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 658
+        width: 99
+        height: 147
+      alignment: 9
+      pivot: {x: 0.15103611, y: 0.17358814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f881d5565ad42664abf31433eb0a6fc9
+      internalID: 4701569246633043376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightlegonemid
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 659
+        width: 104
+        height: 146
+      alignment: 9
+      pivot: {x: 0.11244906, y: 0.13191453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7fa2e5d95fac148bb3288096b91600
+      internalID: 2954116530159682719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_SpiderSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 782
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79714fa8e091faf44856dc51b780e4da
+      internalID: 5568167615176102752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 356
+        width: 224
+        height: 422
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6091546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bec0ea8bb08c9b4ba317474eb11fe70
+      internalID: 233227185538982242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_SpiderSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 775
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9386d6eaadd8dd5408fe790cf9e7e9f4
+      internalID: -2950120629307456871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightlegonetop
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 669
+        width: 72
+        height: 111
+      alignment: 9
+      pivot: {x: 0.10014343, y: 0.1541803}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32818ea618c56747abbbd11cf006d91
+      internalID: 5723967415830425249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L leg one top
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 664
+        width: 72
+        height: 111
+      alignment: 9
+      pivot: {x: 0.7665698, y: 0.24063468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e37d9cb0f59b194a905d152838e209a
+      internalID: 6518368519790755348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftlegtwotop
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 560
+        width: 120
+        height: 22
+      alignment: 9
+      pivot: {x: 0.80388945, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e87bbbc2c3ba0c458d26b46afa4e06d
+      internalID: 3984626025893262036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_LegTwo_Mid
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 562
+        width: 200
+        height: 37
+      alignment: 9
+      pivot: {x: 0.86466736, y: 0.6037466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4651aec074020418394fe57f437a8e
+      internalID: -5020172183130049310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L leg two base
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 567
+        width: 167
+        height: 41
+      alignment: 9
+      pivot: {x: 0.87926334, y: 0.5468125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08ccbe0e89c3d64cb056c7b755c5d0b
+      internalID: 2357223140107896719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R leg two base
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 571
+        width: 167
+        height: 41
+      alignment: 9
+      pivot: {x: 0.097751275, y: 0.5468125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbfcb03be467f8498d13ce39ba938dc
+      internalID: -6873683274224244699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightlegtwomid
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 567
+        width: 202
+        height: 37
+      alignment: 9
+      pivot: {x: 0.119940124, y: 0.55187327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ebb5b1c2b03c6458ea7ea9231def53
+      internalID: 9034796642996434004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightlegtwotop
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 567
+        width: 120
+        height: 22
+      alignment: 9
+      pivot: {x: 0.13213298, y: 0.41275856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0878dc385c6654f9108a46520c0c1c
+      internalID: -8536999850679138209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftlegthirdmid
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 429
+        width: 185
+        height: 93
+      alignment: 9
+      pivot: {x: 0.81123805, y: 0.80956507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e80db0353c9e741b1ff9d4c7b597a9
+      internalID: 5281158721922575735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_SpiderSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 499
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3978316d78d3fef4a8bb0786b592c41a
+      internalID: -2473191316453405730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftlegthirdbase
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 433
+        width: 149
+        height: 94
+      alignment: 9
+      pivot: {x: 0.83491176, y: 0.7858536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8574cd6afdfa88c40bf3888e8941d0cf
+      internalID: 4810830572485773468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightlegthirdbase
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 433
+        width: 146
+        height: 94
+      alignment: 9
+      pivot: {x: 0.13191453, y: 0.8062718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2900f6460b84583488e570ae089692ac
+      internalID: -5469865761301579694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightlegthirdmid
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 427
+        width: 178
+        height: 94
+      alignment: 9
+      pivot: {x: 0.10104336, y: 0.8675261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddeb798fd994b44ca598519432b2f2d
+      internalID: 5146563952647022424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightlegthirdtop
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 440
+        width: 118
+        height: 71
+      alignment: 9
+      pivot: {x: 0.12589897, y: 0.79735684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f3d6c1a342f0f4ba78764f7c030797
+      internalID: -6117743312545891232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftlegthirdtop
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 422
+        width: 109
+        height: 68
+      alignment: 9
+      pivot: {x: 0.8521653, y: 0.75402564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce32cc83ef744ea4aa3ed2677a028ccb
+      internalID: -6134291648330262951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftlegfourmid
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 214
+        width: 136
+        height: 140
+      alignment: 9
+      pivot: {x: 0.8104755, y: 0.8838606}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5aab2813ad544f41b2fb01fdd80c3df
+      internalID: 951469456936690445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftlegfourbase
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 223
+        width: 116
+        height: 135
+      alignment: 9
+      pivot: {x: 0.8143684, y: 0.8412096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1919e0e5b4030ac4cb467efc835e8321
+      internalID: -5741576446579254986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightlegfourbase
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 228
+        width: 113
+        height: 135
+      alignment: 9
+      pivot: {x: 0.1433154, y: 0.8554265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a19ff4742f08fd4b9c535aca180ed66
+      internalID: -9017472632751439552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightlegfourmid
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 212
+        width: 142
+        height: 151
+      alignment: 9
+      pivot: {x: 0.121545926, y: 0.88131833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085b4e7fcac4d804dbff272227814339
+      internalID: 8570977972245901573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightlegfourtop
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 240
+        width: 81
+        height: 99
+      alignment: 9
+      pivot: {x: 0.14457195, y: 0.8489645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20981e7e11cccd84ca4dcd1716538562
+      internalID: 5559935352356009044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftfrontlegtop
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 169
+        width: 69
+        height: 149
+      alignment: 9
+      pivot: {x: 0.75034374, y: 0.15220775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528f9b0784ae1f54eaa651b5bc055690
+      internalID: -1713713629615617641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightfrontlegtop
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 173
+        width: 69
+        height: 149
+      alignment: 9
+      pivot: {x: 0.19402435, y: 0.20373207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f216321cad441e048833bc8f0139f629
+      internalID: -7499171326359360247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftlegfourtop
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 228
+        width: 84
+        height: 99
+      alignment: 9
+      pivot: {x: 0.7970352, y: 0.79080325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3ebac9436028d40a97a6672ae9dc73
+      internalID: 4920181814460448315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L front leg base
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 19
+        width: 50
+        height: 124
+      alignment: 9
+      pivot: {x: 0.61515826, y: 0.20591375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e27a87bd6b78ea44ae8161ae5cb2fca
+      internalID: 282524114002596941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightfrontlegbase
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 20
+        width: 50
+        height: 124
+      alignment: 9
+      pivot: {x: 0.3464557, y: 0.19043556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7884cf6fcf00cb9419300ee8472c1c85
+      internalID: 2782227009479520946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftpincer
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 26
+        width: 77
+        height: 89
+      alignment: 9
+      pivot: {x: 0.32551792, y: 0.19808793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea58dcd3b39a7e42aaf64377d9f0e3a
+      internalID: 1543060906395732762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rightpincer
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 28
+        width: 54
+        height: 116
+      alignment: 9
+      pivot: {x: 0.5, y: 0.20217748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5b7ec4381144042a1d8d33403d23f5
+      internalID: -554921106568623590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 25933593d532d93458c8bf6edeaf7861
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
