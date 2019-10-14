@@ -16,7 +16,8 @@ public class StorkBossMainScript : MonoBehaviour
     public bool isRange = false; // Is RANGE (GREY BOX) Cause walking
     public bool isWithin = false; // is within in the close/med/FAR area
     public bool isBreakable = false; //Collider ON breakable floor
-    public bool isBroken = false; //Will be used to active breakingPlaftorm Animation
+    public bool isBroken = false;
+     public bool fallenRange = false; //Will be used to active breakingPlaftorm Animation
 
     public Animator FloorBreaking;
     private Animator anim;
