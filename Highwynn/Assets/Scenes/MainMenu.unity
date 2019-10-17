@@ -5942,7 +5942,7 @@ PrefabInstance:
     - target: {fileID: 811482540085073133, guid: 3fb71107a44d0b749a2b9a3234c93a72,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -327.70773
+      value: -327.70776
       objectReference: {fileID: 0}
     - target: {fileID: 811482540085073133, guid: 3fb71107a44d0b749a2b9a3234c93a72,
         type: 3}
@@ -6081,7 +6081,7 @@ PrefabInstance:
     - target: {fileID: 1549910160155863751, guid: f09b5b588dac721409beda4ac0e685f9,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -331.95438
+      value: -331.95435
       objectReference: {fileID: 0}
     - target: {fileID: 1549910160155863751, guid: f09b5b588dac721409beda4ac0e685f9,
         type: 3}
@@ -6220,7 +6220,7 @@ PrefabInstance:
     - target: {fileID: 2887876617673017195, guid: eda8e749588598f4786bac51f6ecb5d0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -330.18497
+      value: -330.18494
       objectReference: {fileID: 0}
     - target: {fileID: 2887876617673017195, guid: eda8e749588598f4786bac51f6ecb5d0,
         type: 3}
@@ -6466,13 +6466,14 @@ GameObject:
   - component: {fileID: 3477332259209175600}
   - component: {fileID: 3477332259209175614}
   - component: {fileID: 3477332259209175604}
+  - component: {fileID: 3477332259209175605}
   m_Layer: 5
   m_Name: AnimationIntroduction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &3477332259209175604
 Animator:
   serializedVersion: 3
@@ -6492,6 +6493,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3477332259209175605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3477332259209175603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd78b0ca990efe49a0e2f4d1c9bc348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!222 &3477332259209175614
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7815,7 +7829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3477332260849272683
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7926,12 +7940,12 @@ PrefabInstance:
     - target: {fileID: 3625356309908644973, guid: 06224eb2e826a694d8ab6c5831ecf9be,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -321.6918
+      value: -321.69177
       objectReference: {fileID: 0}
     - target: {fileID: 3625356309908644973, guid: 06224eb2e826a694d8ab6c5831ecf9be,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 243.62282
+      value: 243.6228
       objectReference: {fileID: 0}
     - target: {fileID: 3625356309908644973, guid: 06224eb2e826a694d8ab6c5831ecf9be,
         type: 3}
