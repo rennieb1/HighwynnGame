@@ -15,9 +15,9 @@ public class SpiderMove : MonoBehaviour
     private int value = 3;
     [SerializeField]
     private int rand;
-    public float timer = 2;
+    private float timer = 3;
     private float minTime = 0.5f;
-    private float maxTime = 1.5f;
+    private float maxTime = 3f;
 
     public Animator anim;
 
@@ -43,7 +43,7 @@ public class SpiderMove : MonoBehaviour
 
             if (Vector3.Distance(spiderUp.position, transform.position) < attackRange)//range
             {
-                moveSpeed = Random.Range(2, 4);
+                moveSpeed = Random.Range(1, 4);
                 anim.Play("SpiderCrawlUp");
                 timer -= Time.deltaTime;
                 transform.position += transform.up * moveSpeed * Time.deltaTime; //Movespeed to attack player
@@ -62,7 +62,7 @@ public class SpiderMove : MonoBehaviour
 
             if (Vector3.Distance(SpiderDown.position, transform.position) < attackRange)//range
             {
-                moveSpeed = Random.Range(2, 4);
+                moveSpeed = Random.Range(1, 4);
                 Vector3 direction = SpiderDown.position - transform.position;//How it knows to attack
                 anim.Play("SpiderCrawlDown");
                 timer -= Time.deltaTime;

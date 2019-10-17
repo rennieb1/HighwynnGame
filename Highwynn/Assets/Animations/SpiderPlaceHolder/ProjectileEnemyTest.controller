@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: acf9064a79cc802479afb7576f44cd54, type: 2}
+  m_Motion: {fileID: 7400000, guid: 19ca71e07302574419b4d050952cfeb8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -84,7 +84,7 @@ AnimatorStateMachine:
     m_Position: {x: 510, y: -130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5886581420457723552}
-    m_Position: {x: 530, y: 120, z: 0}
+    m_Position: {x: 510, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 735799326486300214}
     m_Position: {x: 280, y: 20, z: 0}
@@ -118,7 +118,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 16cb118b35be42a44b1c380d2e4bf127, type: 2}
+  m_Motion: {fileID: 7400000, guid: f264f0de3098a4c44af360ac37a07807, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -132,7 +132,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SpiderCrawlDown
-  m_Speed: 1
+  m_Speed: -1
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -144,7 +144,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 426be673c2db6d24794d384cbc9c2eac, type: 2}
+  m_Motion: {fileID: 7400000, guid: 19ca71e07302574419b4d050952cfeb8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

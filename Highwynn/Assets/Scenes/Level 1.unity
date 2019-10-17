@@ -6054,6 +6054,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5127003885600378039, guid: cc07348b09aba1041b06638d068753e8,
+        type: 3}
+      propertyPath: saveText
+      value: 
+      objectReference: {fileID: 2134231002}
     - target: {fileID: 5127003885755464427, guid: cc07348b09aba1041b06638d068753e8,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -6064,11 +6069,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5127003885600378039, guid: cc07348b09aba1041b06638d068753e8,
-        type: 3}
-      propertyPath: saveText
-      value: 
-      objectReference: {fileID: 2134231002}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc07348b09aba1041b06638d068753e8, type: 3}
 --- !u!1001 &422309123
@@ -7516,7 +7516,8 @@ MonoBehaviour:
   C_L0_1: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799, type: 3}
   LoadLevelButton: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799,
     type: 3}
-  LoadLevelButton2: {fileID: 0}
+  LoadLevelButton2: {fileID: 3133987792025187278, guid: 15f3287fa8ea08e4895e0f3655958799,
+    type: 3}
   C_L1_1: {fileID: 1549910161361163950}
   C_L1_2: {fileID: 811482541705569124}
   C_L1_3: {fileID: 2887876617304699491}
