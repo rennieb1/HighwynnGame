@@ -496,7 +496,7 @@ Transform:
   - {fileID: 372104792}
   - {fileID: 1232620205}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &62531815
 GameObject:
@@ -1169,6 +1169,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypewriterText (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5604191534373443362, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443363, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1314,6 +1319,16 @@ PrefabInstance:
       propertyPath: outputMessage
       value: Oh look, a dragon fruit, grab it to heal yourself heal yourself.
       objectReference: {fileID: 0}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 3104289047156198804}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBarImage
+      value: 
+      objectReference: {fileID: 3104289047156198806}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c32ec35f5271334bb0d7311401befd0, type: 3}
 --- !u!1 &113601783
@@ -2812,6 +2827,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypewriterText (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5604191534373443362, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443363, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2957,6 +2977,16 @@ PrefabInstance:
       propertyPath: outputMessage
       value: Ok lets get into the real world.
       objectReference: {fileID: 0}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 3104289047156198804}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBarImage
+      value: 
+      objectReference: {fileID: 3104289047156198806}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c32ec35f5271334bb0d7311401befd0, type: 3}
 --- !u!1 &299770183
@@ -3275,6 +3305,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &313515077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313515078}
+  - component: {fileID: 313515081}
+  - component: {fileID: 313515080}
+  - component: {fileID: 313515079}
+  m_Layer: 5
+  m_Name: Canvas (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &313515078
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313515077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 3104289047156198805}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &313515079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313515077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &313515080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313515077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &313515081
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313515077}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 534669904}
+  m_PlaneDistance: 5
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 99
+  m_TargetDisplay: 0
 --- !u!1 &313984046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,7 +3719,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &372104791
 GameObject:
@@ -5564,7 +5693,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
@@ -5597,6 +5726,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TypewriterText
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604191534373443362, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443363, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
@@ -5743,6 +5877,16 @@ PrefabInstance:
       propertyPath: outputMessage
       value: Press SpaceBar to Jump over the gap.
       objectReference: {fileID: 0}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 3104289047156198804}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBarImage
+      value: 
+      objectReference: {fileID: 3104289047156198806}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c32ec35f5271334bb0d7311401befd0, type: 3}
 --- !u!1 &547948007
@@ -17396,7 +17540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &755864456
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17582,6 +17726,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypewriterText (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5604191534373443362, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443363, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17728,6 +17877,16 @@ PrefabInstance:
       value: Press E to use your flamethrower breath to burn down those vines so we
         can continue.
       objectReference: {fileID: 0}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 3104289047156198804}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBarImage
+      value: 
+      objectReference: {fileID: 3104289047156198806}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c32ec35f5271334bb0d7311401befd0, type: 3}
 --- !u!1 &797822953
@@ -18068,6 +18227,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypewriterText (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5604191534373443362, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443363, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18219,6 +18383,16 @@ PrefabInstance:
       value: Ohhhhh its one of the keys! you are going to need to collect all of them
         to unlock the sun and free us from darkness.
       objectReference: {fileID: 0}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 3104289047156198804}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBarImage
+      value: 
+      objectReference: {fileID: 3104289047156198806}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c32ec35f5271334bb0d7311401befd0, type: 3}
 --- !u!1 &820718395
@@ -19741,6 +19915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 935177992}
+  - component: {fileID: 935177993}
   m_Layer: 0
   m_Name: TypeWrtiterText
   m_TagString: Untagged
@@ -19771,13 +19946,29 @@ RectTransform:
   - {fileID: 1315232659}
   - {fileID: 1284281781}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -34.94, y: -31.20435}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &935177993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935177991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e024cd292083ff44d8d12827bb239252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollBar: {fileID: 3104289047156198804}
+  scrollBarImage: {fileID: 3104289047156198806}
+  barload: 0.1
+  startvalue: 0
 --- !u!1 &938448151
 GameObject:
   m_ObjectHideFlags: 0
@@ -19948,6 +20139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypewriterText (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5604191534373443362, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443363, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20094,6 +20290,16 @@ PrefabInstance:
       value: Press Down Down to drop through the log, you can also jump up through
         it.
       objectReference: {fileID: 0}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 3104289047156198804}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBarImage
+      value: 
+      objectReference: {fileID: 3104289047156198806}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c32ec35f5271334bb0d7311401befd0, type: 3}
 --- !u!1 &947595609
@@ -20763,7 +20969,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21344,7 +21550,7 @@ Transform:
   - {fileID: 2131256671}
   - {fileID: 1843856235}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1145051823
 MonoBehaviour:
@@ -21459,7 +21665,7 @@ RectTransform:
   - {fileID: 2134231004}
   - {fileID: 755864456}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -21560,7 +21766,7 @@ Transform:
   - {fileID: 343802956}
   - {fileID: 334185998}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1155892553
 GameObject:
@@ -22838,6 +23044,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypewriterText (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5604191534373443362, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443363, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22984,6 +23195,16 @@ PrefabInstance:
       value: The Double jump can be used here too. See how you can use it at different
         times to get height and distance.
       objectReference: {fileID: 0}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 3104289047156198804}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBarImage
+      value: 
+      objectReference: {fileID: 3104289047156198806}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c32ec35f5271334bb0d7311401befd0, type: 3}
 --- !u!224 &1284281781 stripped
@@ -24829,6 +25050,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypewriterText (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5604191534373443362, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443363, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24975,6 +25201,16 @@ PrefabInstance:
       value: oh glowing blue, a save points up head, press f to shoot it with fire,
         or just run past it to light it.
       objectReference: {fileID: 0}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 3104289047156198804}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBarImage
+      value: 
+      objectReference: {fileID: 3104289047156198806}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c32ec35f5271334bb0d7311401befd0, type: 3}
 --- !u!1 &1473385587
@@ -26413,7 +26649,7 @@ Transform:
   m_Children:
   - {fileID: 621738379}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1585874639
 PrefabInstance:
@@ -26817,7 +27053,7 @@ Transform:
   - {fileID: 1311188093}
   - {fileID: 220450438}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1604970572
 GameObject:
@@ -27226,6 +27462,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypewriterText (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5604191534373443362, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443363, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27372,6 +27613,16 @@ PrefabInstance:
       value: Looks like a corrupted boar. If it sees you it will get agressive, Shoot
         fire at it with F to eliminate it.
       objectReference: {fileID: 0}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 3104289047156198804}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBarImage
+      value: 
+      objectReference: {fileID: 3104289047156198806}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c32ec35f5271334bb0d7311401befd0, type: 3}
 --- !u!1 &1696668913
@@ -29215,6 +29466,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypewriterText (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5604191534373443362, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443363, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29361,6 +29617,16 @@ PrefabInstance:
       value: Press Crouch to get through the gap, its can also be used to shoot fire
         at a different angle.
       objectReference: {fileID: 0}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 3104289047156198804}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBarImage
+      value: 
+      objectReference: {fileID: 3104289047156198806}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c32ec35f5271334bb0d7311401befd0, type: 3}
 --- !u!1 &1883870522
@@ -29785,6 +30051,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypewriterText (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5604191534373443362, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443363, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29930,6 +30201,16 @@ PrefabInstance:
       propertyPath: outputMessage
       value: You can double jump! Press space again to jump to preform an air jump.
       objectReference: {fileID: 0}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBar
+      value: 
+      objectReference: {fileID: 3104289047156198804}
+    - target: {fileID: 540342290894974755, guid: 1c32ec35f5271334bb0d7311401befd0,
+        type: 3}
+      propertyPath: scrollBarImage
+      value: 
+      objectReference: {fileID: 3104289047156198806}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c32ec35f5271334bb0d7311401befd0, type: 3}
 --- !u!1 &1929782985
@@ -32388,7 +32669,7 @@ Transform:
   - {fileID: 1415847438}
   - {fileID: 1939114625}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2140156183
 GameObject:
@@ -33311,6 +33592,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa621b6cef1404543901769a7eb9806a, type: 3}
+--- !u!1 &3104289047156198804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3104289047156198805}
+  - component: {fileID: 3104289047156198807}
+  - component: {fileID: 3104289047156198806}
+  m_Layer: 5
+  m_Name: ScrollBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3104289047156198805
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3104289047156198804}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.69497997}
+  m_Children: []
+  m_Father: {fileID: 313515078}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 753, y: -408}
+  m_SizeDelta: {x: 1634.9, y: 107.6}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &3104289047156198806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3104289047156198804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 897710771807637462, guid: bbf430963d1444c4b863212204179f52, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &3104289047156198807
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3104289047156198804}
+  m_CullTransparentMesh: 0
 --- !u!1 &3127406655957262790
 GameObject:
   m_ObjectHideFlags: 0
@@ -33340,7 +33695,7 @@ Transform:
   m_Children:
   - {fileID: 1053865700}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4533063669911248060
 MonoBehaviour:
@@ -33404,7 +33759,7 @@ PrefabInstance:
     - target: {fileID: 3770895012745964349, guid: cc07348b09aba1041b06638d068753e8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3770895012745964349, guid: cc07348b09aba1041b06638d068753e8,
         type: 3}
@@ -33478,7 +33833,7 @@ PrefabInstance:
     - target: {fileID: 5350411041505384357, guid: b2482bb61b839574592249fd8ecc1ec8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5350411041505384357, guid: b2482bb61b839574592249fd8ecc1ec8,
         type: 3}
@@ -33635,7 +33990,7 @@ PrefabInstance:
     - target: {fileID: 8709420105405027073, guid: 7f7b2bd7ef54036468ea488615bc6f88,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8709420105405027073, guid: 7f7b2bd7ef54036468ea488615bc6f88,
         type: 3}

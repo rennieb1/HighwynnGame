@@ -13,13 +13,14 @@ GameObject:
   - component: {fileID: 5604191534373443374}
   - component: {fileID: 5604191534373443373}
   - component: {fileID: 5604191534373443372}
+  - component: {fileID: 540342290894974755}
   m_Layer: 0
   m_Name: TypewriterText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5604191534373443363
 RectTransform:
   m_ObjectHideFlags: 0
@@ -137,3 +138,19 @@ MonoBehaviour:
   typeDelay: 0.05
   highlightColour: {r: 0, g: 0, b: 0, a: 0}
   outputBox: {fileID: 0}
+--- !u!114 &540342290894974755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5604191534373443362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e024cd292083ff44d8d12827bb239252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollBar: {fileID: 0}
+  scrollBarImage: {fileID: 0}
+  barload: 0.1
+  startvalue: 0
