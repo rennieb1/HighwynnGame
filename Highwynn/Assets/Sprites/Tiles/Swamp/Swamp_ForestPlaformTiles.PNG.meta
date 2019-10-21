@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: a999bf312e42beb4ca0507b3fecc9649
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8117265066662492038
+    second: Platform Tiles FLAT LAYERSByron_0
+  - first:
+      213: 8504603121521046961
+    second: Platform Tiles FLAT LAYERSByron_1
+  - first:
+      213: -8903369474641306242
+    second: Platform Tiles FLAT LAYERSByron_2
+  - first:
+      213: 546485147028613909
+    second: Platform Tiles FLAT LAYERSByron_3
+  - first:
+      213: 486654935459456082
+    second: Platform Tiles FLAT LAYERSByron_4
+  - first:
+      213: 7145437949515390117
+    second: Platform Tiles FLAT LAYERSByron_5
+  - first:
+      213: -6852665142160413549
+    second: Platform Tiles FLAT LAYERSByron_6
+  - first:
+      213: 8906961561860910943
+    second: Platform Tiles FLAT LAYERSByron_7
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 451
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Platform Tiles FLAT LAYERSByron_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 749
+        width: 451
+        height: 451
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -25.5, y: 225.5}
+        - {x: -31.5, y: 221.5}
+        - {x: -31.5, y: -225.5}
+        - {x: 225.5, y: -225.5}
+        - {x: 225.5, y: 225.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b649d33fbdd0024b89cf3b414d30c76
+      internalID: 8117265066662492038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform Tiles FLAT LAYERSByron_1
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 749
+        width: 451
+        height: 451
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -225.5, y: 225.5}
+        - {x: -225.5, y: -225.5}
+        - {x: 17.5, y: -225.5}
+        - {x: 31.5, y: -220.5}
+        - {x: 31.5, y: 225.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeee3757572b9414b93e270ffec431f5
+      internalID: 8504603121521046961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform Tiles FLAT LAYERSByron_2
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 747
+        width: 451
+        height: 451
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -225.5, y: 225.5}
+        - {x: -225.5, y: -225.5}
+        - {x: 225.5, y: -225.5}
+        - {x: 225.5, y: 225.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6e9c9b709a63c4fb90ee4f18085e49
+      internalID: -8903369474641306242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform Tiles FLAT LAYERSByron_3
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 747
+        width: 451
+        height: 451
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -225.5, y: 225.5}
+        - {x: -225.5, y: -225.5}
+        - {x: 225.5, y: -225.5}
+        - {x: 225.5, y: 225.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa0f67a09edae54199aced54ea0f389
+      internalID: 546485147028613909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform Tiles FLAT LAYERSByron_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 296
+        width: 451
+        height: 451
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -225.5, y: 225.5}
+        - {x: -225.5, y: -225.5}
+        - {x: 225.5, y: -225.5}
+        - {x: 225.5, y: 225.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f3a5bc879fd2c4a8c619ac6cb1665a
+      internalID: 486654935459456082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform Tiles FLAT LAYERSByron_5
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 296
+        width: 451
+        height: 451
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -221.5, y: 225.5}
+        - {x: -225.5, y: 225.5}
+        - {x: -225.5, y: -225.5}
+        - {x: 225.5, y: -225.5}
+        - {x: 225.5, y: -217.5}
+        - {x: -12.675537, y: 4.3709106}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0380a61c100ec4c9d33ffb358a3b24
+      internalID: 7145437949515390117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform Tiles FLAT LAYERSByron_6
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 295
+        width: 451
+        height: 451
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 30.542725, y: 26.780212}
+        - {x: -225.5, y: -225.5}
+        - {x: 225.5, y: -225.5}
+        - {x: 225.5, y: 225.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea49dc4579b932e4881293e00cc27c8a
+      internalID: -6852665142160413549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform Tiles FLAT LAYERSByron_7
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 296
+        width: 451
+        height: 451
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -225.5, y: 225.5}
+        - {x: -225.5, y: -225.5}
+        - {x: 225.5, y: -225.5}
+        - {x: 225.5, y: 225.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5839e5ed884f94f45bd9ab73ff92a810
+      internalID: 8906961561860910943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f3c24f1b3bd948c4bb64ba3098e650a7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
