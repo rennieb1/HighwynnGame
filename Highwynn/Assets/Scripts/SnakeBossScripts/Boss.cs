@@ -8,7 +8,7 @@ public class Boss : MonoBehaviour
 
     public int health;
     public int ModifyHealth;
-    private float timeBtwDamage = 1.5f;
+    private float timeBtwDamage = 3.5f;
     public int damage;
 
     public Player Player;
@@ -22,6 +22,8 @@ public class Boss : MonoBehaviour
     public Transform spawn;
     public float shootSpeed = 0.5f;
     public bool hasShot = false;
+    public bool hasShot1 = false;
+    public bool hasShot2 = false;
 
     private void Start()
     {
@@ -37,6 +39,7 @@ public class Boss : MonoBehaviour
                     // Spit here
                     Debug.Log("Spit");
                     GameObject p = Instantiate(projectile, spawn.position, Quaternion.identity);
+                    Quaternion.Euler(new Vector3(0, 0, transform.localEulerAngles.z));
                     p.GetComponent<Rigidbody2D>().AddForce(Vector3.Normalize((target.gameObject.transform.position - p.gameObject.transform.position)) * shootSpeed);
                     hasShot = true;
                 }
@@ -44,6 +47,50 @@ public class Boss : MonoBehaviour
         }
         else {
             hasShot = false;
+        }
+        if (health <= 600)
+        {
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("SpitFire"))
+            {
+                if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.4f && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.5f)
+                {
+                    if (!hasShot1)
+                    {
+                        // Spit here
+                        Debug.Log("Spit");
+                        GameObject p = Instantiate(projectile, spawn.position, Quaternion.identity);
+                        Quaternion.Euler(new Vector3(0, 0, transform.localEulerAngles.z));
+                        p.GetComponent<Rigidbody2D>().AddForce(Vector3.Normalize((target.gameObject.transform.position - p.gameObject.transform.position)) * shootSpeed);
+                        hasShot1 = true;
+                    }
+                }
+            }
+            else
+            {
+                hasShot1 = false;
+            }
+        }
+        if (health <= 300)
+        {
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("SpitFire"))
+            {
+                if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.3f && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.4f)
+                {
+                    if (!hasShot2)
+                    {
+                        // Spit here
+                        Debug.Log("Spit");
+                        GameObject p = Instantiate(projectile, spawn.position, Quaternion.identity);
+                        Quaternion.Euler(new Vector3(0, 0, transform.localEulerAngles.z));
+                        p.GetComponent<Rigidbody2D>().AddForce(Vector3.Normalize((target.gameObject.transform.position - p.gameObject.transform.position)) * shootSpeed);
+                        hasShot2 = true;
+                    }
+                }
+            }
+            else
+            {
+                hasShot2 = false;
+            }
         }
 
         if (health <= 0)
@@ -71,7 +118,8 @@ public class Boss : MonoBehaviour
         {
             if (timeBtwDamage <= 0)
             {
-                Player.Update_Health(ModifyHealth);               
+                Player.Update_Health(ModifyHealth);
+                timeBtwDamage = 3.5f;
             }
 
         }

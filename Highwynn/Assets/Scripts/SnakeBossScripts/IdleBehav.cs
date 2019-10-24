@@ -5,6 +5,7 @@ using UnityEngine;
 public class IdleBehav : StateMachineBehaviour
 {
     public int Rand;
+    [SerializeField]
     private float timer;
     public float minTime;
     public float maxTime;
@@ -14,7 +15,7 @@ public class IdleBehav : StateMachineBehaviour
     {
       
         timer = Random.Range(minTime, maxTime);
-        Rand = Random.Range(0  , 3);
+        Rand = Random.Range(0  , 5);
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -32,14 +33,25 @@ public class IdleBehav : StateMachineBehaviour
             }
             if (Rand == 1)
             {
+                animator.SetTrigger("SpitFire");
+
+            }
+
+            if (Rand == 2)
+            {
                 animator.SetTrigger("TailAttack");
 
             }
-            if (Rand == 2)
+            if (Rand == 3)
             {               
                 animator.SetTrigger("Bite");
 
             }
+            if (Rand == 4)
+            {
+                animator.SetTrigger("Hiss");
+            }
+            
 
         }
         else
