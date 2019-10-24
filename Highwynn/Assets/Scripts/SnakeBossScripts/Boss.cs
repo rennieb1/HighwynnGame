@@ -18,6 +18,8 @@ public class Boss : MonoBehaviour
     public bool isDead = false;
 
     public GameObject projectile;
+
+    public GameObject SnakeHealthBar;
     public Transform target;
     public Transform spawn;
     public float shootSpeed = 0.5f;
@@ -39,7 +41,6 @@ public class Boss : MonoBehaviour
                     // Spit here
                     Debug.Log("Spit");
                     GameObject p = Instantiate(projectile, spawn.position, Quaternion.identity);
-                    Quaternion.Euler(new Vector3(0, 0, transform.localEulerAngles.z));
                     p.GetComponent<Rigidbody2D>().AddForce(Vector3.Normalize((target.gameObject.transform.position - p.gameObject.transform.position)) * shootSpeed);
                     hasShot = true;
                 }
@@ -59,7 +60,6 @@ public class Boss : MonoBehaviour
                         // Spit here
                         Debug.Log("Spit");
                         GameObject p = Instantiate(projectile, spawn.position, Quaternion.identity);
-                        Quaternion.Euler(new Vector3(0, 0, transform.localEulerAngles.z));
                         p.GetComponent<Rigidbody2D>().AddForce(Vector3.Normalize((target.gameObject.transform.position - p.gameObject.transform.position)) * shootSpeed);
                         hasShot1 = true;
                     }
@@ -80,8 +80,7 @@ public class Boss : MonoBehaviour
                     {
                         // Spit here
                         Debug.Log("Spit");
-                        GameObject p = Instantiate(projectile, spawn.position, Quaternion.identity);
-                        Quaternion.Euler(new Vector3(0, 0, transform.localEulerAngles.z));
+                        GameObject p = Instantiate(projectile, spawn.position, Quaternion.identity); 
                         p.GetComponent<Rigidbody2D>().AddForce(Vector3.Normalize((target.gameObject.transform.position - p.gameObject.transform.position)) * shootSpeed);
                         hasShot2 = true;
                     }
@@ -96,7 +95,9 @@ public class Boss : MonoBehaviour
         if (health <= 0)
         {
             anim.SetTrigger("Dead");
-            
+        //    SnakeHealthBar.
+
+
         }
            if (isDead == true)
         {
