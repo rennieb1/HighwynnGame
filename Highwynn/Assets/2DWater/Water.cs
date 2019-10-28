@@ -23,9 +23,9 @@ public class Water : MonoBehaviour
     public GameObject watermesh;
 
 
-    public const float springconstant = 0.02f;
-    public const float damping = 0.04f;
-    public const float spread = 0.05f;
+    public const float springconstant = 0.01f; // Change to sliders
+    public const float damping = 0.08f;
+    public const float spread = 0.01f;
     public const float z = -1f;
 
 
