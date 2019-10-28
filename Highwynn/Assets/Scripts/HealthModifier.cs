@@ -63,7 +63,7 @@ public class HealthModifier : MonoBehaviour
                     // rb.AddForce(moveDirection.normalized * launchForce);
                     // Vector2 direction = (transform.position - collision.transform.position).normalized;
                     //rb.AddForce(direction * forcex);
-                    rb.velocity = new Vector2(-forcex, forcey);
+                    rb.velocity = new Vector2(forcex, forcey);
 
 
 
