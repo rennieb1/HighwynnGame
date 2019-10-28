@@ -292,20 +292,21 @@ namespace Highwynn
             transform.localScale = theScale;
         }
 
-       /* void OnCollisionEnter2D(Collision2D other)
+        void OnCollisionEnter2D(Collision2D other)
         {
             // Add current collider to list of colliders
+            // Used for drop down
             currentColliders.Add(other.collider);
 
-            if (other.gameObject.tag.Equals("Enemy"))
-            {
-              //  gameOverText.SetActive(true);
-              //  restartButton.SetActive(true);
+            // if (other.gameObject.tag.Equals("Enemy"))
+            // {
+            //   //  gameOverText.SetActive(true);
+            //   //  restartButton.SetActive(true);
                 
-                gameObject.SetActive(false);
-                HighwynnGameManager.Instance().ResetPlayerToLastCheckpoint();
-            }
-        } */
+            //     gameObject.SetActive(false);
+            //     HighwynnGameManager.Instance().ResetPlayerToLastCheckpoint();
+            // }
+        } 
 
         void OnCollisionExit2D(Collision2D other) 
         {

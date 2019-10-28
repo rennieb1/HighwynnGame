@@ -7,6 +7,9 @@ namespace Highwynn
     [RequireComponent(typeof (PlatformerCharacter2D))]
     public class Platformer2DUserControl : MonoBehaviour
     {
+        [SerializeField]
+        [Range(-0.5f, -0.2f)]
+        private float dropSensitivity;
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
         // Custom variables
@@ -74,26 +77,33 @@ namespace Highwynn
             // Determine if player is trying to "drop-down"
             float v = CrossPlatformInputManager.GetAxis("Vertical");
             if (v <= -0.5f) {
-                if (!downAxisInUse) {
-                    downAxisInUse = true;
-
-                    // If cooldown hasn't finished, and button count is high enough allow drop-through
-                    // Otherwise reset cooldown and increment button count
-                    if (buttonCooldown > 0 && buttonCount == 1) {
-                        m_Character.DropThrough();
-                    }
-                    else {
-                        buttonCooldown = 0.5f;
-                        buttonCount += 1;
-                    }
-
-                }
+                m_Character.DropThrough();
             }
+            // if (buttonCooldown != 0.0f) Debug.Log(buttonCooldown);
+            // if (v <= -0.2f) {
+            //     if (!downAxisInUse) {
+            //         // Debug.Log("Trying to drop: " + v);
+            //         downAxisInUse = true;
 
-            // For "drop-down"
-            if (v > -0.5f) {
-                downAxisInUse = false;
-            }
+            //         // If cooldown hasn't finished, and button count is high enough allow drop-through
+            //         // Otherwise reset cooldown and increment button count
+            //         if (buttonCooldown > 0 && buttonCount == 1) {
+            //             Debug.Log("Drop!");
+            //             m_Character.DropThrough();
+            //         }
+            //         else {
+            //             // Debug.Log(buttonCount);
+            //             buttonCooldown = 0.5f;
+            //             buttonCount += 1;
+            //         }
+
+            //     }
+            // }
+
+            // // For "drop-down"
+            // if (v > -0.2f) {
+            //     downAxisInUse = false;
+            // }
 
             // Count "drop-down" cooldown timer. Reset button count if cooldown runs out
             if (buttonCooldown > 0) {
