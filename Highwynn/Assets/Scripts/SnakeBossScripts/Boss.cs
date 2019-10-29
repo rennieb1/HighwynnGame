@@ -140,7 +140,7 @@ public class Boss : MonoBehaviour
     }
     void SetHealth(float myhealth)
     {
-        healthBar.fillAmount = myhealth;
+        healthBar.fillAmount = myhealth; // could be put in update mode
     } 
 
 
