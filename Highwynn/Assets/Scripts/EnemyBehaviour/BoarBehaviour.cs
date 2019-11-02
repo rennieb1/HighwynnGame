@@ -57,18 +57,18 @@ namespace Highwynn
                     break;
 
                 case "Walk":
-                    Move(10.0f);
+                    Move(2.0f);
                     break;
 
                 case "BoarRun":
-                    Move(20.0f);
+                    Move(4.0f);
                     break;
 
                 case "RunContinue":
-                    Move(40.0f);
+                    Move(8.0f);
                     break;
                 case "BoarStopping":
-                    Move(5.0f);
+                    Move(1f);
                     break;
             }
         }
