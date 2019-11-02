@@ -6,14 +6,16 @@ using UnityEngine.UI;
 public class Boss : MonoBehaviour
 {
 
-    public int health;
+    public float health;
+    public float maxHealth;
     public int ModifyHealth;
     private float timeBtwDamage = 3.5f;
-    public int damage;
+    public float damage;
 
     public Player Player;
 
-    public Slider healthBar;
+    public Image healthBar;
+
     private Animator anim;
     public bool isDead = false;
 
@@ -35,6 +37,7 @@ public class Boss : MonoBehaviour
 
     private void Update()
     {
+
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("SpitFire")) {
             if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5f && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.6f) {
                 if (!hasShot) {
@@ -109,7 +112,7 @@ public class Boss : MonoBehaviour
             timeBtwDamage -= Time.deltaTime;
         }
 
-        healthBar.value = health;
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -128,7 +131,17 @@ public class Boss : MonoBehaviour
         {
             health = health - damage;
             Destroy(GameObject.FindWithTag("Fire"));
+
+                
+            float calc_health = health / maxHealth;
+            SetHealth(calc_health);
+            
         }
     }
+    void SetHealth(float myhealth)
+    {
+        healthBar.fillAmount = myhealth; // could be put in update mode
+    } 
+
 
 }

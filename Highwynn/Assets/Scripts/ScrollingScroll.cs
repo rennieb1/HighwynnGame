@@ -9,6 +9,7 @@ public class ScrollingScroll : MonoBehaviour
     public Image scrollBarImage;
     public float barload = 0.1f;
     public float startvalue = 0;
+    public GameObject WispImage;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,7 @@ public class ScrollingScroll : MonoBehaviour
             Debug.Log("enter");
             scrollBar.SetActive(true);
             startvalue = 1;
+            WispImage.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -52,6 +54,7 @@ public class ScrollingScroll : MonoBehaviour
             scrollBar.SetActive(false);
             startvalue = 0;
             barload = 0.1f;
+            WispImage.SetActive(false);
         }
     }
 }
