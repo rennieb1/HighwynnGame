@@ -22,12 +22,15 @@ public class Water : MonoBehaviour
     public Material mat;
     public GameObject watermesh;
 
-
-    public const float springconstant = 0.01f; // Change to sliders
-    public const float damping = 0.08f;
-    public const float spread = 0.01f;
-    public const float z = -1f;
-
+    [Range(-1.0f, 1.0f)]
+    public float springconstant = 0.01f; // Change to sliders
+    [Range(-1.0f, 1.0f)]
+    public float damping = 0.08f;
+    [Range(-1.0f, 1.0f)]
+    public float spread = 0.01f;
+    [Range(-10.0f, 10.0f)]
+    public float z = -1f;
+    [Space(20)]
 
     public float baseheight;
     public float left;

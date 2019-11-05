@@ -33181,7 +33181,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: dbda2ebfe2644284192c36b92595e6a1, type: 3}
       propertyPath: m_Name
-      value: WaterManager
+      value: WaterManagerSmall
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dbda2ebfe2644284192c36b92595e6a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33227,26 +33227,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: dbda2ebfe2644284192c36b92595e6a1, type: 3}
-      propertyPath: baseheight
-      value: -52
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: dbda2ebfe2644284192c36b92595e6a1, type: 3}
-      propertyPath: left
-      value: -2.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: dbda2ebfe2644284192c36b92595e6a1, type: 3}
-      propertyPath: bottom
-      value: -54
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: dbda2ebfe2644284192c36b92595e6a1, type: 3}
-      propertyPath: width
-      value: 17.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: dbda2ebfe2644284192c36b92595e6a1, type: 3}
-      propertyPath: splash
-      value: 
-      objectReference: {fileID: 100000, guid: b50d56404404a5a43b0bae29e41bbacd, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbda2ebfe2644284192c36b92595e6a1, type: 3}
 --- !u!1 &1363543382
@@ -40660,6 +40640,21 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5350411041505384410, guid: b2482bb61b839574592249fd8ecc1ec8,
+        type: 3}
+      propertyPath: Winlevel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5350411041505384410, guid: b2482bb61b839574592249fd8ecc1ec8,
+        type: 3}
+      propertyPath: LevelCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43814698462301206, guid: b2482bb61b839574592249fd8ecc1ec8,
+        type: 3}
+      propertyPath: LevelCount
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7687556270111726888, guid: b2482bb61b839574592249fd8ecc1ec8,
         type: 3}
       propertyPath: transitionAnim
@@ -40680,21 +40675,6 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 688538380}
-    - target: {fileID: 43814698462301206, guid: b2482bb61b839574592249fd8ecc1ec8,
-        type: 3}
-      propertyPath: LevelCount
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5350411041505384410, guid: b2482bb61b839574592249fd8ecc1ec8,
-        type: 3}
-      propertyPath: Winlevel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5350411041505384410, guid: b2482bb61b839574592249fd8ecc1ec8,
-        type: 3}
-      propertyPath: LevelCount
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5350411041505384410, guid: b2482bb61b839574592249fd8ecc1ec8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b2482bb61b839574592249fd8ecc1ec8, type: 3}
