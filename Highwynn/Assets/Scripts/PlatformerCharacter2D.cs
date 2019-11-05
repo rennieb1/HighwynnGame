@@ -59,8 +59,11 @@ namespace Highwynn
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
-       
-        
+        public Vector2 normal;//Byron
+        public Rigidbody2D rb;//Byroon
+        public Vector2 upright;
+        public float xDragonValue;
+        public float yDragonValue;
 
         private void Awake()
         {
@@ -76,6 +79,8 @@ namespace Highwynn
             manaReqColour = manaRequirement.fillRect.GetComponent<Image>().color;
             manaReqColour.a = 0.0f;
             manaRequirement.fillRect.GetComponent<Image>().color = manaReqColour;
+            rb = GetComponent<Rigidbody2D>();
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
         void Start()
@@ -97,6 +102,15 @@ namespace Highwynn
 
             // Mana bar value
             manaBar.value = mana / 100.0f;
+
+            // The values i work from  the x n y can probz get removed from here as they where just more for understanding purposes.-----------------
+          
+            transform.up = normal;
+            Debug.DrawRay(transform.position, normal * 100, Color.red);
+            xDragonValue = normal.x;
+            yDragonValue = normal.y;
+        
+         
 
             // Mana Requirement bar indicator
             if (manaReqReveal) {
@@ -256,6 +270,7 @@ namespace Highwynn
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
                 m_Anim.Play("Jumping");//Added By Byron
+                normal = upright; // When the player jumps corrects the upright position of the player
             }
         }
 
@@ -297,21 +312,69 @@ namespace Highwynn
             // Add current collider to list of colliders
             // Used for drop down
             currentColliders.Add(other.collider);
+            
+            if (m_Grounded == true && other.gameObject.tag == "ground") //Byron Ground Shifting Body Check
+            {
+                
+                if (xDragonValue <= 0.7f && xDragonValue >= -0.7f && yDragonValue >= 0.6f)
+                {
+                    normal = other.contacts[0].normal;
+                }
+                if (xDragonValue >= 0.7f && yDragonValue >= 0.6f)
+                {                    
+                    xDragonValue = 0.69f;
+                    yDragonValue = other.contacts[0].normal.y;
+                    normal = new Vector2(xDragonValue, yDragonValue);
+                }
+                if (xDragonValue >= 0.7f && yDragonValue <= 0.6f)
+                {
+                    xDragonValue = 0.69f;
+                    yDragonValue = 0.61f;
+                    normal = new Vector2(xDragonValue, yDragonValue);
+                }
+
+                if (xDragonValue <= -0.7f && yDragonValue >= 0.6f)
+                {
+                    xDragonValue = -0.69f;
+                    yDragonValue = other.contacts[0].normal.y;
+                    normal = new Vector2(xDragonValue, yDragonValue);
+                }
+                if (xDragonValue <= -0.7f && yDragonValue <= 0.6f)
+                {
+                    xDragonValue = -0.69f;
+                    yDragonValue = 0.61f;
+                    normal = new Vector2(xDragonValue, yDragonValue);
+                }
+
+            }
+            else
+            {
+                normal = upright;
+            }
+
 
             // if (other.gameObject.tag.Equals("Enemy"))
             // {
             //   //  gameOverText.SetActive(true);
             //   //  restartButton.SetActive(true);
-                
+
             //     gameObject.SetActive(false);
             //     HighwynnGameManager.Instance().ResetPlayerToLastCheckpoint();
             // }
-        } 
+        }
+       void OnCollisionStay2D(Collision2D collision)
+        {
+          //  xDragonValue = 0f;
+           // yDragonValue = 0.6f;
+        }
+
 
         void OnCollisionExit2D(Collision2D other) 
         {
             // Remove current collider from list
             currentColliders.Remove(other.collider);
+
+
         }
 
         public bool ReduceMana(float cost) {
