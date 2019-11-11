@@ -110,6 +110,114 @@ TextureImporter:
   - first:
       213: 5333185051796315186
     second: Template2ball_35
+  - first:
+      213: -6817751490493881472
+    second: Swamp_Dirt_Ball_HalfHalf_0
+  - first:
+      213: 4971846306613210151
+    second: Swamp_Dirt_Ball_HalfHalf_1
+  - first:
+      213: 9202411232270657269
+    second: Swamp_Dirt_Ball_HalfHalf_2
+  - first:
+      213: -4125099912735925617
+    second: Swamp_Dirt_Ball_HalfHalf_3
+  - first:
+      213: 4579446200483957722
+    second: Swamp_Dirt_Ball_HalfHalf_4
+  - first:
+      213: -1185923239787234476
+    second: Swamp_Dirt_Ball_HalfHalf_5
+  - first:
+      213: 2977849435786081813
+    second: Swamp_Dirt_Ball_HalfHalf_6
+  - first:
+      213: 5573447108124451249
+    second: Swamp_Dirt_Ball_HalfHalf_7
+  - first:
+      213: -634042263849492818
+    second: Swamp_Dirt_Ball_HalfHalf_8
+  - first:
+      213: -5107349877680214790
+    second: Swamp_Dirt_Ball_HalfHalf_9
+  - first:
+      213: -3208626103632437434
+    second: Swamp_Dirt_Ball_HalfHalf_10
+  - first:
+      213: -3533323000293557411
+    second: Swamp_Dirt_Ball_HalfHalf_11
+  - first:
+      213: -2421078491712089789
+    second: Swamp_Dirt_Ball_HalfHalf_12
+  - first:
+      213: 8528497102851679455
+    second: Swamp_Dirt_Ball_HalfHalf_13
+  - first:
+      213: 5899153617239689812
+    second: Swamp_Dirt_Ball_HalfHalf_14
+  - first:
+      213: -6858441126901441451
+    second: Swamp_Dirt_Ball_HalfHalf_15
+  - first:
+      213: 468346258130294279
+    second: Swamp_Dirt_Ball_HalfHalf_16
+  - first:
+      213: -3424734079430652792
+    second: Swamp_Dirt_Ball_HalfHalf_17
+  - first:
+      213: 5228444688945617409
+    second: Swamp_Dirt_Ball_HalfHalf_18
+  - first:
+      213: 2453201942192184309
+    second: Swamp_Dirt_Ball_HalfHalf_19
+  - first:
+      213: -9032336034563542712
+    second: Swamp_Dirt_Ball_HalfHalf_20
+  - first:
+      213: -2171304814248708461
+    second: Swamp_Dirt_Ball_HalfHalf_21
+  - first:
+      213: 2644059738745241287
+    second: Swamp_Dirt_Ball_HalfHalf_22
+  - first:
+      213: -8886095380964952054
+    second: Swamp_Dirt_Ball_HalfHalf_23
+  - first:
+      213: 5556755612982799970
+    second: Swamp_Dirt_Ball_HalfHalf_24
+  - first:
+      213: 6647155993250742904
+    second: Swamp_Dirt_Ball_HalfHalf_25
+  - first:
+      213: -5977431019702924142
+    second: Swamp_Dirt_Ball_HalfHalf_26
+  - first:
+      213: -7909785467729770282
+    second: Swamp_Dirt_Ball_HalfHalf_27
+  - first:
+      213: -4581501370262955563
+    second: Swamp_Dirt_Ball_HalfHalf_28
+  - first:
+      213: 9180956758964745193
+    second: Swamp_Dirt_Ball_HalfHalf_29
+  - first:
+      213: -7801744264171176263
+    second: Swamp_Dirt_Ball_HalfHalf_30
+  - first:
+      213: -2301918629500972251
+    second: Swamp_Dirt_Ball_HalfHalf_31
+  - first:
+      213: -6123304595875283517
+    second: Swamp_Dirt_Ball_HalfHalf_32
+  - first:
+      213: 8372892519341686378
+    second: Swamp_Dirt_Ball_HalfHalf_33
+  - first:
+      213: -2504254032816446034
+    second: Swamp_Dirt_Ball_HalfHalf_34
+  - first:
+      213: -4307036963542415504
+    second: Swamp_Dirt_Ball_HalfHalf_35
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -139,7 +247,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 2
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 0
@@ -155,7 +263,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 512
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -179,6 +287,17 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -189,7 +308,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
-    buildTarget: Android
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -203,7 +322,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Template2ball_0
+      name: Swamp_Dirt_Ball_HalfHalf_0
       rect:
         serializedVersion: 2
         x: 0
@@ -217,14 +336,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf9b8c971d22de64e8b8fda4adc12324
-      internalID: 1096222880390619819
+      spriteID: 95c8bae2a4cdab94fa576dbede2daf31
+      internalID: -6817751490493881472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_1
+      name: Swamp_Dirt_Ball_HalfHalf_1
       rect:
         serializedVersion: 2
         x: 512
@@ -238,14 +357,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46f738fabaa170c499b62f79a69b8e60
-      internalID: 1310448456935143505
+      spriteID: 34c65f104eb0b1d4091f4184d52b350b
+      internalID: 4971846306613210151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_2
+      name: Swamp_Dirt_Ball_HalfHalf_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -259,14 +378,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 764d8ac31d4b2034da37eac1c11c6f24
-      internalID: -7716542487863633038
+      spriteID: 881a2d7f1668ea14f9b090114c8da9b9
+      internalID: 9202411232270657269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_3
+      name: Swamp_Dirt_Ball_HalfHalf_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -280,14 +399,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c495da07c4ccac49b2aff6f0d80368f
-      internalID: -7820725351091415965
+      spriteID: ab2c70606ef520d4abff4c78e8b25870
+      internalID: -4125099912735925617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_4
+      name: Swamp_Dirt_Ball_HalfHalf_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -301,14 +420,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4fdc28903747d14f8f3360cc1730187
-      internalID: 7081172205465367882
+      spriteID: afc2869665c80dd49b95e675a8041215
+      internalID: 4579446200483957722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_5
+      name: Swamp_Dirt_Ball_HalfHalf_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -322,14 +441,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 093b7b7066d0e3d429b1e47fb44c1d1b
-      internalID: -3121712784281297062
+      spriteID: 7727f21c2e1c09f4b9af36751b410d22
+      internalID: -1185923239787234476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_6
+      name: Swamp_Dirt_Ball_HalfHalf_6
       rect:
         serializedVersion: 2
         x: 0
@@ -343,14 +462,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43ece1dd943b1c045b78c306f24785f1
-      internalID: 616958266799840063
+      spriteID: 7a138fd1ba772e642b89998066768094
+      internalID: 2977849435786081813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_7
+      name: Swamp_Dirt_Ball_HalfHalf_7
       rect:
         serializedVersion: 2
         x: 512
@@ -364,14 +483,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b863a72e4faf1e4aa568c51c492920f
-      internalID: 7517606215085485483
+      spriteID: 1010136ace3272f46a867fdbf31e5888
+      internalID: 5573447108124451249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_8
+      name: Swamp_Dirt_Ball_HalfHalf_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -385,14 +504,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1084ba4ddba67d44fb9b40f71a56240a
-      internalID: -1831762349034156503
+      spriteID: 74c9b5f24f73f2d4a8a04e4ff4914eaf
+      internalID: -634042263849492818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_9
+      name: Swamp_Dirt_Ball_HalfHalf_9
       rect:
         serializedVersion: 2
         x: 1536
@@ -406,14 +525,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 780fd3b4d7a2f7c469f5644452da63d6
-      internalID: 2015084081101049454
+      spriteID: b11ed9963f06cfb478d6857e6ee9910b
+      internalID: -5107349877680214790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_10
+      name: Swamp_Dirt_Ball_HalfHalf_10
       rect:
         serializedVersion: 2
         x: 2048
@@ -427,14 +546,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9236ddf5224c07544839f1b7dd865e8a
-      internalID: -5299004520224751101
+      spriteID: a85079cc66d5f7b44a7c5eb54d980a63
+      internalID: -3208626103632437434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_11
+      name: Swamp_Dirt_Ball_HalfHalf_11
       rect:
         serializedVersion: 2
         x: 2560
@@ -448,14 +567,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e885ea9343d706447ae9eae36318fbee
-      internalID: -2885398154514792235
+      spriteID: e665ad49b49676144a6fcce3bd6587d6
+      internalID: -3533323000293557411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_12
+      name: Swamp_Dirt_Ball_HalfHalf_12
       rect:
         serializedVersion: 2
         x: 0
@@ -469,14 +588,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa3fe379fef6b4842bc4e9529c58e7ad
-      internalID: -4168051719214327328
+      spriteID: 11f05aae8069b184992416a3cb64ec4d
+      internalID: -2421078491712089789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_13
+      name: Swamp_Dirt_Ball_HalfHalf_13
       rect:
         serializedVersion: 2
         x: 512
@@ -490,14 +609,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 914be6ed1f28dac4d9e1a8d77e8b599b
-      internalID: -4067632552967398934
+      spriteID: ad7b1bc3887acc140894a219acb2d8e5
+      internalID: 8528497102851679455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_14
+      name: Swamp_Dirt_Ball_HalfHalf_14
       rect:
         serializedVersion: 2
         x: 1024
@@ -511,14 +630,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a85cdc6ca256f58468ba573d47c68912
-      internalID: -158130215423763865
+      spriteID: f4a35698c17ded74ea10802d1c36709d
+      internalID: 5899153617239689812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_15
+      name: Swamp_Dirt_Ball_HalfHalf_15
       rect:
         serializedVersion: 2
         x: 1536
@@ -532,14 +651,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcab2f46d52799b48b4e82dedae97d70
-      internalID: 2833050595338160351
+      spriteID: dcaf426466198874d93c847e2e3c1176
+      internalID: -6858441126901441451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_16
+      name: Swamp_Dirt_Ball_HalfHalf_16
       rect:
         serializedVersion: 2
         x: 2048
@@ -553,14 +672,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10dbedf3d43eacd4ca6f40e54f1a5062
-      internalID: 3755850504925202197
+      spriteID: 21ff1bd8983c3434dbf27008c751da75
+      internalID: 468346258130294279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_17
+      name: Swamp_Dirt_Ball_HalfHalf_17
       rect:
         serializedVersion: 2
         x: 2560
@@ -574,14 +693,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82f7cc92d884eaa4a9d969629c6af488
-      internalID: -5661470346037500979
+      spriteID: 3ee607bd18d592947a55344043a6455e
+      internalID: -3424734079430652792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_18
+      name: Swamp_Dirt_Ball_HalfHalf_18
       rect:
         serializedVersion: 2
         x: 0
@@ -595,14 +714,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d7e422533962ae4bb76fe2737f60661
-      internalID: -5285047528559979172
+      spriteID: 2812717b8e237044fb90822332dda064
+      internalID: 5228444688945617409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_19
+      name: Swamp_Dirt_Ball_HalfHalf_19
       rect:
         serializedVersion: 2
         x: 512
@@ -616,14 +735,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49c4df4228f6d56469a08308b26d6746
-      internalID: -4789605727155917483
+      spriteID: 407ecbeaaad0da14588e0a9bef2a66f9
+      internalID: 2453201942192184309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_20
+      name: Swamp_Dirt_Ball_HalfHalf_20
       rect:
         serializedVersion: 2
         x: 1024
@@ -637,14 +756,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8867194809c7e1b4dac33248160a8a5f
-      internalID: 4358457140223417001
+      spriteID: 33513036ba9e78c4784bdbcf43b81641
+      internalID: -9032336034563542712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_21
+      name: Swamp_Dirt_Ball_HalfHalf_21
       rect:
         serializedVersion: 2
         x: 1536
@@ -658,14 +777,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9493e45ee3003334eafbe0aecfe4112a
-      internalID: 91307016737393301
+      spriteID: a74c8e69df8e56e4e9fa2bb623ce85f9
+      internalID: -2171304814248708461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_22
+      name: Swamp_Dirt_Ball_HalfHalf_22
       rect:
         serializedVersion: 2
         x: 2048
@@ -679,14 +798,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3188c40544a0d1b46955b19863f3a09e
-      internalID: -5792041864902044066
+      spriteID: ec75541e8823e5242b429f359412c581
+      internalID: 2644059738745241287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_23
+      name: Swamp_Dirt_Ball_HalfHalf_23
       rect:
         serializedVersion: 2
         x: 2560
@@ -700,14 +819,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 508a516e5db319e4aa0002bf6db93049
-      internalID: -8302251943677183203
+      spriteID: e28de7fee76d28648ba6b2ee352c3c0a
+      internalID: -8886095380964952054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_24
+      name: Swamp_Dirt_Ball_HalfHalf_24
       rect:
         serializedVersion: 2
         x: 0
@@ -721,14 +840,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20d7ea4c8bb0c65459a7a76dcd6a1f7a
-      internalID: -6973506238835391450
+      spriteID: ffd460dfe3ff46348927e77e906bf13c
+      internalID: 5556755612982799970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_25
+      name: Swamp_Dirt_Ball_HalfHalf_25
       rect:
         serializedVersion: 2
         x: 512
@@ -742,14 +861,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3f61e7f10c3d364cb0e740f24a3b21c
-      internalID: -1291908627269385838
+      spriteID: 830c7dd068332ef43990754db547a935
+      internalID: 6647155993250742904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_26
+      name: Swamp_Dirt_Ball_HalfHalf_26
       rect:
         serializedVersion: 2
         x: 1024
@@ -763,14 +882,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beb3d952281892a45b38fbc269479d6d
-      internalID: -8971095557228874922
+      spriteID: 4d333f65c45cd6d498ac36e4d5d49edc
+      internalID: -5977431019702924142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_27
+      name: Swamp_Dirt_Ball_HalfHalf_27
       rect:
         serializedVersion: 2
         x: 1536
@@ -784,14 +903,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84a0276635b974642a109e1edd4e8793
-      internalID: 6562516350586677647
+      spriteID: dcb74d43f1c825a42851a584088e2c1b
+      internalID: -7909785467729770282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_28
+      name: Swamp_Dirt_Ball_HalfHalf_28
       rect:
         serializedVersion: 2
         x: 2048
@@ -805,14 +924,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 152f2e711d564524fa11d62d90290187
-      internalID: 8640413871529519066
+      spriteID: 912f9acf5f104e741bd258c16e0bb013
+      internalID: -4581501370262955563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_29
+      name: Swamp_Dirt_Ball_HalfHalf_29
       rect:
         serializedVersion: 2
         x: 2560
@@ -826,14 +945,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4d8b2d0d4a183749bfc2b07d85c798e
-      internalID: -1615678542866908496
+      spriteID: a308b9aec111c144c9855bbef557b6fd
+      internalID: 9180956758964745193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_30
+      name: Swamp_Dirt_Ball_HalfHalf_30
       rect:
         serializedVersion: 2
         x: 0
@@ -847,14 +966,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 643a573d906530d4380090efa00ec8d0
-      internalID: 4487263685869624883
+      spriteID: d4abce4d69069aa4fa19ed62573452df
+      internalID: -7801744264171176263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_31
+      name: Swamp_Dirt_Ball_HalfHalf_31
       rect:
         serializedVersion: 2
         x: 512
@@ -868,14 +987,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ceaa81180aa71a45be5341b85514605
-      internalID: -5400246298783077852
+      spriteID: 12fa4aba0fb596a44b13e0f046ca39bf
+      internalID: -2301918629500972251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_32
+      name: Swamp_Dirt_Ball_HalfHalf_32
       rect:
         serializedVersion: 2
         x: 1024
@@ -889,14 +1008,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 862dab92c207a4f44ba2d00c67af5a5c
-      internalID: -1818513380919275314
+      spriteID: 050e9ccb7dde3db43951f99f570e7c59
+      internalID: -6123304595875283517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_33
+      name: Swamp_Dirt_Ball_HalfHalf_33
       rect:
         serializedVersion: 2
         x: 1536
@@ -910,14 +1029,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 358995ad1c2c1e14daeadad350b99e3b
-      internalID: 2020766886168009963
+      spriteID: 16b125c239d37a449951938e56029502
+      internalID: 8372892519341686378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_34
+      name: Swamp_Dirt_Ball_HalfHalf_34
       rect:
         serializedVersion: 2
         x: 2048
@@ -931,14 +1050,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e40646193252d1849acfb050f69d290e
-      internalID: 6276384618932508119
+      spriteID: b7651c93f656f984a8ee0e2394f681af
+      internalID: -2504254032816446034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Template2ball_35
+      name: Swamp_Dirt_Ball_HalfHalf_35
       rect:
         serializedVersion: 2
         x: 2560
@@ -952,8 +1071,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f454fca3c86967442a25e8c20d079d66
-      internalID: 5333185051796315186
+      spriteID: e4642b455e2cb00489cb9e00b2cb650f
+      internalID: -4307036963542415504
       vertices: []
       indices: 
       edges: []
