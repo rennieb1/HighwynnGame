@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 6139771820533770713}
   - component: {fileID: 4069577595441394779}
   - component: {fileID: 8896168576047281424}
+  - component: {fileID: -7780826947909984541}
   m_Layer: 0
   m_Name: EnemyStag
   m_TagString: Untagged
@@ -346,6 +347,24 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 12288
   debug: 0
+--- !u!114 &-7780826947909984541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766089423083883507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b296708cf8b7e5e44895ea67ffcb17e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ModifyHealth: -30
+  Player: {fileID: 0}
+  timer: 0
+  rb: {fileID: 0}
+  forcex: 0
+  forcey: 0
 --- !u!1 &934763141701961591
 GameObject:
   m_ObjectHideFlags: 0
