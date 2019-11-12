@@ -24,7 +24,7 @@ namespace Highwynn
         private List<Collider2D> currentColliders;
         private CircleCollider2D feet;
         [SerializeField]
-        private BoxCollider2D body;
+        private BoxCollider2D body = null;
         [SerializeField]
         private float companionTravelDistance = 5.0f;
         // Player Mana members
@@ -43,7 +43,7 @@ namespace Highwynn
         private bool manaReqReveal = false;
         private float manaReqColourFadeTimer;
         [SerializeField]
-        private GameObject fireCone;
+        private GameObject fireCone = null;
         private bool fireConeTrigger = false;
         private float fireConeTimer = 0.0f;
         [SerializeField]

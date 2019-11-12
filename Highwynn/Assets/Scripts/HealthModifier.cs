@@ -9,9 +9,9 @@ public class HealthModifier : MonoBehaviour
     public float timer;
     public Rigidbody2D rb;
     [SerializeField]
-    private float forcex;
+    private float forcex = 0.0f;
     [SerializeField]
-    private float forcey;
+    private float forcey = 0.0f;
     // public Vector2 moveDirection;
     // public float launchForce;
     // public GameObject playercontroller;

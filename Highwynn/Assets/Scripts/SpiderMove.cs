@@ -12,7 +12,7 @@ public class SpiderMove : MonoBehaviour
     public Transform spiderUp;
     public Transform SpiderDown;
 
-    private int value = 3;
+    // private int value = 3;
     [SerializeField]
     private int rand;
     private float timer = 3;

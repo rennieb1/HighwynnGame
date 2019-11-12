@@ -6,7 +6,7 @@ namespace Highwynn
 {
     public class StagBehaviour : EnemyBehavior
     {
-        private float speed = 0.0f;
+        // private float speed = 0.0f;
         //////////////////////////////////////////////// Overridden Classes /////////////////////////////////////////////////////////
         protected override void OnSeen(Collider2D other, float distance) {
             // Get name of current animation
@@ -98,7 +98,7 @@ namespace Highwynn
 
         protected override void OnDeath() {
             dying = true;
-           speed = 0.0f;
+        //    speed = 0.0f;
             // PLAY DEATH ANIMATION
             anim.Play("Stag_Death");
         }

@@ -40,7 +40,6 @@ public class Water : MonoBehaviour
 
     void Start()
     {
-
         SpawnWater(left, width, baseheight, bottom);
     }
     public void Splash(float xpos, float velocity)
@@ -51,9 +50,15 @@ public class Water : MonoBehaviour
             int index = Mathf.RoundToInt((xpositions.Length - 1) * (xpos / (xpositions[xpositions.Length - 1] - xpositions[0])));
             velocities[index] += velocity;
             float lifetime = 0.93f + Mathf.Abs(velocity) * 0.07f;
-            splash.GetComponent<ParticleSystem>().startSpeed = 2 + 2 * Mathf.Pow(Mathf.Abs(velocity), 0.5f);
-            splash.GetComponent<ParticleSystem>().startSpeed = 2 + 2 * Mathf.Pow(Mathf.Abs(velocity), 0.5f);
-            splash.GetComponent<ParticleSystem>().startLifetime = lifetime;
+
+            ParticleSystem.MainModule m = splash.GetComponent<ParticleSystem>().main;
+            ParticleSystem.MinMaxCurve startSpeed = m.startSpeed;
+            startSpeed.constant = 2 + 2 * Mathf.Pow(Mathf.Abs(velocity), 0.5f);
+            m.startSpeed = startSpeed;
+            ParticleSystem.MinMaxCurve startLifeTime = m.startLifetime;
+            startLifeTime.constant = lifetime;
+            m.startLifetime = startLifeTime;
+
             Vector3 position = new Vector3(xpositions[index], ypositions[index] - 0.35f, 5);
             Quaternion rotation = Quaternion.LookRotation(new Vector3(xpositions[Mathf.FloorToInt(xpositions.Length / 2)], baseheight + 8, 5) - position);
             
@@ -74,8 +79,10 @@ public class Water : MonoBehaviour
         Body = gameObject.AddComponent<LineRenderer>();
         Body.material = mat;
         Body.material.renderQueue = 1000;
-        Body.SetVertexCount(nodecount);
-        Body.SetWidth(0.1f, 0.1f);
+        // Body.SetVertexCount(nodecount);
+        Body.positionCount = nodecount;
+        // Body.SetWidth(0.1f, 0.1f);
+        Body.startWidth = 0.1f;
 
         xpositions = new float[nodecount];
         ypositions = new float[nodecount];

@@ -33,7 +33,6 @@ namespace Highwynn
 
         private Transform leftWayPoint, rightWayPoint;
         private Vector3 localScale;
-        private bool isAttacking = false;
         private float timeSinceLastSeen = 0.0f;
         private bool playerSeen = false;
 

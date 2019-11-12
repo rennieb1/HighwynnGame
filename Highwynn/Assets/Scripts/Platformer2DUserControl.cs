@@ -14,9 +14,9 @@ namespace Highwynn
         private bool m_Jump;
         // Custom variables
         private Coroutine scoutRoutine = null; // Hold reference to started coroutine so it can be cancelled
-        private bool downAxisInUse = false;
+        // private bool downAxisInUse = false;
         private float buttonCooldown = 0.5f;
-        private int buttonCount = 0;
+        // private int buttonCount = 0;
 
 
         private void Awake()
@@ -110,7 +110,7 @@ namespace Highwynn
                 buttonCooldown -= Time.deltaTime;
             }
             else {
-                buttonCount = 0;
+                // buttonCount = 0;
                 buttonCooldown = 0.0f;
             }
         }

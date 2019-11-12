@@ -14,7 +14,7 @@ namespace Highwynn
         public float typeDelay = 0.125f;
         public Color highlightColour;
         public TMP_Text outputBox;
-        private bool isTyping = false;
+        // private bool isTyping = false;
         private Coroutine typeRoutine;
         public float timer = 0;
         public float activator;
@@ -22,7 +22,7 @@ namespace Highwynn
         void Start()
         {
             typeRoutine = StartCoroutine(TypeText());
-            isTyping = true;
+            // isTyping = true;
         }
          
 
@@ -46,7 +46,7 @@ namespace Highwynn
                 }
                 yield return new WaitForSeconds(typeDelay);
             }
-            isTyping = false;
+            // isTyping = false;
         }
      
     }
