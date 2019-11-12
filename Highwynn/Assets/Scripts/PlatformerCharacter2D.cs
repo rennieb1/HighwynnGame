@@ -74,7 +74,7 @@ namespace Highwynn
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             feet = gameObject.GetComponent<CircleCollider2D>();
             // body = gameObject.GetComponent<BoxCollider2D>();
-
+            Debug.Log(feet);
             currentColliders = new List<Collider2D>();
             manaReqColour = manaRequirement.fillRect.GetComponent<Image>().color;
             manaReqColour.a = 0.0f;
@@ -372,7 +372,9 @@ namespace Highwynn
         void OnCollisionExit2D(Collision2D other) 
         {
             // Remove current collider from list
+          
             currentColliders.Remove(other.collider);
+            
 
 
         }

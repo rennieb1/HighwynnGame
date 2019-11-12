@@ -11,7 +11,7 @@ public class VinesDestroy : MonoBehaviour
         if (collision.tag == "Fire")
         {
 
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
