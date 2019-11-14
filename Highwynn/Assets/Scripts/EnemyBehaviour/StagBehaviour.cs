@@ -49,40 +49,40 @@ namespace Highwynn
 
         protected override void UpdateBehaviour() {
             // Get current animation name
-            string name = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
+            if (anim.GetCurrentAnimatorClipInfo(0).Length > 0) {
+                string name = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
 
-            switch(name) {
+                switch(name) {
 
-                // case "ANIMATION_NAME":
-                //      SET SPEED
-                //      break;
+                    // case "ANIMATION_NAME":
+                    //      SET SPEED
+                    //      break;
 
-                case "Walk_Start":
-                    Move(1.0f);
-                    break;
+                    case "Walk_Start":
+                        Move(1.0f);
+                        break;
 
-                case "Walk_Continuous":
-                    Move(3.0f);
-                    break;
+                    case "Walk_Continuous":
+                        Move(3.0f);
+                        break;
 
-                case "Attack_Charge":
-                    anim.SetBool("seePlayer", false);
-                    Move(8.0f);
-                    break;
-                case "Walk_End":
-                    Move(1.0f);
-                    break;
-                case "Stag_Idle":
-                    Move(0.0f);
-                    break;
-                case "Stag_Death":
-                    Move(0.0f);
-                    break;
+                    case "Attack_Charge":
+                        anim.SetBool("seePlayer", false);
+                        Move(8.0f);
+                        break;
+                    case "Walk_End":
+                        Move(1.0f);
+                        break;
+                    case "Stag_Idle":
+                        Move(0.0f);
+                        break;
+                    case "Stag_Death":
+                        Move(0.0f);
+                        break;
 
-                   
+                    
+                }
             }
-
-           
 
             // PERHAPS USE TIMER HERE TO HANDLE IDLE LENGTH
         }
@@ -139,6 +139,11 @@ namespace Highwynn
                 anim.SetBool("idleWalk", false);
             }
         }
+
+        public void Die() {
+            base.OnDeath();
+        }
+
         void OnColliderEnter2D(Collider2D other)
         {
             if (other.gameObject.tag == "EnemyTurnaround")

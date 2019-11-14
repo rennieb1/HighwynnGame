@@ -106,7 +106,7 @@ namespace Highwynn
             // The values i work from  the x n y can probz get removed from here as they where just more for understanding purposes.-----------------
           
             transform.up = normal;
-            Debug.DrawRay(transform.position, normal * 100, Color.red);
+            // Debug.DrawRay(transform.position, normal * 100, Color.red);
             xDragonValue = normal.x;
             yDragonValue = normal.y;
         
