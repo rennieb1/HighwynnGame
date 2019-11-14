@@ -5,7 +5,7 @@ using UnityEngine;
 public class MouseInit : MonoBehaviour
 {
     [SerializeField]
-    private Texture2D cursorTexture;
+    private Texture2D cursorTexture = null;
     [SerializeField]
     private CursorMode cursorMode = CursorMode.Auto;
     [SerializeField]
