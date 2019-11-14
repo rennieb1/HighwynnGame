@@ -277,9 +277,11 @@ namespace Highwynn
         public void DropThrough() {
             // Loop through each collider, and for any that the player can fall through...
             foreach (Collider2D col in currentColliders) {
-                if (col.tag == "dropThroughGround") {
-                    // Fall through
-                    StartCoroutine(Drop(col));
+                if (col != null) {
+                    if (col.tag == "dropThroughGround") {
+                        // Fall through
+                        StartCoroutine(Drop(col));
+                    }
                 }
             }
         }
