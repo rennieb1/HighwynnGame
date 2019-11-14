@@ -29619,7 +29619,8 @@ PrefabInstance:
     - target: {fileID: 5604191534373443372, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
       propertyPath: outputMessage
-      value: You can move through the world using [WASD] or the arrow keys!
+      value: You can move through the world using [WASD] or the arrow keys! You can
+        also send me to [scout the darkness] by [clicking with your mouse]!
       objectReference: {fileID: 0}
     - target: {fileID: 5604191534373443372, guid: 1c32ec35f5271334bb0d7311401befd0,
         type: 3}
