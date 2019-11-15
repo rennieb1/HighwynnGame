@@ -1734,7 +1734,6 @@ GameObject:
   - component: {fileID: 1327073885389314646}
   - component: {fileID: 1327073885389314645}
   - component: {fileID: 1327073885389314648}
-  - component: {fileID: 3793764233922643725}
   m_Layer: 0
   m_Name: Stork Mini Boss
   m_TagString: Untagged
@@ -1883,24 +1882,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3793764233922643725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327073885389314642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b296708cf8b7e5e44895ea67ffcb17e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ModifyHealth: -10
-  Player: {fileID: 0}
-  timer: 0
-  rb: {fileID: 0}
-  forcex: 0
-  forcey: 0
 --- !u!1 &1327073885421984589
 GameObject:
   m_ObjectHideFlags: 0
