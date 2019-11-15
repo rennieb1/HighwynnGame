@@ -40,6 +40,8 @@ namespace Highwynn
         private IEnumerator SpawnWithDelay() {
             // Create new capy and set it's den to this one
             GameObject newCapy = Instantiate(capy, transform.position, Quaternion.identity);
+            newCapy.transform.position = new Vector3(newCapy.transform.position.x, newCapy.transform.position.y, 0.0f);
+            newCapy.transform.localScale = new Vector3(newCapy.transform.localScale.x, newCapy.transform.localScale.y, -newCapy.transform.localScale.z);
             newCapy.GetComponent<CapyburraBehaviour>().SetDen = this;
 
             // Get all of the new capy's colliders in all it's children
