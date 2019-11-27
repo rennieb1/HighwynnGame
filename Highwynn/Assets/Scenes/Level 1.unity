@@ -66776,6 +66776,21 @@ PrefabInstance:
       propertyPath: standard.b
       value: 0.990566
       objectReference: {fileID: 0}
+    - target: {fileID: 4366741154109946127, guid: a0a0f4e70c0e8e441acc5b95526dc8dc,
+        type: 3}
+      propertyPath: lootAlert.r
+      value: 0.972549
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366741154109946127, guid: a0a0f4e70c0e8e441acc5b95526dc8dc,
+        type: 3}
+      propertyPath: lootAlert.g
+      value: 0.96504754
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366741154109946127, guid: a0a0f4e70c0e8e441acc5b95526dc8dc,
+        type: 3}
+      propertyPath: lootAlert.b
+      value: 0.84705883
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0a0f4e70c0e8e441acc5b95526dc8dc, type: 3}
 --- !u!114 &935530562 stripped
@@ -82630,12 +82645,12 @@ PrefabInstance:
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -110.03
+      value: 102.5
       objectReference: {fileID: 0}
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.85
+      value: 32.6
       objectReference: {fileID: 0}
     - target: {fileID: 4818006700782677761, guid: 1e971af2ddbc10541a5a699d5bfedeef,
         type: 3}
