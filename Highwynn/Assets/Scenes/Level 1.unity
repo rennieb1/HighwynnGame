@@ -66746,6 +66746,36 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1914422130}
+    - target: {fileID: 4366741154109946127, guid: a0a0f4e70c0e8e441acc5b95526dc8dc,
+        type: 3}
+      propertyPath: enemyAlert.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366741154109946127, guid: a0a0f4e70c0e8e441acc5b95526dc8dc,
+        type: 3}
+      propertyPath: enemyAlert.g
+      value: 0.54147387
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366741154109946127, guid: a0a0f4e70c0e8e441acc5b95526dc8dc,
+        type: 3}
+      propertyPath: enemyAlert.b
+      value: 0.54147387
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366741154109946127, guid: a0a0f4e70c0e8e441acc5b95526dc8dc,
+        type: 3}
+      propertyPath: standard.r
+      value: 0.55602527
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366741154109946127, guid: a0a0f4e70c0e8e441acc5b95526dc8dc,
+        type: 3}
+      propertyPath: standard.g
+      value: 0.9071692
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366741154109946127, guid: a0a0f4e70c0e8e441acc5b95526dc8dc,
+        type: 3}
+      propertyPath: standard.b
+      value: 0.990566
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0a0f4e70c0e8e441acc5b95526dc8dc, type: 3}
 --- !u!114 &935530562 stripped
