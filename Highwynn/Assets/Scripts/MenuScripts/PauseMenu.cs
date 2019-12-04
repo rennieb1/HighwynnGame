@@ -21,7 +21,7 @@ public GameObject gamePauseMenu;
                 Pause();
             }
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Cancel"))
         {
             if (gameIsPaused)
             {

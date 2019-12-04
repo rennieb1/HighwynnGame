@@ -1809,6 +1809,7 @@ MonoBehaviour:
   projectileVelocity: 800
   timeBetweenShots: 0.1
   shootCost: 10
+  coneCost: 5
   addPlayerVelocity: 0
 --- !u!108 &5344030889123510586
 Light:
