@@ -11,12 +11,15 @@ namespace Highwynn {
         public float projectileVelocity;
         public float timeBetweenShots;
         public float shootCost = 30.0f;
+        public float coneCost = 10.0f;
         private float timeBetweenShotsCounter;
         private bool canShoot;
         private PlatformerCharacter2D character;
         public bool addPlayerVelocity = true;
         private Animator m_Anim;
         private bool fire;
+        private bool hasShootEnded = true;
+        private bool hasConeEnded = true;
 
 
         // Use this for initialization
@@ -29,7 +32,8 @@ namespace Highwynn {
     
         // Update is called once per frame
         void Update () {
-            if ((Input.GetButtonDown("Fire1") || Input.GetAxisRaw("Fire1") != 0.0f) 
+            float fIn = Input.GetAxisRaw("Fire1");
+            if ((Input.GetButtonDown("Fire1") || fIn > 0.0f) 
                 && canShoot 
                 && character.ReduceMana(shootCost))
             {
@@ -62,7 +66,8 @@ namespace Highwynn {
                     bulletInstance.GetComponent<Rigidbody2D>().AddForce(-projectileSpawnPoint.right * projectileVelocity);
                 }
 
-                canShoot = false;   
+                canShoot = false;
+                hasShootEnded = false;
             }
             if (!canShoot)
             {
@@ -73,21 +78,27 @@ namespace Highwynn {
                     timeBetweenShotsCounter = timeBetweenShots;
                 }
             }
-            if (Input.GetButtonUp("Fire1"))
+            if ((Input.GetButtonUp("Fire1") || fIn == 0.0f)
+                && !hasShootEnded)
             {
                 m_Anim.Play("FinishAttack");
                 fire = false;
+                hasShootEnded = true;
             }
 
-            if (Input.GetButtonDown("Fire2")) //|| Input.GetAxisRaw("Fire2") != 0.0f) 
+            if ((Input.GetButtonDown("Fire2") || Input.GetAxisRaw("Fire2") > 0.0f)
+                && canShoot)
             {
                 character.TriggerFireCone(true);
                 m_Anim.Play("HeadAttack");
+                hasConeEnded = false;
             }
-            if (Input.GetButtonUp("Fire2")) //|| Input.GetAxisRaw("Fire2") == 0.0f) 
+            if ((Input.GetButtonUp("Fire2") || Input.GetAxisRaw("Fire2") == 0.0f)
+                && !hasConeEnded)
             {
                 character.TriggerFireCone(false);
                 m_Anim.Play("FinishAttack");
+                hasConeEnded = true;
             }
         }
     }
